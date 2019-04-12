@@ -1,0 +1,142 @@
+-----------------------------------------------------------------
+[2018-12-12 14:59:28.847] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 14:59:28.850] [BOT_EVENT] Initializing environment..
+[2018-12-12 14:59:28.851] [BOT_EVENT] Environment: ready!
+[2018-12-12 14:59:30.068] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 14:59:30.156] [DATABASE_ERROR] null
+[2018-12-12 14:59:30.156] [BOT_EVENT] Database: ready!
+[2018-12-12 14:59:30.195] [BOT_EVENT] API: connected!
+[2018-12-12 14:59:30.201] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 14:59:30.204] [BOT_EVENT] Nickname: set!
+[2018-12-12 14:59:30.208] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:02:31.988] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:02:31.988] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:02:31.989] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:02:33.140] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:02:33.232] [DATABASE_ERROR] null
+[2018-12-12 15:02:33.233] [BOT_EVENT] Database: ready!
+[2018-12-12 15:02:33.275] [BOT_EVENT] API: connected!
+[2018-12-12 15:02:33.281] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:02:33.284] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:02:33.289] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:06:38.702] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:06:38.702] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:06:38.703] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:06:39.849] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:06:39.945] [DATABASE_ERROR] null
+[2018-12-12 15:06:39.945] [BOT_EVENT] Database: ready!
+[2018-12-12 15:06:39.985] [BOT_EVENT] API: connected!
+[2018-12-12 15:06:39.992] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:06:39.994] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:06:39.998] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:10:29.916] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:10:29.916] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:10:29.917] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:10:31.542] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:10:31.635] [DATABASE_ERROR] null
+[2018-12-12 15:10:31.635] [BOT_EVENT] Database: ready!
+[2018-12-12 15:10:31.666] [BOT_EVENT] API: connected!
+[2018-12-12 15:10:31.672] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:10:31.674] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:10:31.679] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:12:05.028] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:12:05.029] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:12:05.031] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:12:06.188] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:12:06.292] [DATABASE_ERROR] null
+[2018-12-12 15:12:06.293] [BOT_EVENT] Database: ready!
+[2018-12-12 15:12:06.329] [BOT_EVENT] API: connected!
+[2018-12-12 15:12:06.335] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:12:06.338] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:12:06.343] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:18:57.966] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:18:57.967] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:18:57.968] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:18:59.139] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://127.0.0.1:3306/teamspeak_heimdall?user=tsb-heimdall&pass=h4Oo5cB5td9WwSF4&useUnicode=true&characterEncoding=UTF-8 using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:18:59.235] [DATABASE_ERROR] null
+[2018-12-12 15:18:59.235] [BOT_EVENT] Database: ready!
+[2018-12-12 15:18:59.263] [BOT_EVENT] API: connected!
+[2018-12-12 15:18:59.270] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:18:59.272] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:18:59.277] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:22:15.852] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:22:15.852] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:22:15.853] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:22:17.540] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:22:17.634] [DATABASE_ERROR] null
+[2018-12-12 15:22:17.634] [BOT_EVENT] Database: ready!
+[2018-12-12 15:22:17.660] [BOT_EVENT] API: connected!
+[2018-12-12 15:22:17.666] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:22:17.668] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:22:17.672] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:23:07.409] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:23:07.409] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:23:07.410] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:23:07.629] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:23:07.738] [DATABASE_ERROR] null
+[2018-12-12 15:23:07.738] [BOT_EVENT] Database: ready!
+[2018-12-12 15:23:07.771] [BOT_EVENT] API: connected!
+[2018-12-12 15:23:07.779] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:23:07.782] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:23:07.787] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:46:09.227] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:46:09.227] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:46:09.228] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:46:09.445] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:46:09.549] [DATABASE_ERROR] null
+[2018-12-12 15:46:09.550] [BOT_EVENT] Database: ready!
+[2018-12-12 15:46:09.585] [BOT_EVENT] API: connected!
+[2018-12-12 15:46:09.594] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:46:09.597] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:46:09.603] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:46:35.580] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:46:35.580] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:46:35.581] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:46:35.811] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:46:35.914] [DATABASE_ERROR] null
+[2018-12-12 15:46:35.914] [BOT_EVENT] Database: ready!
+[2018-12-12 15:46:35.944] [BOT_EVENT] API: connected!
+[2018-12-12 15:46:35.950] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:46:35.954] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:46:35.958] [BOT_EVENT] Event-Listener: registered!
+-----------------------------------------------------------------
+[2018-12-12 15:48:44.044] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:48:44.045] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:48:44.045] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:48:44.263] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall&serverTimezone=+00:00 using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:48:44.368] [DATABASE_ERROR] null
+-----------------------------------------------------------------
+[2018-12-12 15:49:07.134] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:49:07.135] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:49:07.136] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:49:07.348] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall?serverTimezone=+00:00 using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2018-12-12 15:49:07.458] [DATABASE_ERROR] null
+-----------------------------------------------------------------
+[2018-12-12 15:49:27.751] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-12-12 15:49:27.751] [BOT_EVENT] Initializing environment..
+[2018-12-12 15:49:27.751] [BOT_EVENT] Environment: ready!
+[2018-12-12 15:49:31.718] [BOT_EVENT] Database: ready!
+[2018-12-12 15:49:31.744] [BOT_EVENT] API: connected!
+[2018-12-12 15:49:31.750] [BOT_EVENT] Server-Query: Logged in!
+[2018-12-12 15:49:31.753] [BOT_EVENT] Nickname: set!
+[2018-12-12 15:49:31.757] [BOT_EVENT] Event-Listener: registered!
+[2018-12-12 15:49:31.794] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Default Channel}
+[2018-12-12 15:49:31.804] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2018-12-12 15:49:31.808] [BOT_EVENT] Feature: CommandManager has been activated.
+[2018-12-12 15:49:31.810] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2018-12-12 15:49:31.810] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2018-12-12 15:49:31.816] [BOT_EVENT] Bot is now running!
+[2018-12-12 15:50:01.627] [BOT_EVENT] Receiving !off command from Admin.. 
+[2018-12-12 15:50:01.628] [BOT_EVENT] Shutting down the bot..
+[2018-12-12 15:50:01.651] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2018-12-12 15:50:01.652] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2018-12-12 15:50:01.652] [BOT_EVENT] Feature: CommandManager has been deactivated.

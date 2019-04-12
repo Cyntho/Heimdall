@@ -1,0 +1,163 @@
+[2017-08-08 19:40:54.420] [Info] -----------------------------------------------------------------
+[2017-08-08 19:40:54.421] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 19:40:54.421] [BotEvent] Initializing environment..
+[2017-08-08 19:40:54.422] [BotEvent] Environment: ready!
+[2017-08-08 19:40:54.647] [BotEvent] Database: ready!
+[2017-08-08 19:40:54.704] [BotEvent] API: connected!
+[2017-08-08 19:40:54.712] [BotEvent] Server-Query: Logged in!
+[2017-08-08 19:40:54.715] [BotEvent] Nickname: set!
+[2017-08-08 19:40:54.740] [BotEvent] Event-Listener: registered!
+[2017-08-08 19:40:54.762] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 19:40:54.783] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-08 19:40:54.786] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-08 19:40:54.786] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-08 19:40:54.786] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-08 19:40:54.787] [BotEvent] Bot is now running!
+[2017-08-08 19:41:01.876] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 19:41:01.898] [Database Error] [UserHistoryFeature] Error inserting new Data into the Database
+[2017-08-08 19:41:18.076] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 19:41:18.078] [ClientLeaveEvent] Successfully unregistered Xida1 [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=1]
+[2017-08-08 19:42:35.649] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-08 19:42:35.651] [Database Error] [UserHistoryFeature] Error inserting new Data into the Database
+[2017-08-08 19:42:43.155] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-08 19:42:43.156] [ClientLeaveEvent] Successfully unregistered unknown [uuid=OwPw01bTdzgBLAdaHMkNG5mEnO4=] [RuntimeId=4]
+[2017-08-08 19:42:51.038] [ClientJoinEvent] Xida1 [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 19:42:51.040] [Database Error] [UserHistoryFeature] Error inserting new Data into the Database
+[2017-08-08 19:43:08.434] [ClientLeaveEvent] Xida1 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 19:43:08.436] [ClientLeaveEvent] Successfully unregistered Xida1 [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=5]
+[2017-08-08 19:43:12.727] [ClientMovedEvent] Xida1 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Twitch Stream}
+[2017-08-08 19:43:17.705] [BotEvent] Receiving shutdown command from console.
+[2017-08-08 19:43:17.705] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-08 19:43:17.705] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-08 19:43:17.705] [BotEvent] Shutting down the bot..
+[2017-08-08 20:02:46.748] [Info] -----------------------------------------------------------------
+[2017-08-08 20:02:46.749] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 20:02:46.749] [BotEvent] Initializing environment..
+[2017-08-08 20:02:46.751] [BotEvent] Environment: ready!
+[2017-08-08 20:02:46.936] [BotEvent] Database: ready!
+[2017-08-08 20:02:46.971] [BotEvent] API: connected!
+[2017-08-08 20:02:46.977] [BotEvent] Server-Query: Logged in!
+[2017-08-08 20:02:46.979] [BotEvent] Nickname: set!
+[2017-08-08 20:02:47.004] [BotEvent] Event-Listener: registered!
+[2017-08-08 20:03:31.160] [Info] -----------------------------------------------------------------
+[2017-08-08 20:03:31.160] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 20:03:31.161] [BotEvent] Initializing environment..
+[2017-08-08 20:03:31.161] [BotEvent] Environment: ready!
+[2017-08-08 20:03:31.326] [BotEvent] Database: ready!
+[2017-08-08 20:03:31.360] [BotEvent] API: connected!
+[2017-08-08 20:03:31.366] [BotEvent] Server-Query: Logged in!
+[2017-08-08 20:03:31.368] [BotEvent] Nickname: set!
+[2017-08-08 20:03:31.393] [BotEvent] Event-Listener: registered!
+[2017-08-08 20:03:31.412] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-08 20:03:31.429] [ClientJoinEvent] Xida1 [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream}
+[2017-08-08 20:03:31.431] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-08 20:03:31.431] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-08 20:03:31.431] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-08 20:03:31.432] [BotEvent] Bot is now running!
+[2017-08-08 20:03:48.326] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-08 20:04:02.799] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-08 20:04:02.842] [ClientLeaveEvent] Successfully unregistered unknown [uuid=0PvjRFUOhjSmOeIy7YgBBq9CC78=] [RuntimeId=4]
+[2017-08-08 20:04:21.711] [ClientLeaveEvent] Xida1 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:04:21.712] [ClientLeaveEvent] Successfully unregistered unknown [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=3]
+[2017-08-08 20:04:21.847] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:04:27.297] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:04:27.331] [ClientLeaveEvent] Successfully unregistered unknown [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=5]
+[2017-08-08 20:04:37.660] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:04:42.360] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-08 20:04:46.631] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Twitch Stream - Misses}
+[2017-08-08 20:04:55.389] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-08 20:05:11.320] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-08 20:05:11.321] [ClientLeaveEvent] Successfully unregistered Malte_21 [uuid=0PvjRFUOhjSmOeIy7YgBBq9CC78=] [RuntimeId=7]
+[2017-08-08 20:05:15.408] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-08 20:05:15.409] [ClientLeaveEvent] Successfully unregistered unknown [uuid=0PvjRFUOhjSmOeIy7YgBBq9CC78=] [RuntimeId=8]
+[2017-08-08 20:06:46.288] [BotEvent] Receiving shutdown command from console.
+[2017-08-08 20:06:46.288] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-08 20:06:46.288] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-08 20:06:46.288] [BotEvent] Shutting down the bot..
+[2017-08-08 20:09:03.082] [Info] -----------------------------------------------------------------
+[2017-08-08 20:09:03.082] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 20:09:03.082] [BotEvent] Initializing environment..
+[2017-08-08 20:09:03.083] [BotEvent] Environment: ready!
+[2017-08-08 20:09:03.272] [BotEvent] Database: ready!
+[2017-08-08 20:09:03.311] [BotEvent] API: connected!
+[2017-08-08 20:09:03.317] [BotEvent] Server-Query: Logged in!
+[2017-08-08 20:09:03.318] [BotEvent] Nickname: set!
+[2017-08-08 20:09:03.344] [BotEvent] Event-Listener: registered!
+[2017-08-08 20:09:03.367] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-08 20:09:03.383] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-08 20:09:03.385] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-08 20:09:03.385] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-08 20:09:03.385] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-08 20:09:03.385] [BotEvent] Bot is now running!
+[2017-08-08 20:09:30.634] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:09:30.643] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=6]
+[2017-08-08 20:09:42.436] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:11:21.939] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:11:31.312] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:11:31.312] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=10]
+[2017-08-08 20:11:49.404] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:11:49.440] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=11]
+[2017-08-08 20:12:17.878] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:12:22.714] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 20:12:27.674] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:12:27.674] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=12]
+[2017-08-08 20:12:29.355] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 20:12:29.385] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=13]
+[2017-08-08 20:27:07.448] [BotEvent] Receiving shutdown command from console.
+[2017-08-08 20:27:07.448] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-08 20:27:07.448] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-08 20:27:07.448] [BotEvent] Shutting down the bot..
+[2017-08-08 22:42:33.563] [Info] -----------------------------------------------------------------
+[2017-08-08 22:42:33.564] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 22:42:33.564] [BotEvent] Initializing environment..
+[2017-08-08 22:42:33.565] [BotEvent] Environment: ready!
+[2017-08-08 22:42:33.754] [BotEvent] Database: ready!
+[2017-08-08 22:42:33.795] [BotEvent] API: connected!
+[2017-08-08 22:42:33.802] [BotEvent] Server-Query: Logged in!
+[2017-08-08 22:42:33.805] [BotEvent] Nickname: set!
+[2017-08-08 22:42:33.829] [BotEvent] Event-Listener: registered!
+[2017-08-08 22:42:33.852] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-08 22:42:33.854] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-08 22:42:33.854] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-08 22:42:33.854] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-08 22:42:33.855] [BotEvent] Bot is now running!
+[2017-08-08 22:42:37.328] [Database Error] Field 'counter' doesn't have a default value
+[2017-08-08 22:42:37.338] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:43:03.498] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 22:43:03.544] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=2]
+[2017-08-08 22:43:14.100] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:43:28.297] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 22:43:28.333] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=3]
+[2017-08-08 22:43:28.454] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:43:58.006] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 22:43:58.105] [ClientLeaveEvent] Successfully unregistered Xida [uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=] [RuntimeId=4]
+[2017-08-08 22:43:58.240] [ClientJoinEvent] xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:46:08.863] [BotEvent] Receiving shutdown command from console.
+[2017-08-08 22:46:08.863] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-08 22:46:08.863] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-08 22:46:08.863] [BotEvent] Shutting down the bot..
+[2017-08-08 22:46:14.074] [Info] -----------------------------------------------------------------
+[2017-08-08 22:46:14.075] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-08 22:46:14.075] [BotEvent] Initializing environment..
+[2017-08-08 22:46:14.075] [BotEvent] Environment: ready!
+[2017-08-08 22:46:14.243] [BotEvent] Database: ready!
+[2017-08-08 22:46:14.278] [BotEvent] API: connected!
+[2017-08-08 22:46:14.285] [BotEvent] Server-Query: Logged in!
+[2017-08-08 22:46:14.287] [BotEvent] Nickname: set!
+[2017-08-08 22:46:14.308] [BotEvent] Event-Listener: registered!
+[2017-08-08 22:46:14.328] [ClientJoinEvent] xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:46:14.344] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-08 22:46:14.345] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-08 22:46:14.346] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-08 22:46:14.346] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-08 22:46:14.346] [BotEvent] Bot is now running!
+[2017-08-08 22:46:19.903] [ClientLeaveEvent] xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-08 22:46:19.912] [Database Error] [UserHistoryFeature::Logout] Unable to update Database for uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=
+[2017-08-08 22:46:20.511] [ClientJoinEvent] xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-08 22:46:32.467] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Public Talk 1}
+[2017-08-08 22:46:33.626] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Public Talk 1} to {/Lobby}
+[2017-08-08 23:38:03.293] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Multigaming - Groups/Group III}
+[2017-08-08 23:46:58.386] [BotEvent] Receiving shutdown command from console.
+[2017-08-08 23:46:58.386] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-08 23:46:58.386] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-08 23:46:58.386] [BotEvent] Shutting down the bot..

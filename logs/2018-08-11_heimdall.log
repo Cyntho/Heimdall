@@ -1,0 +1,99 @@
+-----------------------------------------------------------------
+[2018-08-11 16:48:10.853] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-08-11 16:48:10.853] [BOT_EVENT] Initializing environment..
+[2018-08-11 16:48:10.854] [BOT_EVENT] Environment: ready!
+[2018-08-11 16:48:11.224] [BOT_EVENT] Database: ready!
+[2018-08-11 16:48:11.270] [BOT_EVENT] API: connected!
+[2018-08-11 16:48:11.281] [BOT_EVENT] Server-Query: Logged in!
+[2018-08-11 16:48:11.283] [BOT_EVENT] Nickname: set!
+[2018-08-11 16:48:11.294] [BOT_EVENT] Event-Listener: registered!
+[2018-08-11 16:48:11.841] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 16:48:11.855] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2018-08-11 16:48:11.856] [BOT_EVENT] Feature: CommandManager has been activated.
+[2018-08-11 16:48:11.856] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2018-08-11 16:48:11.856] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2018-08-11 16:48:11.862] [BOT_EVENT] Bot is now running!
+[2018-08-11 16:48:31.819] [COMMAND_ERROR] Could not resolve command by label !list; !list features
+[2018-08-11 16:48:36.488] [COMMAND_ERROR] Could not resolve command by label !help; !help
+[2018-08-11 16:48:50.220] [CLIENT_MOVED_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Room 2}
+[2018-08-11 16:49:01.196] [CLIENT_LEAVE_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2018-08-11 16:49:01.289] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 16:51:18.369] [BOT_EVENT] Receiving !off command from Admin.. 
+[2018-08-11 16:51:18.369] [BOT_EVENT] Shutting down the bot..
+[2018-08-11 16:51:18.370] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2018-08-11 16:51:18.370] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2018-08-11 16:51:18.370] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2018-08-11 17:20:25.826] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-08-11 17:20:25.826] [BOT_EVENT] Initializing environment..
+[2018-08-11 17:20:25.827] [BOT_EVENT] Environment: ready!
+[2018-08-11 17:20:26.211] [BOT_EVENT] Database: ready!
+[2018-08-11 17:20:26.255] [BOT_EVENT] API: connected!
+[2018-08-11 17:20:26.262] [BOT_EVENT] Server-Query: Logged in!
+[2018-08-11 17:20:26.265] [BOT_EVENT] Nickname: set!
+[2018-08-11 17:20:26.276] [BOT_EVENT] Event-Listener: registered!
+[2018-08-11 17:20:26.355] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2018-08-11 17:20:26.851] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:20:26.853] [BOT_EVENT] Feature: CommandManager has been activated.
+[2018-08-11 17:20:26.853] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2018-08-11 17:20:26.853] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2018-08-11 17:20:26.860] [BOT_EVENT] Bot is now running!
+[2018-08-11 17:20:30.998] [CLIENT_MOVED_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Room 1}
+[2018-08-11 17:20:41.936] [CLIENT_MOVED_EVENT] Xida2 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Room 1} to {/Room 2}
+[2018-08-11 17:20:56.858] [CLIENT_LEAVE_EVENT] Xida2 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2018-08-11 17:20:56.955] [CLIENT_JOIN_EVENT] Xida2 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:25:42.788] [BOT_EVENT] Receiving !off command from Admin.. 
+[2018-08-11 17:25:42.788] [BOT_EVENT] Shutting down the bot..
+[2018-08-11 17:25:42.789] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2018-08-11 17:25:42.789] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2018-08-11 17:25:42.789] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2018-08-11 17:25:48.582] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-08-11 17:25:48.582] [BOT_EVENT] Initializing environment..
+[2018-08-11 17:25:48.583] [BOT_EVENT] Environment: ready!
+[2018-08-11 17:25:48.946] [BOT_EVENT] Database: ready!
+[2018-08-11 17:25:48.993] [BOT_EVENT] API: connected!
+[2018-08-11 17:25:48.999] [BOT_EVENT] Server-Query: Logged in!
+[2018-08-11 17:25:49.001] [BOT_EVENT] Nickname: set!
+[2018-08-11 17:25:49.012] [BOT_EVENT] Event-Listener: registered!
+[2018-08-11 17:25:49.112] [CLIENT_JOIN_EVENT] Xida2 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:25:49.132] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2018-08-11 17:25:49.134] [BOT_EVENT] Feature: CommandManager has been activated.
+[2018-08-11 17:25:49.136] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2018-08-11 17:25:49.137] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2018-08-11 17:25:49.155] [BOT_EVENT] Bot is now running!
+[2018-08-11 17:25:55.401] [CLIENT_MOVED_EVENT] Xida2 [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Room 2}
+[2018-08-11 17:26:02.963] [CLIENT_MOVED_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Room 2} to {/Room 1}
+[2018-08-11 17:26:08.219] [CLIENT_LEAVE_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2018-08-11 17:26:08.324] [CLIENT_JOIN_EVENT] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2018-08-11 17:26:13.415] [CLIENT_LEAVE_EVENT] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2018-08-11 17:26:13.512] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:27:47.813] [BOT_EVENT] Receiving !off command from Admin.. 
+[2018-08-11 17:27:47.813] [BOT_EVENT] Shutting down the bot..
+[2018-08-11 17:27:47.813] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2018-08-11 17:27:47.813] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2018-08-11 17:27:47.814] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2018-08-11 17:27:54.780] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2018-08-11 17:27:54.780] [BOT_EVENT] Initializing environment..
+[2018-08-11 17:27:54.781] [BOT_EVENT] Environment: ready!
+[2018-08-11 17:27:55.146] [BOT_EVENT] Database: ready!
+[2018-08-11 17:27:55.188] [BOT_EVENT] API: connected!
+[2018-08-11 17:27:55.195] [BOT_EVENT] Server-Query: Logged in!
+[2018-08-11 17:27:55.198] [BOT_EVENT] Nickname: set!
+[2018-08-11 17:27:55.210] [BOT_EVENT] Event-Listener: registered!
+[2018-08-11 17:27:55.319] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:27:55.340] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2018-08-11 17:27:55.341] [BOT_EVENT] Feature: CommandManager has been activated.
+[2018-08-11 17:27:55.344] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2018-08-11 17:27:55.344] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2018-08-11 17:27:55.352] [BOT_EVENT] Bot is now running!
+[2018-08-11 17:28:04.011] [CLIENT_LEAVE_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2018-08-11 17:28:04.105] [CLIENT_JOIN_EVENT] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2018-08-11 17:28:09.282] [CLIENT_LEAVE_EVENT] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2018-08-11 17:28:09.387] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2018-08-11 17:28:12.957] [BOT_EVENT] Receiving !off command from Admin.. 
+[2018-08-11 17:28:12.957] [BOT_EVENT] Shutting down the bot..
+[2018-08-11 17:28:12.958] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2018-08-11 17:28:12.958] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2018-08-11 17:28:12.958] [BOT_EVENT] Feature: CommandManager has been deactivated.

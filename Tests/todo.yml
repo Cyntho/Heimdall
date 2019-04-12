@@ -1,0 +1,31 @@
+old:
+  2461 = Malte_1
+
+
+
+
+Stream_start:
+  object_start:
+    ref: "userList"
+    type: NET_OBJECT
+    value:
+      object_start:
+        ref: "TS3User"
+        type: NET_OBJECT
+        value:
+          object_start:
+            ref: "id"
+            type: INTEGER
+            value: 1
+          object_end:
+          object_start:
+            ref: "uuid"
+            type: STRING
+            value: "ABCD-AAAA-BBBB-CCCC"
+          object_end:
+      object_end:
+  object_end:
+Stream_end:
+
+
+

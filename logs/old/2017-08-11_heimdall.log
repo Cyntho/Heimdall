@@ -1,0 +1,21 @@
+-----------------------------------------------------------------
+[2017-08-11 13:56:42.068] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-11 13:56:42.069] [BotEvent] Initializing environment..
+[2017-08-11 13:56:42.070] [BotEvent] Environment: ready!
+[2017-08-11 13:56:42.309] [BotEvent] Database: ready!
+[2017-08-11 13:56:42.361] [BotEvent] API: connected!
+[2017-08-11 13:56:42.372] [BotEvent] Server-Query: Logged in!
+[2017-08-11 13:56:42.376] [BotEvent] Nickname: set!
+[2017-08-11 13:56:42.405] [BotEvent] Event-Listener: registered!
+[2017-08-11 13:56:43.003] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream}
+[2017-08-11 13:56:43.007] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-11 13:56:43.008] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-11 13:56:43.008] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-11 13:56:43.009] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-11 13:56:43.013] [BotEvent] Bot is now running!
+[2017-08-11 13:57:57.195] [ClientMovedEvent] [Bot] Thor [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Twitch Stream} to {/Twitch Stream - Misses}
+[2017-08-11 13:58:10.157] [BotEvent] Receiving shutdown command from console.
+[2017-08-11 13:58:10.157] [BotEvent] Shutting down the bot..
+[2017-08-11 13:58:10.206] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-11 13:58:10.206] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-11 13:58:10.206] [BotEvent] Feature: CommandManager has been deactivated.

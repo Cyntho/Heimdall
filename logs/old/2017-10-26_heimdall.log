@@ -1,0 +1,77 @@
+-----------------------------------------------------------------
+[2017-10-26 23:24:15.773] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:24:15.775] [BotEvent] Initializing environment..
+[2017-10-26 23:24:15.776] [BotEvent] Environment: ready!
+[2017-10-26 23:24:15.777] [BotCritical] Unable to load mysql driver class!
+-----------------------------------------------------------------
+[2017-10-26 23:26:16.079] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:26:16.079] [BotEvent] Initializing environment..
+[2017-10-26 23:26:16.080] [BotEvent] Environment: ready!
+[2017-10-26 23:26:18.367] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/cmn_global using credentials user=[tsb-heimdall ] pass=[nFHoBpffE8PAbc9z]
+[2017-10-26 23:26:18.367] [BotEvent] Database: ready!
+[2017-10-26 23:26:19.403] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:26:19.403] [BotError] Shutting down..
+[2017-10-26 23:26:19.403] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:28:25.561] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:28:25.561] [BotEvent] Initializing environment..
+[2017-10-26 23:28:25.562] [BotEvent] Environment: ready!
+[2017-10-26 23:28:26.230] [Database Error] Could not establish connection to jdbc:mysql://46.163.76.146:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:28:26.231] [BotEvent] Database: ready!
+[2017-10-26 23:28:27.270] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:28:27.270] [BotError] Shutting down..
+[2017-10-26 23:28:27.270] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:28:44.455] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:28:44.455] [BotEvent] Initializing environment..
+[2017-10-26 23:28:44.456] [BotEvent] Environment: ready!
+[2017-10-26 23:28:44.706] [Database Error] Could not establish connection to jdbc:mysql://cyntho.org:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:28:44.706] [BotEvent] Database: ready!
+[2017-10-26 23:28:45.743] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:28:45.743] [BotError] Shutting down..
+[2017-10-26 23:28:45.744] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:29:53.419] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:29:53.419] [BotEvent] Initializing environment..
+[2017-10-26 23:29:53.420] [BotEvent] Environment: ready!
+[2017-10-26 23:29:53.672] [Database Error] Could not establish connection to jdbc:mysql://cyntho.org:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:29:53.672] [BotEvent] Database: ready!
+[2017-10-26 23:29:54.718] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:29:54.719] [BotError] Shutting down..
+[2017-10-26 23:29:54.719] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:31:11.671] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:31:11.671] [BotEvent] Initializing environment..
+[2017-10-26 23:31:11.672] [BotEvent] Environment: ready!
+[2017-10-26 23:31:11.912] [Database Error] Could not establish connection to jdbc:mysql://46.163.76.146:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:31:11.912] [BotEvent] Database: ready!
+[2017-10-26 23:31:12.952] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:31:12.953] [BotError] Shutting down..
+[2017-10-26 23:31:12.953] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:32:27.124] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:32:27.124] [BotEvent] Initializing environment..
+[2017-10-26 23:32:27.125] [BotEvent] Environment: ready!
+[2017-10-26 23:32:27.382] [Database Error] Could not establish connection to jdbc:mysql://46.163.76.146:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:32:27.382] [BotEvent] Database: ready!
+[2017-10-26 23:32:28.423] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:32:28.423] [BotError] Shutting down..
+[2017-10-26 23:32:28.423] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:34:49.716] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:34:49.717] [BotEvent] Initializing environment..
+[2017-10-26 23:34:49.717] [BotEvent] Environment: ready!
+[2017-10-26 23:34:50.042] [Database Error] Could not establish connection to jdbc:mysql://46.163.76.146:3306/Teamspeak3 using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:34:50.042] [BotEvent] Database: ready!
+[2017-10-26 23:34:51.087] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:34:51.087] [BotError] Shutting down..
+[2017-10-26 23:34:51.088] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-26 23:35:27.515] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-26 23:35:27.515] [BotEvent] Initializing environment..
+[2017-10-26 23:35:27.516] [BotEvent] Environment: ready!
+[2017-10-26 23:35:27.762] [Database Error] Could not establish connection to jdbc:mysql://46.163.76.146:3306/ilchWEB using credentials user=[ts_4appHeimdall17 ] pass=[bWus%889nFHoBpffE8PAbc9z]
+[2017-10-26 23:35:27.762] [BotEvent] Database: ready!
+[2017-10-26 23:35:28.795] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-26 23:35:28.795] [BotError] Shutting down..
+[2017-10-26 23:35:28.796] [BotEvent] Shutting down the bot..

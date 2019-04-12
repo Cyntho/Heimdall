@@ -1,0 +1,42 @@
+[2017-08-09 00:34:47.126] [Info] -----------------------------------------------------------------
+[2017-08-09 00:34:47.127] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-09 00:34:47.127] [BotEvent] Initializing environment..
+[2017-08-09 00:34:47.128] [BotEvent] Environment: ready!
+[2017-08-09 00:34:47.326] [BotEvent] Database: ready!
+[2017-08-09 00:34:47.372] [BotEvent] API: connected!
+[2017-08-09 00:34:47.379] [BotEvent] Server-Query: Logged in!
+[2017-08-09 00:34:47.383] [BotEvent] Nickname: set!
+[2017-08-09 00:34:47.409] [BotEvent] Event-Listener: registered!
+[2017-08-09 00:34:48.039] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-09 00:34:48.162] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group III}
+[2017-08-09 00:34:48.165] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-09 00:34:48.166] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-09 00:34:48.166] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-09 00:34:48.167] [BotEvent] Bot is now running!
+[2017-08-09 00:34:58.586] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-09 00:35:00.702] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-09 00:36:03.056] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-09 00:36:03.056] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-09 00:36:03.056] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-09 00:36:03.056] [BotEvent] Feature: CommandManager has been deactivated.
+[2017-08-09 00:36:03.056] [BotEvent] Shutting down the bot..
+[2017-08-09 00:37:06.624] [Info] -----------------------------------------------------------------
+[2017-08-09 00:37:06.624] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-09 00:37:06.624] [BotEvent] Initializing environment..
+[2017-08-09 00:37:06.625] [BotEvent] Environment: ready!
+[2017-08-09 00:37:06.849] [BotEvent] Database: ready!
+[2017-08-09 00:37:06.892] [BotEvent] API: connected!
+[2017-08-09 00:37:06.899] [BotEvent] Server-Query: Logged in!
+[2017-08-09 00:37:06.901] [BotEvent] Nickname: set!
+[2017-08-09 00:37:06.928] [BotEvent] Event-Listener: registered!
+[2017-08-09 00:37:07.570] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-09 00:37:07.637] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group III}
+[2017-08-09 00:37:07.638] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-09 00:37:07.639] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-09 00:37:07.639] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-09 00:37:07.640] [BotEvent] Bot is now running!
+[2017-08-09 00:37:20.702] [BotEvent] Receiving !off command from Admin.. 
+[2017-08-09 00:37:20.702] [BotEvent] Shutting down the bot..
+[2017-08-09 00:37:20.702] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-09 00:37:20.702] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-09 00:37:20.702] [BotEvent] Feature: CommandManager has been deactivated.

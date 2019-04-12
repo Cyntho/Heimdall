@@ -1,0 +1,41 @@
+---
+version: 1.0
+released: 2018-02-11
+
+# This feature enables the bot to take a closer look
+# at the activities of certain people, channels or groups
+# on your server. Unlike the normal bot instance, channel chat,
+# uploads/downloads and movement of clients will be logged.
+#
+#
+# NOTE: Each client you intend to watch using this feature,
+#       will (on connect) spawn a ServerQueryClient which will
+#       use one of your server's slots! So make sure to not get
+#       too deep into this :P
+
+
+# General settings for this feature
+surveillance:
+  active: true
+  logChannelChatToFile: true
+  logChannelChatToDb: false
+
+
+# Set the credentials you want the queries to use
+# DO NOT use the 'ServerAdmin' Query. It's also recommended to
+# NOT use the same query the main bot uses.
+query:
+  username: SurveillanceBotInstance
+  password: q2BzDJjV
+  nickname: '[Bot] NSA'
+
+# Set the groups you want to watch here
+groups:
+  server: # Server-Group ID, to watch an entire server group
+    - 666
+  channel_Group: # Channel-Group ID. (Like Channel-Admin only etc.)
+    - 4
+  channel_ID: # Only watch specific channels
+    - 54
+  clients: # Only watch specific clients (by UUID)
+    - TheClientsUuidComesHere

@@ -1,0 +1,756 @@
+-----------------------------------------------------------------
+[2017-12-28 19:16:23.304] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:16:23.305] [BotEvent] Initializing environment..
+[2017-12-28 19:16:23.305] [BotEvent] Environment: ready!
+[2017-12-28 19:16:23.524] [BotEvent] Database: ready!
+[2017-12-28 19:16:23.571] [BotEvent] API: connected!
+[2017-12-28 19:16:23.576] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:16:23.578] [BotEvent] Nickname: set!
+[2017-12-28 19:16:23.605] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:16:23.631] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:16:24.176] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:16:24.181] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:16:24.181] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:16:24.182] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:16:24.182] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:16:24.182] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:16:24.191] [BotEvent] Bot is now running!
+[2017-12-28 19:16:25.928] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:16:26.027] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-12-28 19:16:28.424] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Lobby} to {/Public Talk 3}
+[2017-12-28 19:16:42.993] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Public Talk 3} to {/Multigaming - Groups/Group III}
+[2017-12-28 19:16:46.118] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-12-28 19:23:25.755] [Command Error] Could not resolve command by label !test; !test
+[2017-12-28 19:23:30.564] [Command Error] Could not resolve command by label !test; !test
+[2017-12-28 19:24:21.380] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:24:21.380] [BotEvent] Shutting down the bot..
+[2017-12-28 19:24:21.427] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:24:21.428] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:24:21.428] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:27:00.234] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:27:00.234] [BotEvent] Initializing environment..
+[2017-12-28 19:27:00.235] [BotEvent] Environment: ready!
+[2017-12-28 19:27:00.437] [BotEvent] Database: ready!
+[2017-12-28 19:27:00.473] [BotEvent] API: connected!
+[2017-12-28 19:27:00.477] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:27:00.479] [BotEvent] Nickname: set!
+[2017-12-28 19:27:00.506] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:27:00.531] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:27:00.531] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:27:00.536] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:27:01.064] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:27:01.065] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:27:01.065] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:27:01.066] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:27:01.078] [BotEvent] Bot is now running!
+[2017-12-28 19:27:05.388] [Command fired] Xida used command: !list
+[2017-12-28 19:27:19.837] [Command fired] Xida used command: !list
+[2017-12-28 19:29:20.547] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:29:20.547] [BotEvent] Shutting down the bot..
+[2017-12-28 19:29:21.037] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:29:21.037] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:29:21.037] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:29:27.946] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:29:27.947] [BotEvent] Initializing environment..
+[2017-12-28 19:29:27.947] [BotEvent] Environment: ready!
+[2017-12-28 19:29:28.150] [BotEvent] Database: ready!
+[2017-12-28 19:29:28.187] [BotEvent] API: connected!
+[2017-12-28 19:29:28.192] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:29:28.194] [BotEvent] Nickname: set!
+[2017-12-28 19:29:28.219] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:29:28.242] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:29:28.242] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:29:28.247] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:29:28.342] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:29:28.344] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:29:28.344] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:29:28.345] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:29:28.361] [BotEvent] Bot is now running!
+[2017-12-28 19:29:34.622] [Command fired] Xida used command: !list
+[2017-12-28 19:32:12.353] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:32:12.353] [BotEvent] Shutting down the bot..
+[2017-12-28 19:32:12.855] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:32:12.856] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:32:12.856] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:32:17.003] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:32:17.003] [BotEvent] Initializing environment..
+[2017-12-28 19:32:17.004] [BotEvent] Environment: ready!
+[2017-12-28 19:32:17.213] [BotEvent] Database: ready!
+[2017-12-28 19:32:17.255] [BotEvent] API: connected!
+[2017-12-28 19:32:17.261] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:32:17.263] [BotEvent] Nickname: set!
+[2017-12-28 19:32:17.288] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:32:17.308] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:32:17.410] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:32:17.435] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:32:17.435] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:32:17.437] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:32:17.437] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:32:17.437] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:32:17.450] [BotEvent] Bot is now running!
+[2017-12-28 19:32:20.557] [Command fired] Xida used command: '!list' arguments: [Ljava.lang.String;@2d261f53
+[2017-12-28 19:33:41.309] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:33:41.309] [BotEvent] Shutting down the bot..
+[2017-12-28 19:33:41.792] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:33:41.793] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:33:41.793] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:33:48.438] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:33:48.438] [BotEvent] Initializing environment..
+[2017-12-28 19:33:48.440] [BotEvent] Environment: ready!
+[2017-12-28 19:33:48.638] [BotEvent] Database: ready!
+[2017-12-28 19:33:48.676] [BotEvent] API: connected!
+[2017-12-28 19:33:48.684] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:33:48.686] [BotEvent] Nickname: set!
+[2017-12-28 19:33:48.712] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:33:48.734] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:33:48.837] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:33:48.852] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:33:48.852] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:33:48.855] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:33:48.855] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:33:48.855] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:33:48.862] [BotEvent] Bot is now running!
+[2017-12-28 19:33:51.331] [Command fired] Xida used command: '!list' arguments: !list features 
+[2017-12-28 19:34:20.003] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:34:20.003] [BotEvent] Shutting down the bot..
+[2017-12-28 19:34:20.489] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:34:20.489] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:34:20.489] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:34:24.577] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:34:24.578] [BotEvent] Initializing environment..
+[2017-12-28 19:34:24.579] [BotEvent] Environment: ready!
+[2017-12-28 19:34:24.776] [BotEvent] Database: ready!
+[2017-12-28 19:34:24.817] [BotEvent] API: connected!
+[2017-12-28 19:34:24.822] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:34:24.824] [BotEvent] Nickname: set!
+[2017-12-28 19:34:24.854] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:34:24.874] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:34:24.946] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:34:24.953] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:34:24.953] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:34:24.956] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:34:24.956] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:34:24.956] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:34:24.968] [BotEvent] Bot is now running!
+[2017-12-28 19:34:28.837] [Command fired] Xida used command: '!list features '
+[2017-12-28 19:41:33.857] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:41:33.858] [BotEvent] Shutting down the bot..
+[2017-12-28 19:41:34.331] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:41:34.332] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:41:34.332] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:41:39.589] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:41:39.589] [BotEvent] Initializing environment..
+[2017-12-28 19:41:39.590] [BotEvent] Environment: ready!
+[2017-12-28 19:41:39.791] [BotEvent] Database: ready!
+[2017-12-28 19:41:39.832] [BotEvent] API: connected!
+[2017-12-28 19:41:39.839] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:41:39.842] [BotEvent] Nickname: set!
+[2017-12-28 19:41:39.867] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:41:39.890] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:41:39.890] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:41:39.897] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:41:39.978] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:41:39.980] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:41:39.980] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:41:39.980] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:41:39.996] [BotEvent] Bot is now running!
+[2017-12-28 19:41:43.532] [Command fired] Xida used command: '!list features '
+[2017-12-28 19:41:46.427] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !list
+[2017-12-28 19:42:13.075] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:42:13.075] [BotEvent] Shutting down the bot..
+[2017-12-28 19:42:13.113] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:42:13.113] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:42:13.113] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:42:18.192] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:42:18.193] [BotEvent] Initializing environment..
+[2017-12-28 19:42:18.194] [BotEvent] Environment: ready!
+[2017-12-28 19:42:18.431] [BotEvent] Database: ready!
+[2017-12-28 19:42:18.472] [BotEvent] API: connected!
+[2017-12-28 19:42:18.478] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:42:18.480] [BotEvent] Nickname: set!
+[2017-12-28 19:42:18.504] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:42:18.526] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:42:18.526] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:42:18.533] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:42:18.631] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:42:18.633] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:42:18.634] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:42:18.634] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:42:18.650] [BotEvent] Bot is now running!
+[2017-12-28 19:42:32.232] [Command fired] Xida used command: '!list commands '
+[2017-12-28 19:42:40.782] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 19:43:20.489] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 19:50:21.196] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 19:54:03.098] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:54:03.098] [BotEvent] Shutting down the bot..
+[2017-12-28 19:54:03.585] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:54:03.585] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:54:03.585] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:54:07.310] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:54:07.311] [BotEvent] Initializing environment..
+[2017-12-28 19:54:07.312] [BotEvent] Environment: ready!
+[2017-12-28 19:54:07.515] [BotEvent] Database: ready!
+[2017-12-28 19:54:07.563] [BotEvent] API: connected!
+[2017-12-28 19:54:07.570] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:54:07.573] [BotEvent] Nickname: set!
+[2017-12-28 19:54:07.604] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:54:07.634] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:54:07.720] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:54:07.730] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:54:07.731] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:54:07.733] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:54:07.734] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:54:07.734] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:54:07.747] [BotEvent] Bot is now running!
+[2017-12-28 19:54:51.604] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:54:51.604] [BotEvent] Shutting down the bot..
+[2017-12-28 19:54:52.089] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:54:52.089] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:54:52.089] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:55:08.425] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:55:08.425] [BotEvent] Initializing environment..
+[2017-12-28 19:55:08.426] [BotEvent] Environment: ready!
+[2017-12-28 19:55:08.628] [BotEvent] Database: ready!
+[2017-12-28 19:55:08.670] [BotEvent] API: connected!
+[2017-12-28 19:55:08.674] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:55:08.676] [BotEvent] Nickname: set!
+[2017-12-28 19:55:08.701] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:55:08.724] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:55:08.808] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:55:08.818] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:55:08.818] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:55:08.820] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:55:08.820] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:55:08.820] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:55:08.830] [BotEvent] Bot is now running!
+[2017-12-28 19:56:10.497] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 19:56:10.497] [BotEvent] Shutting down the bot..
+[2017-12-28 19:56:10.985] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 19:56:10.985] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 19:56:10.985] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 19:56:22.107] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 19:56:22.108] [BotEvent] Initializing environment..
+[2017-12-28 19:56:22.108] [BotEvent] Environment: ready!
+[2017-12-28 19:56:22.308] [BotEvent] Database: ready!
+[2017-12-28 19:56:22.348] [BotEvent] API: connected!
+[2017-12-28 19:56:22.353] [BotEvent] Server-Query: Logged in!
+[2017-12-28 19:56:22.356] [BotEvent] Nickname: set!
+[2017-12-28 19:56:22.383] [BotEvent] Event-Listener: registered!
+[2017-12-28 19:56:22.415] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:56:22.498] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group I}
+[2017-12-28 19:56:22.509] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 19:56:22.509] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 19:56:22.511] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 19:56:22.512] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 19:56:22.512] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 19:56:22.518] [BotEvent] Bot is now running!
+[2017-12-28 19:56:35.365] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 19:56:56.945] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 19:57:00.013] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 20:00:17.137] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !hasPermission
+[2017-12-28 20:00:35.356] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:00:35.868] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-12-28 20:00:39.218] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Lobby} to {/Public Talk 2}
+[2017-12-28 20:01:06.929] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Multigaming - Groups/Group I} to {/Multigaming - Groups}
+[2017-12-28 20:01:16.674] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Multigaming - Groups} to {/Multigaming - Groups/Group XII}
+[2017-12-28 20:01:22.324] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from {/Public Talk 2} to {/Public Talk 3}
+-----------------------------------------------------------------
+[2017-12-28 20:20:35.576] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:20:35.577] [BotEvent] Initializing environment..
+[2017-12-28 20:20:35.578] [BotEvent] Environment: ready!
+[2017-12-28 20:20:35.807] [BotEvent] Database: ready!
+[2017-12-28 20:20:35.843] [BotEvent] API: connected!
+[2017-12-28 20:20:35.850] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:20:35.851] [BotError] The bot's specified nickname is already in use. Trying to kick user...
+[2017-12-28 20:20:35.854] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:35.855] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:20:35.858] [BotError] Could not kick the user, since its a server query client!
+[2017-12-28 20:20:35.859] [BotEvent] Nickname: set!
+[2017-12-28 20:20:35.878] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:20:35.900] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:35.901] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:20:35.906] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:35.924] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:20:35.930] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:35.930] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:20:35.933] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:35.943] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:20:35.944] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:20:35.945] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:20:35.945] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:20:35.949] [BotEvent] Bot is now running!
+[2017-12-28 20:20:41.609] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 20:20:41.609] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 20:20:41.609] [BotEvent] Shutting down the bot..
+[2017-12-28 20:20:41.609] [BotEvent] Shutting down the bot..
+[2017-12-28 20:20:42.151] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:20:42.151] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:20:42.151] [BotEvent] Feature: CommandManager has been deactivated.
+[2017-12-28 20:20:42.161] [ClientLeaveEvent] [Bot] Heimdall [serveradmin] has left the server.
+[2017-12-28 20:20:42.184] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:20:42.184] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:20:42.184] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:20:53.969] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:20:53.969] [BotEvent] Initializing environment..
+[2017-12-28 20:20:53.970] [BotEvent] Environment: ready!
+[2017-12-28 20:20:54.172] [BotEvent] Database: ready!
+[2017-12-28 20:20:54.209] [BotEvent] API: connected!
+[2017-12-28 20:20:54.213] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:20:54.215] [BotEvent] Nickname: set!
+[2017-12-28 20:20:54.247] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:20:54.275] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:54.275] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:20:54.279] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:54.390] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:20:54.406] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:20:54.467] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:20:54.468] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:20:54.468] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:20:54.468] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:20:54.474] [BotEvent] Bot is now running!
+[2017-12-28 20:21:21.348] [Command fired] Xida used command: '!descr 7 deeee '
+[2017-12-28 20:21:31.048] [Command fired] Xida used command: '!descr 7 '
+[2017-12-28 20:21:42.492] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !descr
+[2017-12-28 20:21:54.095] [Command fired] Xida used command: '!descr 7 123 '
+[2017-12-28 20:22:05.772] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !descr
+[2017-12-28 20:23:53.814] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 20:23:53.814] [BotEvent] Shutting down the bot..
+[2017-12-28 20:23:54.350] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:23:54.350] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:23:54.350] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:24:07.097] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:24:07.097] [BotEvent] Initializing environment..
+[2017-12-28 20:24:07.099] [BotEvent] Environment: ready!
+[2017-12-28 20:24:07.295] [BotEvent] Database: ready!
+[2017-12-28 20:24:07.340] [BotEvent] API: connected!
+[2017-12-28 20:24:07.344] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:24:07.346] [BotEvent] Nickname: set!
+[2017-12-28 20:24:07.373] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:24:07.395] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:24:07.490] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:24:07.510] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:24:07.510] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:24:07.527] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:24:07.592] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:24:07.593] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:24:07.593] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:24:07.594] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:24:07.598] [BotEvent] Bot is now running!
+[2017-12-28 20:24:14.985] [Command fired] Xida used command: '!descr 7 hallo Welt!!! '
+[2017-12-28 20:24:55.078] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 20:24:55.078] [BotEvent] Shutting down the bot..
+[2017-12-28 20:24:55.572] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:24:55.572] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:24:55.572] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:24:59.892] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:24:59.892] [BotEvent] Initializing environment..
+[2017-12-28 20:24:59.893] [BotEvent] Environment: ready!
+[2017-12-28 20:25:00.099] [BotEvent] Database: ready!
+[2017-12-28 20:25:00.140] [BotEvent] API: connected!
+[2017-12-28 20:25:00.145] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:25:00.147] [BotEvent] Nickname: set!
+[2017-12-28 20:25:00.174] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:25:00.199] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:25:00.274] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:25:00.282] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:25:00.283] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:25:00.293] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:25:00.433] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:25:00.435] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:25:00.435] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:25:00.436] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:25:00.444] [BotEvent] Bot is now running!
+[2017-12-28 20:25:02.530] [Command fired] Xida used command: '!descr 7 hallo Welt!!! '
+[2017-12-28 20:25:49.764] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 20:25:49.765] [BotEvent] Shutting down the bot..
+[2017-12-28 20:25:50.305] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:25:50.305] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:25:50.305] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:26:19.933] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:26:19.933] [BotEvent] Initializing environment..
+[2017-12-28 20:26:19.934] [BotEvent] Environment: ready!
+[2017-12-28 20:26:20.145] [BotEvent] Database: ready!
+[2017-12-28 20:26:20.183] [BotEvent] API: connected!
+[2017-12-28 20:26:20.188] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:26:20.190] [BotEvent] Nickname: set!
+[2017-12-28 20:26:20.216] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:26:20.245] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:26:20.767] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:26:20.773] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:26:20.773] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:26:20.781] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:26:20.842] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:26:20.843] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:26:20.844] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:26:20.844] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:26:20.849] [BotEvent] Bot is now running!
+[2017-12-28 20:26:35.415] [BotEvent] Receiving shutdown command from console.
+[2017-12-28 20:26:35.415] [BotEvent] Shutting down the bot..
+[2017-12-28 20:26:35.479] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:26:35.479] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:26:35.479] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:27:15.150] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:27:15.150] [BotEvent] Initializing environment..
+[2017-12-28 20:27:15.151] [BotEvent] Environment: ready!
+[2017-12-28 20:27:15.370] [BotEvent] Database: ready!
+[2017-12-28 20:27:15.411] [BotEvent] API: connected!
+[2017-12-28 20:27:15.416] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:27:15.418] [BotEvent] Nickname: set!
+[2017-12-28 20:27:15.447] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:27:15.469] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:27:16.004] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:27:16.011] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:27:16.081] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:27:16.085] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:27:16.085] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:27:16.087] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:27:16.087] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:27:16.087] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:27:16.092] [BotEvent] Bot is now running!
+[2017-12-28 20:27:29.759] [Command fired] Xida used command: '!descr 8 test '
+[2017-12-28 20:30:14.375] [BotEvent] Receiving shutdown command from console.
+[2017-12-28 20:30:14.375] [BotEvent] Shutting down the bot..
+[2017-12-28 20:30:14.879] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 20:30:14.879] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 20:30:14.879] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 20:30:18.466] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 20:30:18.466] [BotEvent] Initializing environment..
+[2017-12-28 20:30:18.467] [BotEvent] Environment: ready!
+[2017-12-28 20:30:18.662] [BotEvent] Database: ready!
+[2017-12-28 20:30:18.698] [BotEvent] API: connected!
+[2017-12-28 20:30:18.704] [BotEvent] Server-Query: Logged in!
+[2017-12-28 20:30:18.707] [BotEvent] Nickname: set!
+[2017-12-28 20:30:18.733] [BotEvent] Event-Listener: registered!
+[2017-12-28 20:30:18.757] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:30:18.891] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 20:30:18.899] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:30:18.972] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 20:30:18.977] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 20:30:18.977] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 20:30:18.979] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 20:30:18.980] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 20:30:18.980] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 20:30:18.985] [BotEvent] Bot is now running!
+[2017-12-28 21:43:38.882] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 21:43:38.882] [BotEvent] Shutting down the bot..
+[2017-12-28 21:43:39.427] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 21:43:39.427] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 21:43:39.428] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 21:43:45.031] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 21:43:45.032] [BotEvent] Initializing environment..
+[2017-12-28 21:43:45.033] [BotEvent] Environment: ready!
+[2017-12-28 21:43:45.243] [BotEvent] Database: ready!
+[2017-12-28 21:43:45.281] [BotEvent] API: connected!
+[2017-12-28 21:43:45.287] [BotEvent] Server-Query: Logged in!
+[2017-12-28 21:43:45.288] [BotEvent] Nickname: set!
+[2017-12-28 21:43:45.311] [BotEvent] Event-Listener: registered!
+[2017-12-28 21:43:45.345] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 21:43:45.345] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 21:43:45.352] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 21:43:45.434] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 21:43:45.448] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 21:43:45.511] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 21:43:45.513] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 21:43:45.513] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 21:43:45.513] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 21:43:45.522] [BotEvent] Bot is now running!
+[2017-12-28 21:43:54.320] [BotEvent] Receiving shutdown command from console.
+[2017-12-28 21:43:54.320] [BotEvent] Shutting down the bot..
+[2017-12-28 21:43:54.388] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 21:43:54.388] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 21:43:54.388] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:13:35.106] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:13:35.106] [BotEvent] Initializing environment..
+[2017-12-28 23:13:35.107] [BotEvent] Environment: ready!
+[2017-12-28 23:13:35.298] [BotEvent] Database: ready!
+[2017-12-28 23:13:35.339] [BotEvent] API: connected!
+[2017-12-28 23:13:35.343] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:13:35.345] [BotEvent] Nickname: set!
+[2017-12-28 23:13:35.367] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:13:35.393] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:13:35.393] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:13:35.401] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:13:35.503] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:13:35.519] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:13:35.596] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 23:13:35.598] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:13:35.598] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:13:35.599] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:13:35.605] [BotEvent] Bot is now running!
+[2017-12-28 23:14:15.554] [Command Error] Could not resolve command by label !DebugCommand; !DebugCommand
+[2017-12-28 23:14:54.780] [Command Error] Could not resolve command by label !test; !test
+[2017-12-28 23:15:38.907] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:15:38.908] [BotEvent] Shutting down the bot..
+[2017-12-28 23:15:39.411] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:15:39.411] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:15:39.411] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:15:43.598] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:15:43.599] [BotEvent] Initializing environment..
+[2017-12-28 23:15:43.599] [BotEvent] Environment: ready!
+[2017-12-28 23:15:43.790] [BotEvent] Database: ready!
+[2017-12-28 23:15:43.831] [BotEvent] API: connected!
+[2017-12-28 23:15:43.835] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:15:43.837] [BotEvent] Nickname: set!
+[2017-12-28 23:15:43.861] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:15:43.888] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:15:44.025] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:15:44.039] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:15:44.040] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:15:44.058] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:15:44.119] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-12-28 23:15:44.121] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:15:44.121] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:15:44.121] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:15:44.128] [BotEvent] Bot is now running!
+[2017-12-28 23:15:51.052] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-12-28 23:16:05.705] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:16:05.705] [BotEvent] Shutting down the bot..
+[2017-12-28 23:16:05.733] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:16:05.733] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:16:05.734] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:16:10.690] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:16:10.690] [BotEvent] Initializing environment..
+[2017-12-28 23:16:10.691] [BotEvent] Environment: ready!
+[2017-12-28 23:16:10.889] [BotEvent] Database: ready!
+[2017-12-28 23:16:10.929] [BotEvent] API: connected!
+[2017-12-28 23:16:10.934] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:16:10.935] [BotEvent] Nickname: set!
+[2017-12-28 23:16:10.960] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:16:10.985] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:16:11.056] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:16:11.062] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:16:11.062] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:16:11.064] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:16:11.064] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:16:11.064] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:16:11.069] [BotEvent] Bot is now running!
+[2017-12-28 23:16:18.495] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:16:18.495] [BotEvent] Shutting down the bot..
+[2017-12-28 23:16:18.537] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:16:18.537] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:16:18.538] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:17:32.864] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:17:32.864] [BotEvent] Initializing environment..
+[2017-12-28 23:17:32.865] [BotEvent] Environment: ready!
+[2017-12-28 23:17:33.066] [BotEvent] Database: ready!
+[2017-12-28 23:17:33.106] [BotEvent] API: connected!
+[2017-12-28 23:17:33.110] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:17:33.112] [BotEvent] Nickname: set!
+[2017-12-28 23:17:33.135] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:17:33.162] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:17:33.701] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:17:33.708] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:17:33.708] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:17:33.709] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:17:33.709] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:17:33.709] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:17:33.719] [BotEvent] Bot is now running!
+[2017-12-28 23:17:48.356] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:17:48.356] [BotEvent] Shutting down the bot..
+[2017-12-28 23:17:48.392] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:17:48.393] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:17:48.393] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:19:14.150] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:19:14.151] [BotEvent] Initializing environment..
+[2017-12-28 23:19:14.151] [BotEvent] Environment: ready!
+[2017-12-28 23:19:14.354] [BotEvent] Database: ready!
+[2017-12-28 23:19:14.394] [BotEvent] API: connected!
+[2017-12-28 23:19:14.398] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:19:14.399] [BotEvent] Nickname: set!
+[2017-12-28 23:19:14.428] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:19:14.450] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:19:14.978] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:19:14.986] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:19:14.986] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:19:14.988] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:19:14.988] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:19:14.988] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:19:14.998] [BotEvent] Bot is now running!
+[2017-12-28 23:19:53.136] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:19:53.137] [BotEvent] Shutting down the bot..
+[2017-12-28 23:19:53.633] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:19:53.633] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:19:53.633] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:19:57.049] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:19:57.049] [BotEvent] Initializing environment..
+[2017-12-28 23:19:57.049] [BotEvent] Environment: ready!
+[2017-12-28 23:19:57.236] [BotEvent] Database: ready!
+[2017-12-28 23:19:57.272] [BotEvent] API: connected!
+[2017-12-28 23:19:57.277] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:19:57.279] [BotEvent] Nickname: set!
+[2017-12-28 23:19:57.307] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:19:57.332] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:19:57.441] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:19:57.449] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:19:57.449] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:19:57.451] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:19:57.451] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:19:57.451] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:19:57.458] [BotEvent] Bot is now running!
+[2017-12-28 23:20:09.055] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:20:09.056] [BotEvent] Shutting down the bot..
+[2017-12-28 23:20:09.092] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:20:09.092] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:20:09.092] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:20:52.403] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:20:52.404] [BotEvent] Initializing environment..
+[2017-12-28 23:20:52.404] [BotEvent] Environment: ready!
+[2017-12-28 23:20:52.606] [BotEvent] Database: ready!
+[2017-12-28 23:20:52.643] [BotEvent] API: connected!
+[2017-12-28 23:20:52.649] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:20:52.652] [BotEvent] Nickname: set!
+[2017-12-28 23:20:52.675] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:20:52.697] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:20:53.235] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:20:53.243] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:20:53.244] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:20:53.245] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:20:53.245] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:20:53.245] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:20:53.253] [BotEvent] Bot is now running!
+[2017-12-28 23:20:56.263] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:21:08.911] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:21:08.911] [BotEvent] Shutting down the bot..
+[2017-12-28 23:21:08.948] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:21:08.948] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:21:08.948] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:22:25.318] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:22:25.319] [BotEvent] Initializing environment..
+[2017-12-28 23:22:25.320] [BotEvent] Environment: ready!
+[2017-12-28 23:22:25.526] [BotEvent] Database: ready!
+[2017-12-28 23:22:25.565] [BotEvent] API: connected!
+[2017-12-28 23:22:25.570] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:22:25.572] [BotEvent] Nickname: set!
+[2017-12-28 23:22:25.598] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:22:25.626] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:22:26.156] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:22:26.163] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:22:26.163] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:22:26.164] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:22:26.165] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:22:26.165] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:22:26.175] [BotEvent] Bot is now running!
+[2017-12-28 23:22:28.768] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:22:43.604] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:22:51.463] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:22:51.463] [BotEvent] Shutting down the bot..
+[2017-12-28 23:22:51.503] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:22:51.503] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:22:51.503] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:43:48.138] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:43:48.138] [BotEvent] Initializing environment..
+[2017-12-28 23:43:48.139] [BotEvent] Environment: ready!
+[2017-12-28 23:43:48.336] [BotEvent] Database: ready!
+[2017-12-28 23:43:48.377] [BotEvent] API: connected!
+[2017-12-28 23:43:48.382] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:43:48.384] [BotEvent] Nickname: set!
+[2017-12-28 23:43:48.412] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:45:33.234] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:45:33.234] [BotEvent] Shutting down the bot..
+[2017-12-28 23:45:33.234] [BotError] Could not deactivate UserHistoryFeature, since it's not running!
+[2017-12-28 23:45:33.234] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:46:16.596] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:46:16.596] [BotEvent] Initializing environment..
+[2017-12-28 23:46:16.597] [BotEvent] Environment: ready!
+[2017-12-28 23:46:16.794] [BotEvent] Database: ready!
+[2017-12-28 23:46:16.828] [BotEvent] API: connected!
+[2017-12-28 23:46:16.834] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:46:16.836] [BotEvent] Nickname: set!
+[2017-12-28 23:46:16.860] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:46:16.883] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:46:16.883] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:46:16.889] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:46:17.407] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:46:17.409] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:46:17.409] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:46:17.409] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:46:17.416] [BotEvent] Bot is now running!
+[2017-12-28 23:46:25.109] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:46:35.828] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !descr
+[2017-12-28 23:47:06.046] [Command fired] Xida used command: '!descr 3 asdf hallo welt du '
+[2017-12-28 23:47:16.245] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:47:42.373] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:47:42.373] [BotEvent] Shutting down the bot..
+[2017-12-28 23:47:42.861] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:47:42.861] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:47:42.861] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:47:47.062] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:47:47.062] [BotEvent] Initializing environment..
+[2017-12-28 23:47:47.063] [BotEvent] Environment: ready!
+[2017-12-28 23:47:47.265] [BotEvent] Database: ready!
+[2017-12-28 23:47:47.302] [BotEvent] API: connected!
+[2017-12-28 23:47:47.306] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:47:47.308] [BotEvent] Nickname: set!
+[2017-12-28 23:47:47.336] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:47:47.412] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:47:47.555] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:47:47.569] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:47:47.569] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:47:47.571] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:47:47.571] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:47:47.572] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:47:47.590] [BotEvent] Bot is now running!
+[2017-12-28 23:47:55.535] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:48:31.824] [Command fired] Xida used command: '!descr 4 uuid=admin '
+[2017-12-28 23:48:48.997] [Command fired] Xida used command: '!dbg '
+[2017-12-28 23:48:55.307] [Command fired] Xida used command: '!dbg 4 '
+[2017-12-28 23:51:14.516] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:51:14.516] [BotEvent] Shutting down the bot..
+[2017-12-28 23:51:14.994] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:51:14.994] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:51:14.994] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-12-28 23:51:26.997] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-28 23:51:26.998] [BotEvent] Initializing environment..
+[2017-12-28 23:51:26.998] [BotEvent] Environment: ready!
+[2017-12-28 23:51:27.208] [BotEvent] Database: ready!
+[2017-12-28 23:51:27.246] [BotEvent] API: connected!
+[2017-12-28 23:51:27.251] [BotEvent] Server-Query: Logged in!
+[2017-12-28 23:51:27.253] [BotEvent] Nickname: set!
+[2017-12-28 23:51:27.278] [BotEvent] Event-Listener: registered!
+[2017-12-28 23:51:27.340] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:51:27.453] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Multigaming - Groups/Group XII}
+[2017-12-28 23:51:27.467] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-28 23:51:27.468] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-28 23:51:27.471] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-28 23:51:27.471] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-28 23:51:27.471] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-28 23:51:27.493] [BotEvent] Bot is now running!
+[2017-12-28 23:52:07.571] [Command Error] Could not resolve command by label !list; !list users
+[2017-12-28 23:52:21.421] [Command fired] Xida used command: '!dbg 5 '
+[2017-12-28 23:52:52.059] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !descr
+[2017-12-28 23:53:01.442] [Command fired] Xida used command: '!descr 3 add this '
+[2017-12-28 23:53:06.288] [Command fired] Xida used command: '!dbg 3 '
+[2017-12-28 23:54:30.210] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-28 23:54:30.210] [BotEvent] Shutting down the bot..
+[2017-12-28 23:54:30.694] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-28 23:54:30.694] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-28 23:54:30.694] [BotEvent] Feature: CommandManager has been deactivated.

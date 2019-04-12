@@ -1,0 +1,267 @@
+-----------------------------------------------------------------
+[2017-08-10 17:38:34.166] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 17:38:34.166] [BotEvent] Initializing environment..
+[2017-08-10 17:38:34.167] [BotEvent] Environment: ready!
+[2017-08-10 17:38:34.431] [BotEvent] Database: ready!
+[2017-08-10 17:38:34.487] [BotEvent] API: connected!
+[2017-08-10 17:38:34.504] [BotEvent] Server-Query: Logged in!
+[2017-08-10 17:38:34.513] [BotEvent] Nickname: set!
+[2017-08-10 17:38:34.555] [BotEvent] Event-Listener: registered!
+[2017-08-10 17:38:34.580] [Database Error] [UserHistoryFeature::handleLogin(TS3User)] Could not update the database after restart/crash
+[2017-08-10 17:38:34.596] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Halle III}
+[2017-08-10 17:38:34.605] [Database Error] [UserHistoryFeature::handleLogin(TS3User)] Could not update the database after restart/crash
+[2017-08-10 17:38:34.605] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 17:38:34.606] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 17:38:34.607] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 17:38:34.607] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 17:38:34.607] [BotEvent] Bot is now running!
+[2017-08-10 17:38:52.415] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-10 17:39:10.512] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-10 17:39:10.513] [Database Error] [UserHistoryFeature::Logout] Unable to update Database for uuid=2n8nOljLkhD0i+mVCDyU/4zfjwU=
+[2017-08-10 17:39:49.386] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 17:39:49.386] [BotEvent] Shutting down the bot..
+[2017-08-10 17:39:49.386] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 17:39:49.386] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 17:39:49.386] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 17:43:21.388] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 17:43:21.388] [BotEvent] Initializing environment..
+[2017-08-10 17:43:21.389] [BotEvent] Environment: ready!
+[2017-08-10 17:43:21.573] [BotEvent] Database: ready!
+[2017-08-10 17:43:21.610] [BotEvent] API: connected!
+[2017-08-10 17:43:21.616] [BotEvent] Server-Query: Logged in!
+[2017-08-10 17:43:21.617] [BotEvent] Nickname: set!
+[2017-08-10 17:43:21.643] [BotEvent] Event-Listener: registered!
+[2017-08-10 17:43:21.679] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-10 17:43:21.684] [Database Error] [UserHistoryFeature::handleLogin(TS3User)] Could not update the database after restart/crash
+[2017-08-10 17:43:21.684] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 17:43:21.685] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 17:43:21.685] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 17:43:21.685] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 17:43:21.686] [BotEvent] Bot is now running!
+[2017-08-10 17:43:46.677] [Command Error] Could not resolve command by label !off ; !off
+[2017-08-10 17:43:58.642] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 17:43:58.642] [BotEvent] Shutting down the bot..
+[2017-08-10 17:43:58.642] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 17:43:58.642] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 17:43:58.643] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 17:44:30.769] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 17:44:30.769] [BotEvent] Initializing environment..
+[2017-08-10 17:44:30.769] [BotEvent] Environment: ready!
+[2017-08-10 17:44:30.948] [BotEvent] Database: ready!
+[2017-08-10 17:44:30.984] [BotEvent] API: connected!
+[2017-08-10 17:44:30.990] [BotEvent] Server-Query: Logged in!
+[2017-08-10 17:44:30.992] [BotEvent] Nickname: set!
+[2017-08-10 17:44:31.017] [BotEvent] Event-Listener: registered!
+[2017-08-10 17:44:31.114] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 17:44:31.180] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 17:44:31.182] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 17:44:31.182] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 17:44:31.182] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 17:44:31.182] [BotEvent] Bot is now running!
+[2017-08-10 17:44:51.853] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-10 17:46:28.070] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-10 17:46:38.228] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 17:46:38.228] [BotEvent] Shutting down the bot..
+[2017-08-10 17:46:38.228] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 17:46:38.228] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 17:46:38.228] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 18:07:32.371] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 18:07:32.372] [BotEvent] Initializing environment..
+[2017-08-10 18:07:32.372] [BotEvent] Environment: ready!
+[2017-08-10 18:07:32.551] [BotEvent] Database: ready!
+[2017-08-10 18:07:32.588] [BotEvent] API: connected!
+[2017-08-10 18:07:32.596] [BotEvent] Server-Query: Logged in!
+[2017-08-10 18:07:32.598] [BotEvent] Nickname: set!
+[2017-08-10 18:07:32.623] [BotEvent] Event-Listener: registered!
+[2017-08-10 18:07:33.172] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 18:07:33.293] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-10 18:07:33.298] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 18:07:33.299] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 18:07:33.299] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 18:07:33.302] [BotEvent] Bot is now running!
+[2017-08-10 18:07:37.119] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Twitch Stream - Borin}
+[2017-08-10 18:09:21.686] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 18:09:21.686] [BotEvent] Shutting down the bot..
+[2017-08-10 18:09:22.216] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 18:09:22.217] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 18:09:22.217] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 18:09:39.146] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 18:09:39.147] [BotEvent] Initializing environment..
+[2017-08-10 18:09:39.148] [BotEvent] Environment: ready!
+[2017-08-10 18:09:39.329] [BotEvent] Database: ready!
+[2017-08-10 18:09:39.369] [BotEvent] API: connected!
+[2017-08-10 18:09:39.374] [BotEvent] Server-Query: Logged in!
+[2017-08-10 18:09:39.376] [BotEvent] Nickname: set!
+[2017-08-10 18:09:39.400] [BotEvent] Event-Listener: registered!
+[2017-08-10 18:09:39.410] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 18:09:39.483] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-08-10 18:09:39.484] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 18:09:39.484] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 18:09:39.484] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 18:09:39.485] [BotEvent] Bot is now running!
+[2017-08-10 18:13:14.089] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Twitch Stream - Borin} to {/Twitch Stream}
+[2017-08-10 18:13:18.207] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-10 18:13:18.352] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-10 18:13:47.458] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-10 18:14:52.480] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-10 18:17:36.765] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Twitch Stream}
+[2017-08-10 18:17:43.409] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 18:17:43.409] [BotEvent] Shutting down the bot..
+[2017-08-10 18:17:43.409] [Database Error] [UserHistoryFeature::Logout] Unable to update Database for uuid=serveradmin
+[2017-08-10 18:17:43.441] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 18:17:43.441] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 18:17:43.441] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:16:32.113] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:16:32.113] [BotEvent] Initializing environment..
+[2017-08-10 22:16:32.114] [BotEvent] Environment: ready!
+[2017-08-10 22:16:32.291] [BotEvent] Database: ready!
+[2017-08-10 22:16:32.327] [BotEvent] API: connected!
+[2017-08-10 22:16:32.335] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:16:32.338] [BotEvent] Nickname: set!
+[2017-08-10 22:16:32.361] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:16:32.369] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:16:32.956] [ClientJoinEvent] ! $ % ^ * [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 22:16:32.959] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:16:32.959] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:16:32.959] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:16:32.960] [BotEvent] Bot is now running!
+[2017-08-10 22:16:57.907] [ClientMovedEvent] [Bot] Thor [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Twitch Stream - Misses} to {/Twitch Stream - Borin}
+[2017-08-10 22:17:17.252] [Command Error] Could not resolve command by label !myurl ; !myurl
+[2017-08-10 22:18:15.110] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 22:18:15.110] [BotEvent] Shutting down the bot..
+[2017-08-10 22:18:15.604] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:18:15.604] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:18:15.604] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:18:23.333] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:18:23.333] [BotEvent] Initializing environment..
+[2017-08-10 22:18:23.334] [BotEvent] Environment: ready!
+[2017-08-10 22:18:23.508] [BotEvent] Database: ready!
+[2017-08-10 22:18:23.545] [BotEvent] API: connected!
+[2017-08-10 22:18:23.551] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:18:23.552] [BotEvent] Nickname: set!
+[2017-08-10 22:18:23.576] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:18:23.585] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:18:23.701] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-08-10 22:18:23.703] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:18:23.703] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:18:23.703] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:18:23.704] [BotEvent] Bot is now running!
+[2017-08-10 22:18:27.816] [Command Error] Could not resolve command by label !myurl ; !myurl
+[2017-08-10 22:23:20.465] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 22:23:20.465] [BotEvent] Shutting down the bot..
+[2017-08-10 22:23:20.952] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:23:20.952] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:23:20.953] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:23:25.527] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:23:25.528] [BotEvent] Initializing environment..
+[2017-08-10 22:23:25.528] [BotEvent] Environment: ready!
+[2017-08-10 22:23:25.700] [BotEvent] Database: ready!
+[2017-08-10 22:23:25.737] [BotEvent] API: connected!
+[2017-08-10 22:23:25.742] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:23:25.744] [BotEvent] Nickname: set!
+[2017-08-10 22:23:25.770] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:23:25.906] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-08-10 22:23:25.912] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:23:25.913] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:23:25.914] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:23:25.914] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:23:25.914] [BotEvent] Bot is now running!
+[2017-08-10 22:23:29.482] [Command Error] Could not resolve command by label !myurl ; !myurl
+[2017-08-10 22:23:49.014] [ClientMovedEvent] [Bot] Thor [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Twitch Stream - Borin} to {/Twitch Stream - Misses}
+[2017-08-10 22:24:43.908] [BotEvent] Receiving !off command from Admin.. 
+[2017-08-10 22:24:43.908] [BotEvent] Shutting down the bot..
+[2017-08-10 22:24:44.392] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:24:44.392] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:24:44.393] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:24:53.815] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:24:53.816] [BotEvent] Initializing environment..
+[2017-08-10 22:24:53.816] [BotEvent] Environment: ready!
+[2017-08-10 22:24:53.990] [BotEvent] Database: ready!
+[2017-08-10 22:24:54.025] [BotEvent] API: connected!
+[2017-08-10 22:24:54.030] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:24:54.031] [BotEvent] Nickname: set!
+[2017-08-10 22:24:54.056] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:24:54.186] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 22:24:54.193] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:24:54.194] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:24:54.195] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:24:54.195] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:24:54.196] [BotEvent] Bot is now running!
+[2017-08-10 22:24:57.091] [Command Error] Could not resolve command by label !myurl ; !myurl
+[2017-08-10 22:31:55.573] [BotEvent] Receiving !off command from Admin.. 
+[2017-08-10 22:31:55.573] [BotEvent] Shutting down the bot..
+[2017-08-10 22:31:56.050] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:31:56.051] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:31:56.051] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:32:01.746] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:32:01.746] [BotEvent] Initializing environment..
+[2017-08-10 22:32:01.746] [BotEvent] Environment: ready!
+[2017-08-10 22:32:01.913] [BotEvent] Database: ready!
+[2017-08-10 22:32:01.945] [BotEvent] API: connected!
+[2017-08-10 22:32:01.951] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:32:01.953] [BotEvent] Nickname: set!
+[2017-08-10 22:32:01.975] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:32:01.983] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:32:02.109] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 22:32:02.110] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:32:02.110] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:32:02.110] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:32:02.111] [BotEvent] Bot is now running!
+[2017-08-10 22:32:05.929] [Command Error] Could not resolve command by label !myurl ; !myurl
+[2017-08-10 22:45:10.017] [BotEvent] Receiving shutdown command from console.
+[2017-08-10 22:45:10.017] [BotEvent] Shutting down the bot..
+[2017-08-10 22:45:10.504] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:45:10.504] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:45:10.505] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:45:26.361] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:45:26.362] [BotEvent] Initializing environment..
+[2017-08-10 22:45:26.363] [BotEvent] Environment: ready!
+[2017-08-10 22:45:26.559] [BotEvent] Database: ready!
+[2017-08-10 22:45:26.597] [BotEvent] API: connected!
+[2017-08-10 22:45:26.603] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:45:26.605] [BotEvent] Nickname: set!
+[2017-08-10 22:45:26.630] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:45:26.638] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:45:26.761] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 22:45:26.763] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:45:26.763] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:45:26.763] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:45:26.764] [BotEvent] Bot is now running!
+[2017-08-10 22:45:31.959] [Command Error] Could not resolve command by label !setdescr ; !setdescr
+[2017-08-10 22:46:43.203] [BotEvent] Receiving !off command from Admin.. 
+[2017-08-10 22:46:43.204] [BotEvent] Shutting down the bot..
+[2017-08-10 22:46:43.677] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-10 22:46:43.678] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-10 22:46:43.678] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-08-10 22:47:01.706] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-10 22:47:01.707] [BotEvent] Initializing environment..
+[2017-08-10 22:47:01.707] [BotEvent] Environment: ready!
+[2017-08-10 22:47:01.881] [BotEvent] Database: ready!
+[2017-08-10 22:47:01.914] [BotEvent] API: connected!
+[2017-08-10 22:47:01.920] [BotEvent] Server-Query: Logged in!
+[2017-08-10 22:47:01.921] [BotEvent] Nickname: set!
+[2017-08-10 22:47:01.942] [BotEvent] Event-Listener: registered!
+[2017-08-10 22:47:01.952] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-10 22:47:02.059] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-08-10 22:47:02.061] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-10 22:47:02.061] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-10 22:47:02.061] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-10 22:47:02.062] [BotEvent] Bot is now running!
+[2017-08-10 22:47:39.591] [Command Error] Could not resolve command by label !setdescr ; !setdescr
+[2017-08-11 02:11:00.732] [ClientLeaveEvent] [Bot] Thor [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-11 02:16:09.845] [BotEvent] Receiving shutdown command from console.
+[2017-08-11 02:16:09.845] [BotEvent] Shutting down the bot..
+[2017-08-11 02:16:09.845] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-11 02:16:09.845] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-11 02:16:09.846] [BotEvent] Feature: CommandManager has been deactivated.

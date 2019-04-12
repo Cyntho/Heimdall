@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="cmn_global@localhost" uuid="a63bb266-03e5-410f-a529-646b45edd7be">
+      <database-info product="MySQL" version="5.5.5-10.1.25-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )" dbms="MARIADB" exact-version="5.5.5">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>tsb-heimdall</user-name>
+      <introspection-schemas>*:cmn_global</introspection-schemas>
+    </data-source>
+    <data-source name="teamspeak_heimdall@localhost" uuid="a12f95e3-ac71-41b2-b664-d37df3751e1c">
+      <database-info product="MySQL" version="5.5.5-10.1.25-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )" dbms="MARIADB" exact-version="5.5.5">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>tsb-heimdall</user-name>
+      <introspection-schemas>*:teamspeak_heimdall</introspection-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,125 @@
+-----------------------------------------------------------------
+[2017-10-31 16:58:51.195] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-31 16:58:51.207] [BotEvent] Initializing environment..
+[2017-10-31 16:58:51.208] [BotEvent] Environment: ready!
+[2017-10-31 16:58:51.680] [BotEvent] Database: ready!
+[2017-10-31 16:58:51.737] [BotEvent] API: connected!
+[2017-10-31 16:58:51.747] [BotEvent] Server-Query: Logged in!
+[2017-10-31 16:58:51.763] [BotEvent] Nickname: set!
+[2017-10-31 16:58:51.787] [BotEvent] Event-Listener: registered!
+[2017-10-31 16:58:51.932] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-31 16:58:51.940] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 16:58:51.941] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 16:58:51.942] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 16:58:51.942] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 16:58:52.024] [BotEvent] Bot is now running!
+[2017-10-31 16:59:52.491] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-31 16:59:52.491] [BotEvent] Shutting down the bot..
+[2017-10-31 16:59:52.542] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-31 16:59:52.542] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-31 16:59:52.542] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-31 17:00:18.261] [BotEvent] Trying to start new Bot Instance..
+[2017-10-31 17:00:18.261] [BotEvent] Initializing environment..
+[2017-10-31 17:00:18.262] [BotEvent] Environment: ready!
+[2017-10-31 17:00:18.464] [BotEvent] Database: ready!
+[2017-10-31 17:00:18.501] [BotEvent] API: connected!
+[2017-10-31 17:00:18.506] [BotEvent] Server-Query: Logged in!
+[2017-10-31 17:00:18.506] [BotCritical] Attention! The Query uses the default 'ServerAdmin' account. This could lead to security issues!
+[2017-10-31 17:00:18.508] [BotEvent] Nickname: set!
+[2017-10-31 17:00:18.537] [BotEvent] Event-Listener: registered!
+[2017-10-31 17:00:18.657] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Public Talk 3}
+[2017-10-31 17:00:18.671] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 17:00:18.675] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 17:00:18.675] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 17:00:18.675] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 17:00:18.683] [BotEvent] Bot is now running!
+[2017-10-31 17:01:09.035] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Public Talk 3} to {/Twitch Stream - Borin}
+[2017-10-31 17:01:16.522] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-10-31 17:01:20.602] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from {/Lobby} to {/Public Talk 2}
+[2017-10-31 17:07:21.142] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-31 17:07:21.142] [BotEvent] Shutting down the bot..
+[2017-10-31 17:07:21.217] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-31 17:07:21.217] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-31 17:07:21.217] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-31 17:33:31.385] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-31 17:33:31.385] [BotEvent] Initializing environment..
+[2017-10-31 17:33:31.386] [BotEvent] Environment: ready!
+[2017-10-31 17:33:31.600] [BotEvent] Database: ready!
+[2017-10-31 17:33:31.639] [BotEvent] API: connected!
+[2017-10-31 17:33:31.645] [BotEvent] Server-Query: Logged in!
+[2017-10-31 17:33:31.647] [BotEvent] Nickname: set!
+[2017-10-31 17:33:31.676] [BotEvent] Event-Listener: registered!
+[2017-10-31 17:33:31.780] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-10-31 17:33:31.880] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 2}
+[2017-10-31 17:33:31.884] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 17:33:31.886] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 17:33:31.886] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 17:33:31.886] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 17:33:31.890] [BotEvent] Bot is now running!
+[2017-10-31 17:33:34.260] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-10-31 17:34:00.554] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Twitch Stream - Borin} to {/Twitch Stream}
+[2017-10-31 17:34:08.244] [Command fired] Xida used command: !dbg
+[2017-10-31 17:34:33.051] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-31 17:34:33.051] [BotEvent] Shutting down the bot..
+[2017-10-31 17:34:33.545] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-31 17:34:33.545] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-31 17:34:33.545] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-31 17:35:28.224] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-31 17:35:28.225] [BotEvent] Initializing environment..
+[2017-10-31 17:35:28.226] [BotEvent] Environment: ready!
+[2017-10-31 17:35:28.421] [BotEvent] Database: ready!
+[2017-10-31 17:35:28.459] [BotEvent] API: connected!
+[2017-10-31 17:35:28.464] [BotEvent] Server-Query: Logged in!
+[2017-10-31 17:35:28.466] [BotEvent] Nickname: set!
+[2017-10-31 17:35:28.491] [BotEvent] Event-Listener: registered!
+[2017-10-31 17:35:29.101] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream}
+[2017-10-31 17:35:29.105] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 17:35:29.106] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 17:35:29.106] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 17:35:29.106] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 17:35:29.111] [BotEvent] Bot is now running!
+[2017-10-31 17:35:32.354] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-31 17:35:32.354] [BotEvent] Shutting down the bot..
+[2017-10-31 17:35:32.378] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-31 17:35:32.378] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-31 17:35:32.378] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-31 17:35:36.183] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-31 17:35:36.184] [BotEvent] Initializing environment..
+[2017-10-31 17:35:36.184] [BotEvent] Environment: ready!
+[2017-10-31 17:35:36.383] [BotEvent] Database: ready!
+[2017-10-31 17:35:36.422] [BotEvent] API: connected!
+[2017-10-31 17:35:36.428] [BotEvent] Server-Query: Logged in!
+[2017-10-31 17:35:36.430] [BotEvent] Nickname: set!
+[2017-10-31 17:35:36.461] [BotEvent] Event-Listener: registered!
+[2017-10-31 17:35:36.554] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream}
+[2017-10-31 17:35:36.561] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 17:35:36.563] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 17:35:36.563] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 17:35:36.563] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 17:35:36.569] [BotEvent] Bot is now running!
+[2017-10-31 17:35:37.706] [Command fired] Xida used command: !dbg
+[2017-10-31 17:35:45.123] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-31 17:35:45.123] [BotEvent] Shutting down the bot..
+[2017-10-31 17:35:45.155] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-31 17:35:45.156] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-31 17:35:45.156] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-31 17:39:04.082] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-31 17:39:04.082] [BotEvent] Initializing environment..
+[2017-10-31 17:39:04.083] [BotEvent] Environment: ready!
+[2017-10-31 17:39:04.279] [BotEvent] Database: ready!
+[2017-10-31 17:39:04.315] [BotEvent] API: connected!
+[2017-10-31 17:39:04.322] [BotEvent] Server-Query: Logged in!
+[2017-10-31 17:39:04.325] [BotEvent] Nickname: set!
+[2017-10-31 17:39:04.352] [BotEvent] Event-Listener: registered!
+[2017-10-31 17:39:04.902] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream}
+[2017-10-31 17:39:04.907] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-31 17:39:04.909] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-31 17:39:04.909] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-31 17:39:04.909] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-31 17:39:04.915] [BotEvent] Bot is now running!
+[2017-10-31 17:39:13.388] [Command fired] Xida used command: !dbg

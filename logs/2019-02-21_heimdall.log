@@ -1,0 +1,322 @@
+-----------------------------------------------------------------
+[2019-02-21 20:14:37.411] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:14:37.413] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:14:37.413] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:14:39.685] [DATABASE_ERROR] Could not establish connection to jdbc:mysql://localhost/teamspeak_heimdall?serverTimezone=GMT using credentials user=[tsb-heimdall ] pass=[h4Oo5cB5td9WwSF4]
+[2019-02-21 20:14:39.762] [DATABASE_ERROR] null
+-----------------------------------------------------------------
+[2019-02-21 20:15:15.140] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:15:15.141] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:15:15.142] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:15:15.685] [BOT_EVENT] Database: ready!
+[2019-02-21 20:15:15.745] [BOT_EVENT] API: connected!
+[2019-02-21 20:15:15.761] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:15:15.764] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:15:15.774] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:15:15.962] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Default Channel}
+[2019-02-21 20:15:15.976] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:15:15.980] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:15:15.981] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:15:15.982] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:15:15.992] [BOT_EVENT] Bot is now running!
+[2019-02-21 20:15:39.293] [CLIENT_MOVED_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Default Channel} to {/Leise hier}
+[2019-02-21 20:15:48.932] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 20:15:48.932] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 20:15:49.387] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 20:15:49.388] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 20:15:49.388] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 20:16:53.749] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:16:53.750] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:16:53.750] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:16:54.095] [BOT_EVENT] Database: ready!
+[2019-02-21 20:16:54.128] [BOT_EVENT] API: connected!
+[2019-02-21 20:16:54.134] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:16:54.136] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:16:54.142] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:16:54.213] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 20:16:54.229] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:16:54.233] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:16:54.235] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:16:54.235] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:16:54.241] [BOT_EVENT] Bot is now running!
+[2019-02-21 20:17:13.601] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 20:17:13.601] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 20:17:13.610] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 20:17:13.610] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 20:17:13.610] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 20:31:57.460] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:31:57.460] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:31:57.461] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:31:57.717] [DATABASE_ERROR] Could not access database. Is the connection initialized?
+-----------------------------------------------------------------
+[2019-02-21 20:32:49.360] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:32:49.361] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:32:49.361] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:32:49.740] [BOT_EVENT] Database: ready!
+[2019-02-21 20:32:49.780] [BOT_EVENT] API: connected!
+[2019-02-21 20:32:49.786] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:32:49.789] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:32:49.797] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:32:50.303] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 20:32:50.315] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:32:50.318] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:32:50.320] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:32:50.321] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:32:50.327] [BOT_EVENT] Bot is now running!
+-----------------------------------------------------------------
+[2019-02-21 20:40:32.458] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:40:32.458] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:40:32.459] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:40:32.851] [BOT_EVENT] Database: ready!
+[2019-02-21 20:40:32.893] [BOT_EVENT] API: connected!
+[2019-02-21 20:40:32.906] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:40:32.908] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:40:32.914] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:40:32.975] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 20:40:32.986] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:40:32.992] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:40:32.995] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:40:32.996] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:40:33.005] [BOT_EVENT] Bot is now running!
+[2019-02-21 20:41:40.195] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 20:41:40.195] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 20:41:40.195] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 20:41:40.196] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 20:41:40.196] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 20:57:33.955] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:57:33.955] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:57:33.956] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:57:34.333] [BOT_EVENT] Database: ready!
+[2019-02-21 20:57:34.369] [BOT_EVENT] API: connected!
+[2019-02-21 20:57:34.376] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:57:34.379] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:57:34.387] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:57:34.896] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 20:57:34.911] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:57:34.916] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:57:34.918] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:57:34.918] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:57:34.930] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:00:30.377] [BOT_EVENT] Receiving !off command from Admin.. 
+[2019-02-21 21:00:30.377] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:00:30.838] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:00:30.838] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:00:30.838] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:16:14.092] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:16:14.093] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:16:14.094] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:16:14.494] [BOT_EVENT] Database: ready!
+[2019-02-21 21:16:14.533] [BOT_EVENT] API: connected!
+[2019-02-21 21:16:14.540] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:16:14.542] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:16:14.548] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:16:14.607] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:16:14.624] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:16:14.632] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:16:14.634] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:16:14.634] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:16:14.644] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:16:50.316] [BOT_EVENT] Receiving !off command from Admin.. 
+[2019-02-21 21:16:50.317] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:16:50.317] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:16:50.317] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:16:50.318] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:16:56.883] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:16:56.883] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:16:56.884] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:16:57.262] [BOT_EVENT] Database: ready!
+[2019-02-21 21:16:57.297] [BOT_EVENT] API: connected!
+[2019-02-21 21:16:57.306] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:16:57.310] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:16:57.317] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:16:57.384] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:16:57.406] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:16:57.412] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:16:57.415] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:16:57.416] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:16:57.430] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:18:36.396] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:18:36.396] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:18:36.847] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:18:36.847] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:18:36.847] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:18:42.494] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:18:42.494] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:18:42.495] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:18:42.888] [BOT_EVENT] Database: ready!
+[2019-02-21 21:18:42.922] [BOT_EVENT] API: connected!
+[2019-02-21 21:18:42.928] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:18:42.930] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:18:42.938] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:18:43.006] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:18:43.017] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:18:43.021] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:18:43.023] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:18:43.023] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:18:43.030] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:18:55.251] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:18:55.251] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:18:55.252] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:18:55.252] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:18:55.252] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:20:09.142] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:20:09.142] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:20:09.143] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:20:09.516] [BOT_EVENT] Database: ready!
+[2019-02-21 21:20:09.550] [BOT_EVENT] API: connected!
+[2019-02-21 21:20:09.561] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:20:09.564] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:20:09.570] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:20:09.641] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:20:09.651] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:20:09.654] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:20:09.656] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:20:09.656] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:20:09.663] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:20:13.758] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:20:13.759] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:20:13.772] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:20:13.772] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:20:13.772] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:23:44.371] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:23:44.372] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:23:44.373] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:23:44.777] [BOT_EVENT] Database: ready!
+[2019-02-21 21:23:44.815] [BOT_EVENT] API: connected!
+[2019-02-21 21:23:44.821] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:23:44.823] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:23:44.830] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:23:45.352] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:23:45.363] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:23:45.368] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:23:45.371] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:23:45.371] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:23:45.379] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:24:01.211] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:24:01.212] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:24:01.248] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:24:01.248] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:24:01.248] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:25:33.838] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:25:33.838] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:25:33.839] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:25:34.208] [BOT_EVENT] Database: ready!
+[2019-02-21 21:25:34.242] [BOT_EVENT] API: connected!
+[2019-02-21 21:25:34.251] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:25:34.253] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:25:34.261] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:25:34.790] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:25:34.805] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:25:34.812] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:25:34.814] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:25:34.814] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:25:34.822] [BOT_EVENT] Bot is now running!
+-----------------------------------------------------------------
+[2019-02-21 21:26:44.352] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:26:44.353] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:26:44.353] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:26:44.767] [BOT_EVENT] Database: ready!
+[2019-02-21 21:26:44.804] [BOT_EVENT] API: connected!
+[2019-02-21 21:26:44.810] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:26:44.816] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:26:44.823] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:26:45.340] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:26:45.355] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:26:45.361] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:26:45.364] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:26:45.364] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:26:45.372] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:31:50.885] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:31:50.885] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:31:51.343] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:31:51.344] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:31:51.344] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:31:57.393] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:31:57.394] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:31:57.395] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:31:57.784] [BOT_EVENT] Database: ready!
+[2019-02-21 21:31:57.817] [BOT_EVENT] API: connected!
+[2019-02-21 21:31:57.826] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:31:57.829] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:31:57.838] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:31:57.909] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:31:57.921] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:31:57.926] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:31:57.929] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:31:57.929] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:31:57.937] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:34:24.772] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:34:24.772] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:34:24.773] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:34:24.773] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:34:24.773] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:35:38.279] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:35:38.279] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:35:38.279] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:35:38.693] [BOT_EVENT] Database: ready!
+[2019-02-21 21:35:38.735] [BOT_EVENT] API: connected!
+[2019-02-21 21:35:38.742] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:35:38.745] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:35:38.752] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:35:39.252] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:35:39.263] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:35:39.266] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:35:39.269] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:35:39.269] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:35:39.277] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:37:01.688] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:37:01.688] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:37:02.146] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:37:02.146] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:37:02.146] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 21:37:09.185] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 21:37:09.185] [BOT_EVENT] Initializing environment..
+[2019-02-21 21:37:09.186] [BOT_EVENT] Environment: ready!
+[2019-02-21 21:37:09.617] [BOT_EVENT] Database: ready!
+[2019-02-21 21:37:09.654] [BOT_EVENT] API: connected!
+[2019-02-21 21:37:09.660] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 21:37:09.663] [BOT_EVENT] Nickname: set!
+[2019-02-21 21:37:09.670] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 21:37:09.752] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 21:37:09.763] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 21:37:09.767] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 21:37:09.769] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 21:37:09.770] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 21:37:09.776] [BOT_EVENT] Bot is now running!
+[2019-02-21 21:38:25.595] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 21:38:25.595] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 21:38:26.061] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 21:38:26.061] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 21:38:26.061] [BOT_EVENT] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2019-02-21 20:38:31.786] [BOT_EVENT] Trying to start new Bot Instance [DEBUG MODE]
+[2019-02-21 20:38:31.787] [BOT_EVENT] Initializing environment..
+[2019-02-21 20:38:31.788] [BOT_EVENT] Environment: ready!
+[2019-02-21 20:38:32.157] [BOT_EVENT] Database: ready!
+[2019-02-21 20:38:32.192] [BOT_EVENT] API: connected!
+[2019-02-21 20:38:32.198] [BOT_EVENT] Server-Query: Logged in!
+[2019-02-21 20:38:32.203] [BOT_EVENT] Nickname: set!
+[2019-02-21 20:38:32.212] [BOT_EVENT] Event-Listener: registered!
+[2019-02-21 20:38:32.284] [CLIENT_JOIN_EVENT] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Leise hier}
+[2019-02-21 20:38:32.293] [CLIENT_JOIN_EVENT] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2019-02-21 20:38:32.296] [BOT_EVENT] Feature: CommandManager has been activated.
+[2019-02-21 20:38:32.298] [BOT_EVENT] Feature: UserHistoryFeature has been activated.
+[2019-02-21 20:38:32.298] [BOT_EVENT] Feature: WelcomeMessageFeature has been activated.
+[2019-02-21 20:38:32.306] [BOT_EVENT] Bot is now running!
+[2019-02-21 20:39:14.718] [BOT_EVENT] Receiving shutdown command from console.
+[2019-02-21 20:39:14.718] [BOT_EVENT] Shutting down the bot..
+[2019-02-21 20:39:14.719] [BOT_EVENT] Feature: UserHistoryFeature has been deactivated.
+[2019-02-21 20:39:14.719] [BOT_EVENT] Feature: WelcomeMessageFeature has been deactivated.
+[2019-02-21 20:39:14.719] [BOT_EVENT] Feature: CommandManager has been deactivated.

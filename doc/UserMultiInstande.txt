@@ -1,0 +1,54 @@
+
+
+# Description of how to handle multiple TS3User instances
+
+
+# TS3User properties (cut):
+# - TS3User parentInstance = null
+# - List<TS3User> childInstances = new ArrayList<>()
+
+# Methods:
+# - boolean         isParent()
+# - boolean         isChild()
+# - List<TS3User>   getChildren()
+
+# - void            addChild(TS3User)
+# - void            removeChild(TS3User || runtimeId)
+# - void            setAsChildOf(TS3User || runtimeId)
+# - void            setAsParentOf(TS3User || runtimeId)
+
+
+On Login:
+    Check if there is another user with the same uuid online
+
+    if yes:
+        Determine if that client is already parent of other instances
+        if yes:
+            add the new client as child to the parent
+        if no:
+            set the 'older' client as parent of the new one
+            and set the newer as child of the older
+    if no:
+        register the client
+        end;
+
+
+On Logout:
+
+    Assertions:
+    - The Parent Instance is always the 'oldest'
+    - No instance can be parent and child at the same time
+
+
+    Check if the client is parent of other instances
+    If yes:
+        List all child instances,
+        select the 'oldest' instance and set it as parent to the rest
+        unregister
+        end;
+    if no:
+        Check if the client is child of another instance
+        if yes:
+            Tell the parent to remove that child
+            unregister
+            end;

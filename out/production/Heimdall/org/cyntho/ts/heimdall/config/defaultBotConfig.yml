@@ -1,0 +1,76 @@
+---
+version: 1.5
+released: 2017-07-14
+
+# Database configuration
+database:
+  username: tsb-heimdall
+  password: h4Oo5cB5td9WwSF4
+  host: 127.0.0.1
+  port: 3306
+  database: 'teamspeak_heimdall'
+  prefix: 'tsb'
+  local: 'D:\tools\Teamspeak-Server-3.5.0\teamspeak3-server_win64\ts3server.sqlitedb'
+
+
+# Teamspeak Server Query configuration
+query:
+  username: serveradmin
+  password: t9YB9C1f
+  host: 127.0.0.1
+  port: 10011
+  floodRate: UNLIMITED
+  debugLevel: OFF
+
+# Selection for the server (if running multiple instances)
+server:
+  id: 1
+  commandTimeout: 4000
+  debugLevel: INFO
+
+# General bot settings
+bot:
+  logToFile: true
+  logToDatabase: true
+  logFileZip: false
+  nick: '[Bot] Heimdall'
+  goOnlineMessage: ''     # Leave empty to deactivate message
+  goOfflineMessage: ''                        # Leave empty to deactivate message
+
+# A list of administrators, who will be able to ignore any restriction (@see: permissions.yml)
+admins:
+  - YourUUIDcomesHere
+  - AnotherAdminUUID
+
+# Activate or deactivate some features
+features:
+  userHistory: true
+  customWelcomeMessages: false
+  webNotifications: false
+  autoPromotion:
+    active: true
+    aliases:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

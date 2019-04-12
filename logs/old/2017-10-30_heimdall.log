@@ -1,0 +1,222 @@
+-----------------------------------------------------------------
+[2017-10-30 16:34:03.406] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 16:34:03.413] [BotEvent] Initializing environment..
+[2017-10-30 16:34:03.414] [BotEvent] Environment: ready!
+[2017-10-30 16:34:03.732] [BotEvent] Database: ready!
+[2017-10-30 16:34:04.843] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-10-30 16:34:04.843] [BotError] Shutting down..
+[2017-10-30 16:34:04.843] [BotEvent] Shutting down the bot..
+-----------------------------------------------------------------
+[2017-10-30 16:34:26.363] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 16:34:26.364] [BotEvent] Initializing environment..
+[2017-10-30 16:34:26.365] [BotEvent] Environment: ready!
+[2017-10-30 16:34:26.589] [BotEvent] Database: ready!
+[2017-10-30 16:34:26.629] [BotEvent] API: connected!
+[2017-10-30 16:34:27.096] [BotEvent] Server-Query: Logged in!
+[2017-10-30 16:34:27.104] [BotEvent] Nickname: set!
+[2017-10-30 16:34:27.127] [BotEvent] Event-Listener: registered!
+[2017-10-30 16:34:27.219] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-10-30 16:34:27.223] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 16:34:27.224] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 16:34:27.224] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 16:34:27.224] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 16:34:27.263] [BotEvent] Bot is now running!
+[2017-10-30 16:34:32.848] [ClientMovedEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] went from {/Lobby} to {/Public Talk 2}
+[2017-10-30 16:37:39.366] [BotEvent] Receiving shutdown command from console.
+[2017-10-30 16:37:39.366] [BotEvent] Shutting down the bot..
+[2017-10-30 16:37:39.876] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 16:37:39.877] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 16:37:39.877] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:02:17.361] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:02:17.361] [BotEvent] Initializing environment..
+[2017-10-30 17:02:17.361] [BotEvent] Environment: ready!
+[2017-10-30 17:02:17.579] [BotEvent] Database: ready!
+[2017-10-30 17:02:17.620] [BotEvent] API: connected!
+[2017-10-30 17:02:17.624] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:02:17.626] [BotEvent] Nickname: set!
+[2017-10-30 17:02:17.655] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:02:17.795] [ClientJoinEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-10-30 17:02:17.804] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:02:17.805] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:02:17.806] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:02:17.806] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:02:17.815] [BotEvent] Bot is now running!
+[2017-10-30 17:02:23.393] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-10-30 17:02:23.599] [ClientJoinEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-10-30 17:02:34.057] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-10-30 17:02:34.340] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:02:39.826] [Command Error] Could not resolve command by label !list ; !list
+[2017-10-30 17:02:45.129] [Command Error] Could not resolve command by label !list ; !list features
+[2017-10-30 17:02:49.932] [Command Error] Could not resolve command by label !help ; !help
+[2017-10-30 17:04:46.823] [Command Error] Could not resolve command by label !setDescription ; !setDescription
+[2017-10-30 17:05:40.331] [Command fired] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:07:13.929] [Command fired] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:08:14.205] [Command fired] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:08:18.665] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:08:18.665] [BotEvent] Shutting down the bot..
+[2017-10-30 17:08:18.699] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:08:18.699] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:08:18.699] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:09:23.375] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:09:23.376] [BotEvent] Initializing environment..
+[2017-10-30 17:09:23.377] [BotEvent] Environment: ready!
+[2017-10-30 17:09:23.597] [BotEvent] Database: ready!
+[2017-10-30 17:09:23.639] [BotEvent] API: connected!
+[2017-10-30 17:09:23.645] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:09:23.646] [BotEvent] Nickname: set!
+[2017-10-30 17:09:23.672] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:09:23.681] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:09:23.780] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:09:23.781] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:09:23.781] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:09:23.781] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:09:23.792] [BotEvent] Bot is now running!
+[2017-10-30 17:09:51.964] [Command Error] Could not resolve command by label !test; !test
+[2017-10-30 17:09:54.741] [Command fired] Xida used command: !getPath
+[2017-10-30 17:10:07.083] [Command fired] Xida used command: !getPath
+[2017-10-30 17:10:16.289] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:10:16.289] [BotEvent] Shutting down the bot..
+[2017-10-30 17:10:16.776] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:10:16.776] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:10:16.776] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:10:26.135] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:10:26.136] [BotEvent] Initializing environment..
+[2017-10-30 17:10:26.136] [BotEvent] Environment: ready!
+[2017-10-30 17:10:26.347] [BotEvent] Database: ready!
+[2017-10-30 17:10:26.379] [BotEvent] API: connected!
+[2017-10-30 17:10:26.387] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:10:26.389] [BotEvent] Nickname: set!
+[2017-10-30 17:10:26.418] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:10:26.431] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:10:26.575] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:10:26.579] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:10:26.579] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:10:26.579] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:10:26.589] [BotEvent] Bot is now running!
+[2017-10-30 17:10:54.406] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:10:54.406] [BotEvent] Shutting down the bot..
+[2017-10-30 17:10:54.888] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:10:54.888] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:10:54.888] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:11:29.556] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:11:29.556] [BotEvent] Initializing environment..
+[2017-10-30 17:11:29.557] [BotEvent] Environment: ready!
+[2017-10-30 17:11:29.767] [BotEvent] Database: ready!
+[2017-10-30 17:11:29.804] [BotEvent] API: connected!
+[2017-10-30 17:11:29.811] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:11:29.813] [BotEvent] Nickname: set!
+[2017-10-30 17:11:29.844] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:11:29.852] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:11:29.969] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:11:29.971] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:11:29.971] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:11:29.971] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:11:29.982] [BotEvent] Bot is now running!
+[2017-10-30 17:11:35.407] [Command fired] Xida used command: !getPath
+[2017-10-30 17:11:40.165] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:11:40.165] [BotEvent] Shutting down the bot..
+[2017-10-30 17:11:40.210] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:11:40.210] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:11:40.210] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:12:32.964] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:12:32.965] [BotEvent] Initializing environment..
+[2017-10-30 17:12:32.966] [BotEvent] Environment: ready!
+[2017-10-30 17:12:33.201] [BotEvent] Database: ready!
+[2017-10-30 17:12:33.247] [BotEvent] API: connected!
+[2017-10-30 17:12:33.251] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:12:33.256] [BotEvent] Nickname: set!
+[2017-10-30 17:12:33.283] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:12:33.292] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:12:33.911] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:12:33.912] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:12:33.913] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:12:33.913] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:12:33.922] [BotEvent] Bot is now running!
+[2017-10-30 17:12:38.094] [Command fired] Xida used command: !getPath
+[2017-10-30 17:12:41.678] [Command Error] Could not get path to channel '2' - Channel not found
+[2017-10-30 17:12:41.679] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:13:13.629] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:13:13.629] [BotEvent] Shutting down the bot..
+[2017-10-30 17:13:14.132] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:13:14.132] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:13:14.132] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:13:19.059] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:13:19.059] [BotEvent] Initializing environment..
+[2017-10-30 17:13:19.060] [BotEvent] Environment: ready!
+[2017-10-30 17:13:19.285] [BotEvent] Database: ready!
+[2017-10-30 17:13:19.319] [BotEvent] API: connected!
+[2017-10-30 17:13:19.323] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:13:19.325] [BotEvent] Nickname: set!
+[2017-10-30 17:13:19.352] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:13:19.467] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:13:19.478] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:13:19.479] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:13:19.480] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:13:19.480] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:13:19.495] [BotEvent] Bot is now running!
+[2017-10-30 17:13:25.770] [Command Error] Could not get path to channel '12' - Channel not found
+[2017-10-30 17:13:25.770] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:13:33.819] [Command fired] Xida used command: !getPath
+[2017-10-30 17:13:47.896] [Command fired] Xida used command: !getPath
+[2017-10-30 17:13:56.852] [Command fired] Xida used command: !getPath
+[2017-10-30 17:14:57.191] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:14:57.191] [BotEvent] Shutting down the bot..
+[2017-10-30 17:14:57.698] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:14:57.698] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:14:57.698] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:23:04.526] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:23:04.526] [BotEvent] Initializing environment..
+[2017-10-30 17:23:04.526] [BotEvent] Environment: ready!
+[2017-10-30 17:23:04.768] [BotEvent] Database: ready!
+[2017-10-30 17:23:04.805] [BotEvent] API: connected!
+[2017-10-30 17:23:04.811] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:23:04.814] [BotEvent] Nickname: set!
+[2017-10-30 17:23:04.842] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:23:04.853] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:23:05.441] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-10-30 17:23:05.442] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:23:05.442] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:23:05.443] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:23:05.449] [BotEvent] Bot is now running!
+[2017-10-30 17:23:11.452] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-10-30 17:23:11.453] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:28:11.138] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:28:11.138] [BotEvent] Shutting down the bot..
+[2017-10-30 17:28:11.608] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:28:11.608] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:28:11.608] [BotEvent] Feature: CommandManager has been deactivated.
+-----------------------------------------------------------------
+[2017-10-30 17:28:20.916] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-10-30 17:28:20.916] [BotEvent] Initializing environment..
+[2017-10-30 17:28:20.916] [BotEvent] Environment: ready!
+[2017-10-30 17:28:21.128] [BotEvent] Database: ready!
+[2017-10-30 17:28:21.173] [BotEvent] API: connected!
+[2017-10-30 17:28:21.183] [BotEvent] Server-Query: Logged in!
+[2017-10-30 17:28:21.185] [BotEvent] Nickname: set!
+[2017-10-30 17:28:21.227] [BotEvent] Event-Listener: registered!
+[2017-10-30 17:28:21.237] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-10-30 17:28:21.360] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Public Talk 2}
+[2017-10-30 17:28:21.361] [BotEvent] Feature: CommandManager has been activated.
+[2017-10-30 17:28:21.362] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-10-30 17:28:21.362] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-10-30 17:28:21.370] [BotEvent] Bot is now running!
+[2017-10-30 17:28:32.742] [Command fired] Xida used command: !getPath
+[2017-10-30 17:28:39.506] [Command fired] Xida used command: !getPath
+[2017-10-30 17:28:50.585] [Command fired] Xida used command: !getPath
+[2017-10-30 17:29:06.161] [Command fired] Xida used command: !getPath
+[2017-10-30 17:29:10.221] [Command fired] Xida used command: !getPath
+[2017-10-30 17:29:13.164] [Command Error] Could not get path to channel '-1' - Channel not found
+[2017-10-30 17:29:13.164] [Command Error] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-10-30 17:29:21.153] [Command fired] Xida used command: !getPath
+[2017-10-30 17:29:25.064] [BotEvent] Receiving !off command from Admin.. 
+[2017-10-30 17:29:25.064] [BotEvent] Shutting down the bot..
+[2017-10-30 17:29:25.542] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-10-30 17:29:25.542] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-10-30 17:29:25.542] [BotEvent] Feature: CommandManager has been deactivated.

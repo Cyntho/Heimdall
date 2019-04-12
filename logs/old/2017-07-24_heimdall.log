@@ -1,0 +1,114 @@
+[2017-07-24 12:11:39.901] [Info] -----------------------------------------------------------------
+[2017-07-24 12:11:39.902] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 12:11:39.902] [BotEvent] Initializing environment..
+[2017-07-24 12:11:39.902] [BotEvent] Environment: ready!
+[2017-07-24 12:11:40.208] [BotEvent] Database: ready!
+[2017-07-24 12:12:52.250] [Info] -----------------------------------------------------------------
+[2017-07-24 12:12:52.251] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 12:12:52.251] [BotEvent] Initializing environment..
+[2017-07-24 12:12:52.252] [BotEvent] Environment: ready!
+[2017-07-24 12:12:52.418] [BotEvent] Database: ready!
+[2017-07-24 12:12:53.454] [BotError] Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-07-24 12:13:41.574] [Info] -----------------------------------------------------------------
+[2017-07-24 12:13:41.575] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 12:13:41.575] [BotEvent] Initializing environment..
+[2017-07-24 12:13:41.576] [BotEvent] Environment: ready!
+[2017-07-24 12:13:41.735] [BotEvent] Database: ready!
+[2017-07-24 12:13:42.767] [BotError] Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-07-24 12:13:42.769] [BotEvent] Shutting down the bot..
+[2017-07-24 12:14:06.235] [Info] -----------------------------------------------------------------
+[2017-07-24 12:14:06.236] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 12:14:06.236] [BotEvent] Initializing environment..
+[2017-07-24 12:14:06.237] [BotEvent] Environment: ready!
+[2017-07-24 12:14:06.395] [BotEvent] Database: ready!
+[2017-07-24 12:14:07.428] [BotError] Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-07-24 12:22:24.087] [Info] -----------------------------------------------------------------
+[2017-07-24 12:22:24.087] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 12:22:24.087] [BotEvent] Initializing environment..
+[2017-07-24 12:22:24.088] [BotEvent] Environment: ready!
+[2017-07-24 12:22:24.248] [BotEvent] Database: ready!
+[2017-07-24 12:22:25.279] [BotError] API: Could not connect to the Teamspeak 3 Server. Make sure it is running!
+[2017-07-24 12:22:25.280] [BotError] Shutting down..
+[2017-07-24 13:33:32.284] [Info] -----------------------------------------------------------------
+[2017-07-24 13:33:32.284] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 13:33:32.284] [BotEvent] Initializing environment..
+[2017-07-24 13:33:32.286] [BotEvent] Environment: ready!
+[2017-07-24 13:33:32.517] [BotEvent] Database: ready!
+[2017-07-24 13:33:32.560] [BotEvent] API: connected!
+[2017-07-24 13:33:32.569] [BotCritical] Could not login with teamspeak query credentials!
+[2017-07-24 13:34:42.370] [Info] -----------------------------------------------------------------
+[2017-07-24 13:34:42.370] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 13:34:42.370] [BotEvent] Initializing environment..
+[2017-07-24 13:34:42.371] [BotEvent] Environment: ready!
+[2017-07-24 13:34:42.628] [BotEvent] Database: ready!
+[2017-07-24 13:34:42.671] [BotEvent] API: connected!
+[2017-07-24 13:34:42.678] [BotEvent] Server-Query: Logged in!
+[2017-07-24 13:34:42.685] [BotEvent] Nickname: set!
+[2017-07-24 13:34:42.713] [BotEvent] Event-Listener: registered!
+[2017-07-24 13:34:42.729] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-24 13:34:42.729] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-24 13:34:42.730] [BotEvent] Bot is now running!
+[2017-07-24 13:35:05.879] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-24 13:35:05.880] [BotEvent] Shutting down the bot..
+[2017-07-24 13:36:47.629] [Info] -----------------------------------------------------------------
+[2017-07-24 13:36:47.629] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 13:36:47.630] [BotEvent] Initializing environment..
+[2017-07-24 13:36:47.630] [BotEvent] Environment: ready!
+[2017-07-24 13:36:47.900] [BotEvent] Database: ready!
+[2017-07-24 13:36:47.945] [BotEvent] API: connected!
+[2017-07-24 13:36:47.952] [BotEvent] Server-Query: Logged in!
+[2017-07-24 13:36:47.955] [BotEvent] Nickname: set!
+[2017-07-24 13:36:47.987] [BotEvent] Event-Listener: registered!
+[2017-07-24 13:36:48.000] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-24 13:36:48.000] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-24 13:36:48.000] [BotEvent] Bot is now running!
+[2017-07-24 13:39:13.016] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Lobby} to {/Public Talk 2}
+[2017-07-24 13:39:36.992] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Public Talk 2} to {/Public Talk 1}
+[2017-07-24 13:39:41.080] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Public Talk 1} to {/Public Talk 3}
+[2017-07-24 13:39:48.183] [BotEvent] Receiving shutdown command from console.
+[2017-07-24 13:39:48.183] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-24 13:39:48.183] [BotEvent] Shutting down the bot..
+[2017-07-24 13:40:10.503] [Info] -----------------------------------------------------------------
+[2017-07-24 13:40:10.504] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 13:40:10.504] [BotEvent] Initializing environment..
+[2017-07-24 13:40:10.504] [BotEvent] Environment: ready!
+[2017-07-24 13:40:10.757] [BotEvent] Database: ready!
+[2017-07-24 13:40:10.803] [BotEvent] API: connected!
+[2017-07-24 13:40:10.812] [BotEvent] Server-Query: Logged in!
+[2017-07-24 13:40:10.815] [BotEvent] Nickname: set!
+[2017-07-24 13:40:10.847] [BotEvent] Event-Listener: registered!
+[2017-07-24 13:40:10.862] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-24 13:40:10.862] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-24 13:40:10.862] [BotEvent] Bot is now running!
+[2017-07-24 13:40:25.961] [BotEvent] Receiving shutdown command from console.
+[2017-07-24 13:40:25.961] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-24 13:40:25.961] [BotEvent] Shutting down the bot..
+[2017-07-24 13:43:58.270] [Info] -----------------------------------------------------------------
+[2017-07-24 13:43:58.270] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-24 13:43:58.271] [BotEvent] Initializing environment..
+[2017-07-24 13:43:58.272] [BotEvent] Environment: ready!
+[2017-07-24 13:43:58.519] [BotEvent] Database: ready!
+[2017-07-24 13:43:58.563] [BotEvent] API: connected!
+[2017-07-24 13:43:58.571] [BotEvent] Server-Query: Logged in!
+[2017-07-24 13:43:58.574] [BotEvent] Nickname: set!
+[2017-07-24 13:43:58.602] [BotEvent] Event-Listener: registered!
+[2017-07-24 13:43:58.630] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-07-24 13:43:58.653] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Public Talk 3}
+[2017-07-24 13:43:58.665] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-07-24 13:43:58.667] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-24 13:43:58.667] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-24 13:43:58.668] [BotEvent] Bot is now running!
+[2017-07-24 13:44:00.664] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-07-24 13:44:06.068] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-07-24 13:50:12.106] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-07-24 13:50:16.936] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-07-24 13:50:23.408] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] went from {/Lobby} to {/Public Talk 3}
+[2017-07-24 13:50:42.099] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-24 13:50:46.318] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Public Talk 3}
+[2017-07-24 13:51:20.915] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-24 13:51:32.988] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Public Talk 3}
+[2017-07-24 13:56:44.295] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-24 14:04:45.457] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-24 15:41:20.079] [BotEvent] Receiving shutdown command from console.
+[2017-07-24 15:41:20.291] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-24 15:41:20.292] [BotEvent] Shutting down the bot..

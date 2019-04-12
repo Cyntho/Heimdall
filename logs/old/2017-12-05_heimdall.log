@@ -1,0 +1,27 @@
+-----------------------------------------------------------------
+[2017-12-05 19:40:39.805] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-05 19:40:39.818] [BotEvent] Initializing environment..
+[2017-12-05 19:40:39.818] [BotEvent] Environment: ready!
+[2017-12-05 19:40:40.268] [BotEvent] Database: ready!
+[2017-12-05 19:40:40.340] [BotEvent] API: connected!
+[2017-12-05 19:40:40.358] [BotEvent] Server-Query: Logged in!
+[2017-12-05 19:40:40.365] [BotEvent] Nickname: set!
+[2017-12-05 19:40:40.395] [BotEvent] Event-Listener: registered!
+[2017-12-05 19:40:40.428] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-05 19:40:40.543] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Public Talk 3}
+[2017-12-05 19:40:40.551] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-05 19:40:40.621] [ClientJoinEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-12-05 19:40:40.625] [Database Error] Could not resolve columns for database 'tsb_perm_special'
+[2017-12-05 19:40:40.626] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-05 19:40:40.627] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-05 19:40:40.628] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-05 19:40:40.628] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-05 19:40:40.654] [BotEvent] Bot is now running!
+[2017-12-05 19:40:43.586] [ClientMovedEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] went from {/Lobby} to {/Public Talk 1}
+[2017-12-05 19:41:09.762] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Public Talk 3} to {/Lobby}
+[2017-12-05 19:41:13.656] [Command Error] Could not resolve command by label !debug; !debug
+[2017-12-05 19:41:53.717] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-05 19:41:53.717] [BotEvent] Shutting down the bot..
+[2017-12-05 19:41:54.240] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-05 19:41:54.240] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-05 19:41:54.240] [BotEvent] Feature: CommandManager has been deactivated.

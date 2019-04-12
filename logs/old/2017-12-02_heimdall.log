@@ -1,0 +1,22 @@
+-----------------------------------------------------------------
+[2017-12-02 15:52:45.342] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-12-02 15:52:45.346] [BotEvent] Initializing environment..
+[2017-12-02 15:52:45.347] [BotEvent] Environment: ready!
+[2017-12-02 15:52:45.696] [BotEvent] Database: ready!
+[2017-12-02 15:52:45.766] [BotEvent] API: connected!
+[2017-12-02 15:52:45.780] [BotEvent] Server-Query: Logged in!
+[2017-12-02 15:52:45.793] [BotEvent] Nickname: set!
+[2017-12-02 15:52:45.825] [BotEvent] Event-Listener: registered!
+[2017-12-02 15:52:46.036] [ClientJoinEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Misses}
+[2017-12-02 15:52:46.043] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-12-02 15:52:46.046] [BotEvent] Feature: CommandManager has been activated.
+[2017-12-02 15:52:46.046] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-12-02 15:52:46.046] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-12-02 15:52:46.070] [BotEvent] Bot is now running!
+[2017-12-02 15:53:06.299] [Command Error] Could not resolve command by label !help; !help
+[2017-12-02 15:54:06.091] [Command Error] Could not resolve command by label !list; !list users
+[2017-12-02 15:58:45.169] [BotEvent] Receiving !off command from Admin.. 
+[2017-12-02 15:58:45.169] [BotEvent] Shutting down the bot..
+[2017-12-02 15:58:45.215] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-12-02 15:58:45.215] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-12-02 15:58:45.215] [BotEvent] Feature: CommandManager has been deactivated.

@@ -1,0 +1,793 @@
+[2017-07-16 00:05:56.653] [Info] -----------------------------------------------------------------
+[2017-07-16 00:05:56.654] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:05:56.654] [BotEvent] Initializing environment..
+[2017-07-16 00:05:56.654] [BotEvent] Environment: ready!
+[2017-07-16 00:05:56.822] [BotEvent] Database: ready!
+[2017-07-16 00:05:56.863] [BotEvent] API: connected!
+[2017-07-16 00:05:56.873] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:05:56.877] [BotEvent] Nickname: set!
+[2017-07-16 00:05:56.896] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:06:32.376] [Info] -----------------------------------------------------------------
+[2017-07-16 00:06:32.377] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:06:32.377] [BotEvent] Initializing environment..
+[2017-07-16 00:06:32.378] [BotEvent] Environment: ready!
+[2017-07-16 00:06:32.552] [BotEvent] Database: ready!
+[2017-07-16 00:06:32.594] [BotEvent] API: connected!
+[2017-07-16 00:06:32.599] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:06:32.601] [BotError] The bot's specified nickname is already in use. Trying to kick user...
+[2017-07-16 00:06:32.607] [BotError] Could not kick the user, since its a server query client!
+[2017-07-16 00:06:32.608] [BotEvent] Nickname: set!
+[2017-07-16 00:06:32.619] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:07:07.492] [Info] -----------------------------------------------------------------
+[2017-07-16 00:07:07.492] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:07:07.492] [BotEvent] Initializing environment..
+[2017-07-16 00:07:07.493] [BotEvent] Environment: ready!
+[2017-07-16 00:07:07.667] [BotEvent] Database: ready!
+[2017-07-16 00:07:07.704] [BotEvent] API: connected!
+[2017-07-16 00:07:07.709] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:07:07.711] [BotError] The bot's specified nickname is already in use. Trying to kick user...
+[2017-07-16 00:07:07.717] [BotError] Could not kick the user, since its a server query client!
+[2017-07-16 00:07:07.717] [BotEvent] Nickname: set!
+[2017-07-16 00:07:07.729] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:07:07.746] [BotEvent] Bot is now running!
+[2017-07-16 00:07:15.523] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:07:15.524] [Info] Could not handle ClientJoinEvent.
+[2017-07-16 00:07:46.153] [BotEvent] Shutting down the bot..
+[2017-07-16 00:07:46.153] [BotEvent] Shutting down the bot..
+[2017-07-16 00:07:46.153] [BotEvent] Shutting down the bot..
+[2017-07-16 00:40:40.803] [Info] -----------------------------------------------------------------
+[2017-07-16 00:40:40.803] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:40:40.803] [BotEvent] Initializing environment..
+[2017-07-16 00:40:40.804] [BotEvent] Environment: ready!
+[2017-07-16 00:40:40.974] [BotEvent] Database: ready!
+[2017-07-16 00:40:41.019] [BotEvent] API: connected!
+[2017-07-16 00:40:41.025] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:40:41.028] [BotEvent] Nickname: set!
+[2017-07-16 00:40:41.044] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:40:41.055] [BotEvent] Bot is now running!
+[2017-07-16 00:41:13.185] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:41:13.208] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from null to {/Multigaming/League of Legends/Team 1}
+[2017-07-16 00:41:17.674] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:41:17.698] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from null to {/Multigaming/League of Legends/Team 2}
+[2017-07-16 00:41:30.932] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:41:40.825] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:41:40.829] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from null to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 2}
+[2017-07-16 00:41:49.885] [BotEvent] Shutting down the bot..
+[2017-07-16 00:43:22.311] [Info] -----------------------------------------------------------------
+[2017-07-16 00:43:22.312] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:43:22.312] [BotEvent] Initializing environment..
+[2017-07-16 00:43:22.313] [BotEvent] Environment: ready!
+[2017-07-16 00:43:22.492] [BotEvent] Database: ready!
+[2017-07-16 00:43:22.536] [BotEvent] API: connected!
+[2017-07-16 00:43:22.541] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:43:22.542] [BotEvent] Nickname: set!
+[2017-07-16 00:43:22.558] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:43:22.570] [BotEvent] Bot is now running!
+[2017-07-16 00:43:28.003] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:43:28.009] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from null to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1}
+[2017-07-16 00:43:32.045] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1} to {/Multigaming/Wolfenstein: Enemy Territory/Fragging/Allies}
+[2017-07-16 00:43:43.728] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:43:43.737] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from null to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1}
+[2017-07-16 00:43:46.175] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1} to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 2}
+[2017-07-16 00:50:00.328] [BotError] GlobalListener.onClientMoved(): Unhandled reason id '4'
+[2017-07-16 00:50:35.093] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from {/Lobby} to {/Multigaming/League of Legends/Team 1}
+[2017-07-16 00:50:43.204] [BotError] GlobalListener.onClientMoved(): Unhandled reason id '4'
+[2017-07-16 00:51:12.746] [ClientKickedFromServer] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] been kicked from the Server by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] - Reason: 321
+[2017-07-16 00:52:28.758] [BotEvent] Shutting down the bot..
+[2017-07-16 00:52:59.083] [Info] -----------------------------------------------------------------
+[2017-07-16 00:52:59.083] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:52:59.083] [BotEvent] Initializing environment..
+[2017-07-16 00:52:59.084] [BotEvent] Environment: ready!
+[2017-07-16 00:52:59.248] [BotEvent] Database: ready!
+[2017-07-16 00:52:59.286] [BotEvent] API: connected!
+[2017-07-16 00:52:59.292] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:52:59.295] [BotEvent] Nickname: set!
+[2017-07-16 00:52:59.309] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:52:59.321] [BotEvent] Bot is now running!
+[2017-07-16 00:53:06.062] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:53:19.245] [Command Error] Could not get path to channel '0' - Channel not found
+[2017-07-16 00:53:19.251] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from null to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 2}
+[2017-07-16 00:55:43.562] [BotEvent] Shutting down the bot..
+[2017-07-16 00:55:49.709] [Info] -----------------------------------------------------------------
+[2017-07-16 00:55:49.709] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 00:55:49.709] [BotEvent] Initializing environment..
+[2017-07-16 00:55:49.710] [BotEvent] Environment: ready!
+[2017-07-16 00:55:49.872] [BotEvent] Database: ready!
+[2017-07-16 00:55:49.910] [BotEvent] API: connected!
+[2017-07-16 00:55:49.915] [BotEvent] Server-Query: Logged in!
+[2017-07-16 00:55:49.917] [BotEvent] Nickname: set!
+[2017-07-16 00:55:49.933] [BotEvent] Event-Listener: registered!
+[2017-07-16 00:55:49.948] [BotEvent] Bot is now running!
+[2017-07-16 00:56:20.727] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4= ] was moved by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=]  from {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 2} to {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1}
+[2017-07-16 00:56:25.471] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Multigaming/Wolfenstein: Enemy Territory/Fragging/Allies} to {/Multigaming/Minecraft/Survival}
+[2017-07-16 00:56:53.827] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] was kicked from Channel {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1} by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] Reason: {123}
+[2017-07-16 00:57:00.968] [ClientKickedFromServer] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] been kicked from the Server by Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] - Reason: 5464+
+[2017-07-16 00:57:11.117] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:57:17.241] [ClientBannedFromServer] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has been banned from the Server byXida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] - Reason: [Scammer. ] Duration: [permanent]
+[2017-07-16 00:58:09.597] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:58:21.015] [ClientBannedFromServer] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has been banned from the Server byXida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] - Reason: [Scammer. ] Duration: [00:00:05]
+[2017-07-16 00:59:26.306] [Database Error] Error while executing query: SELECT * FROM prefix_WML_ WHERE active = ?
+[2017-07-16 00:59:36.389] [ClientMovedEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] went from {/Multigaming/Wolfenstein: Enemy Territory/Trickjumping/Server 1} to {/Lobby}
+[2017-07-16 01:06:02.197] [BotEvent] Shutting down the bot..
+[2017-07-16 01:06:12.340] [Info] -----------------------------------------------------------------
+[2017-07-16 01:06:12.340] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 01:06:12.340] [BotEvent] Initializing environment..
+[2017-07-16 01:06:12.341] [BotEvent] Environment: ready!
+[2017-07-16 01:06:12.510] [BotEvent] Database: ready!
+[2017-07-16 01:06:12.558] [BotEvent] API: connected!
+[2017-07-16 01:06:12.563] [BotEvent] Server-Query: Logged in!
+[2017-07-16 01:06:12.566] [BotEvent] Nickname: set!
+[2017-07-16 01:06:12.582] [BotEvent] Event-Listener: registered!
+[2017-07-16 01:06:12.597] [BotEvent] Bot is now running!
+[2017-07-16 01:07:18.765] [BotEvent] Shutting down the bot..
+[2017-07-16 01:07:24.584] [Info] -----------------------------------------------------------------
+[2017-07-16 01:07:24.584] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 01:07:24.584] [BotEvent] Initializing environment..
+[2017-07-16 01:07:24.585] [BotEvent] Environment: ready!
+[2017-07-16 01:07:24.749] [BotEvent] Database: ready!
+[2017-07-16 01:07:24.785] [BotEvent] API: connected!
+[2017-07-16 01:07:24.791] [BotEvent] Server-Query: Logged in!
+[2017-07-16 01:07:24.793] [BotEvent] Nickname: set!
+[2017-07-16 01:07:24.808] [BotEvent] Event-Listener: registered!
+[2017-07-16 01:07:24.822] [BotEvent] Bot is now running!
+[2017-07-16 01:08:07.045] [BotEvent] Shutting down the bot..
+[2017-07-16 14:22:20.273] [Info] -----------------------------------------------------------------
+[2017-07-16 14:22:20.279] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:22:20.279] [BotEvent] Initializing environment..
+[2017-07-16 14:22:20.280] [BotEvent] Environment: ready!
+[2017-07-16 14:22:20.792] [BotEvent] Database: ready!
+[2017-07-16 14:22:59.404] [Info] -----------------------------------------------------------------
+[2017-07-16 14:22:59.404] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:22:59.404] [BotEvent] Initializing environment..
+[2017-07-16 14:22:59.405] [BotEvent] Environment: ready!
+[2017-07-16 14:22:59.628] [BotEvent] Database: ready!
+[2017-07-16 14:22:59.666] [BotEvent] API: connected!
+[2017-07-16 14:22:59.677] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:22:59.680] [BotEvent] Nickname: set!
+[2017-07-16 14:22:59.712] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:22:59.721] [BotEvent] Bot is now running!
+[2017-07-16 14:23:55.330] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:23:55.330] [BotEvent] Shutting down the bot..
+[2017-07-16 14:24:02.312] [Info] -----------------------------------------------------------------
+[2017-07-16 14:24:02.313] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:24:02.313] [BotEvent] Initializing environment..
+[2017-07-16 14:24:02.314] [BotEvent] Environment: ready!
+[2017-07-16 14:24:02.533] [BotEvent] Database: ready!
+[2017-07-16 14:24:02.576] [BotEvent] API: connected!
+[2017-07-16 14:24:02.582] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:24:02.584] [BotEvent] Nickname: set!
+[2017-07-16 14:24:02.602] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:24:02.618] [BotEvent] Bot is now running!
+[2017-07-16 14:24:08.217] [Command fired] Handling command..
+[2017-07-16 14:24:13.842] [Command fired] Handling command..
+[2017-07-16 14:24:51.277] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:24:51.278] [BotEvent] Shutting down the bot..
+[2017-07-16 14:31:38.010] [Info] -----------------------------------------------------------------
+[2017-07-16 14:31:38.010] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:31:38.010] [BotEvent] Initializing environment..
+[2017-07-16 14:31:38.011] [BotEvent] Environment: ready!
+[2017-07-16 14:31:38.229] [BotEvent] Database: ready!
+[2017-07-16 14:31:38.269] [BotEvent] API: connected!
+[2017-07-16 14:31:38.274] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:31:38.276] [BotEvent] Nickname: set!
+[2017-07-16 14:31:38.294] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:31:38.307] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:31:38.307] [BotEvent] Feature: CommandFeature has been activated.
+[2017-07-16 14:31:38.308] [BotEvent] Bot is now running!
+[2017-07-16 14:31:51.665] [Command fired] Handling command..
+[2017-07-16 14:31:56.118] [Command fired] Handling command..
+[2017-07-16 14:31:59.203] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:31:59.203] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:31:59.203] [BotEvent] Feature: CommandFeature has been deactivated.
+[2017-07-16 14:31:59.203] [BotEvent] Shutting down the bot..
+[2017-07-16 14:33:55.402] [Info] -----------------------------------------------------------------
+[2017-07-16 14:33:55.403] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:33:55.403] [BotEvent] Initializing environment..
+[2017-07-16 14:33:55.404] [BotEvent] Environment: ready!
+[2017-07-16 14:33:55.614] [BotEvent] Database: ready!
+[2017-07-16 14:33:55.662] [BotEvent] API: connected!
+[2017-07-16 14:33:55.667] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:33:55.669] [BotEvent] Nickname: set!
+[2017-07-16 14:33:55.687] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:33:55.698] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:33:55.699] [BotEvent] Feature: CommandFeature has been activated.
+[2017-07-16 14:33:55.699] [BotEvent] Bot is now running!
+[2017-07-16 14:33:59.950] [Command fired] Handling command..
+[2017-07-16 14:34:06.441] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:34:06.441] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:34:06.441] [BotEvent] Feature: CommandFeature has been deactivated.
+[2017-07-16 14:34:06.441] [BotEvent] Shutting down the bot..
+[2017-07-16 14:34:32.350] [Info] -----------------------------------------------------------------
+[2017-07-16 14:34:32.351] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:34:32.351] [BotEvent] Initializing environment..
+[2017-07-16 14:34:32.352] [BotEvent] Environment: ready!
+[2017-07-16 14:34:32.567] [BotEvent] Database: ready!
+[2017-07-16 14:34:32.607] [BotEvent] API: connected!
+[2017-07-16 14:34:32.612] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:34:32.614] [BotEvent] Nickname: set!
+[2017-07-16 14:34:32.631] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:34:32.643] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:34:32.643] [BotEvent] Feature: CommandFeature has been activated.
+[2017-07-16 14:34:32.644] [BotEvent] Bot is now running!
+[2017-07-16 14:34:35.362] [Command fired] Handling command..
+[2017-07-16 14:38:36.418] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:38:36.418] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:38:36.419] [BotEvent] Feature: CommandFeature has been deactivated.
+[2017-07-16 14:38:36.419] [BotEvent] Shutting down the bot..
+[2017-07-16 14:50:14.409] [Info] -----------------------------------------------------------------
+[2017-07-16 14:50:14.410] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:50:14.410] [BotEvent] Initializing environment..
+[2017-07-16 14:50:14.411] [BotEvent] Environment: ready!
+[2017-07-16 14:50:14.611] [BotEvent] Database: ready!
+[2017-07-16 14:50:14.663] [BotEvent] API: connected!
+[2017-07-16 14:50:14.669] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:50:14.671] [BotEvent] Nickname: set!
+[2017-07-16 14:50:14.688] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:50:14.700] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:50:14.701] [BotEvent] Bot is now running!
+[2017-07-16 14:52:49.087] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:52:49.087] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:52:49.088] [BotEvent] Shutting down the bot..
+[2017-07-16 14:53:07.890] [Info] -----------------------------------------------------------------
+[2017-07-16 14:53:07.890] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:53:07.890] [BotEvent] Initializing environment..
+[2017-07-16 14:53:07.891] [BotEvent] Environment: ready!
+[2017-07-16 14:53:08.099] [BotEvent] Database: ready!
+[2017-07-16 14:53:08.147] [BotEvent] API: connected!
+[2017-07-16 14:53:08.152] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:53:08.154] [BotEvent] Nickname: set!
+[2017-07-16 14:53:08.173] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:53:08.187] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:53:08.188] [BotEvent] Bot is now running!
+[2017-07-16 14:53:19.912] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:53:19.912] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:53:19.912] [BotEvent] Shutting down the bot..
+[2017-07-16 14:53:37.919] [Info] -----------------------------------------------------------------
+[2017-07-16 14:53:37.919] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:53:37.919] [BotEvent] Initializing environment..
+[2017-07-16 14:53:37.922] [BotEvent] Environment: ready!
+[2017-07-16 14:53:38.124] [BotEvent] Database: ready!
+[2017-07-16 14:53:38.169] [BotEvent] API: connected!
+[2017-07-16 14:53:38.174] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:53:38.177] [BotEvent] Nickname: set!
+[2017-07-16 14:53:38.194] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:53:38.208] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 14:53:38.208] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:53:38.209] [BotEvent] Bot is now running!
+[2017-07-16 14:53:41.498] [Command fired] Handling command..
+[2017-07-16 14:53:41.498] [Command Error] Could not resolve command by label !test ; !test
+[2017-07-16 14:53:49.152] [Command fired] Handling command..
+[2017-07-16 14:53:49.152] [Command Error] Could not resolve command by label !getPath ; !getPath
+[2017-07-16 14:53:56.036] [Command fired] Handling command..
+[2017-07-16 14:53:56.036] [Command fired] Xida failed to use command !off
+[2017-07-16 14:54:07.415] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:54:07.415] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:54:07.415] [BotEvent] Shutting down the bot..
+[2017-07-16 14:55:09.321] [Info] -----------------------------------------------------------------
+[2017-07-16 14:55:09.322] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:55:09.322] [BotEvent] Initializing environment..
+[2017-07-16 14:55:09.322] [BotEvent] Environment: ready!
+[2017-07-16 14:55:09.540] [BotEvent] Database: ready!
+[2017-07-16 14:55:09.595] [BotEvent] API: connected!
+[2017-07-16 14:55:09.602] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:55:09.604] [BotEvent] Nickname: set!
+[2017-07-16 14:55:09.627] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:55:09.640] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 14:55:09.640] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:55:09.641] [BotEvent] Bot is now running!
+[2017-07-16 14:55:13.694] [Command Error] Could not resolve command by label !test ; !test
+[2017-07-16 14:55:20.097] [Command Error] Could not resolve command by label !shutdown ; !shutdown
+[2017-07-16 14:55:28.364] [Command Error] Could not resolve command by label !shutdown ; !shutdown -n
+[2017-07-16 14:55:36.159] [Command fired] Xida failed to use command !getPath
+[2017-07-16 14:55:39.791] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 14:55:39.791] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 14:55:39.791] [BotEvent] Shutting down the bot..
+[2017-07-16 14:58:52.169] [Info] -----------------------------------------------------------------
+[2017-07-16 14:58:52.170] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 14:58:52.170] [BotEvent] Initializing environment..
+[2017-07-16 14:58:52.170] [BotEvent] Environment: ready!
+[2017-07-16 14:58:52.375] [BotEvent] Database: ready!
+[2017-07-16 14:58:52.422] [BotEvent] API: connected!
+[2017-07-16 14:58:52.428] [BotEvent] Server-Query: Logged in!
+[2017-07-16 14:58:52.429] [BotEvent] Nickname: set!
+[2017-07-16 14:58:52.449] [BotEvent] Event-Listener: registered!
+[2017-07-16 14:58:52.461] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 14:58:52.461] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 14:58:52.462] [BotEvent] Bot is now running!
+[2017-07-16 14:59:02.983] [Command Error] Insufficient permissions.
+[2017-07-16 14:59:02.983] [Command fired] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !getPath
+[2017-07-16 16:32:07.735] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:32:07.737] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:32:07.737] [BotEvent] Shutting down the bot..
+[2017-07-16 16:35:39.051] [Info] -----------------------------------------------------------------
+[2017-07-16 16:35:39.052] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:35:39.052] [BotEvent] Initializing environment..
+[2017-07-16 16:35:39.053] [BotEvent] Environment: ready!
+[2017-07-16 16:35:39.257] [BotEvent] Database: ready!
+[2017-07-16 16:35:39.299] [BotEvent] API: connected!
+[2017-07-16 16:35:39.307] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:35:39.309] [BotEvent] Nickname: set!
+[2017-07-16 16:35:39.327] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:35:39.340] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:35:39.340] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:35:39.341] [BotEvent] Bot is now running!
+[2017-07-16 16:36:29.771] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:36:29.772] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:36:29.772] [BotEvent] Shutting down the bot..
+[2017-07-16 16:36:39.834] [Info] -----------------------------------------------------------------
+[2017-07-16 16:36:39.834] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:36:39.834] [BotEvent] Initializing environment..
+[2017-07-16 16:36:39.835] [BotEvent] Environment: ready!
+[2017-07-16 16:36:40.045] [BotEvent] Database: ready!
+[2017-07-16 16:36:40.090] [BotEvent] API: connected!
+[2017-07-16 16:36:40.095] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:36:40.097] [BotEvent] Nickname: set!
+[2017-07-16 16:36:40.113] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:36:40.131] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:36:40.132] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:36:40.132] [BotEvent] Bot is now running!
+[2017-07-16 16:36:42.568] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 16:37:07.098] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 16:37:13.470] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:37:17.889] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:38:47.647] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:39:37.547] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:39:37.547] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:39:37.547] [BotEvent] Shutting down the bot..
+[2017-07-16 16:39:43.451] [Info] -----------------------------------------------------------------
+[2017-07-16 16:39:43.451] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:39:43.451] [BotEvent] Initializing environment..
+[2017-07-16 16:39:43.452] [BotEvent] Environment: ready!
+[2017-07-16 16:39:43.682] [BotEvent] Database: ready!
+[2017-07-16 16:39:43.729] [BotEvent] API: connected!
+[2017-07-16 16:39:43.735] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:39:43.737] [BotEvent] Nickname: set!
+[2017-07-16 16:39:43.756] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:39:43.773] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:39:43.773] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:39:43.774] [BotEvent] Bot is now running!
+[2017-07-16 16:39:45.786] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:40:15.190] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:40:15.190] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:40:15.191] [BotEvent] Shutting down the bot..
+[2017-07-16 16:40:22.544] [Info] -----------------------------------------------------------------
+[2017-07-16 16:40:22.545] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:40:22.545] [BotEvent] Initializing environment..
+[2017-07-16 16:40:22.545] [BotEvent] Environment: ready!
+[2017-07-16 16:40:22.757] [BotEvent] Database: ready!
+[2017-07-16 16:40:22.803] [BotEvent] API: connected!
+[2017-07-16 16:40:22.808] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:40:22.810] [BotEvent] Nickname: set!
+[2017-07-16 16:40:22.827] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:40:22.840] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:40:22.840] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:40:22.841] [BotEvent] Bot is now running!
+[2017-07-16 16:42:09.561] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 16:42:11.678] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:42:11.678] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:42:11.678] [BotEvent] Shutting down the bot..
+[2017-07-16 16:42:20.009] [Info] -----------------------------------------------------------------
+[2017-07-16 16:42:20.010] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:42:20.010] [BotEvent] Initializing environment..
+[2017-07-16 16:42:20.011] [BotEvent] Environment: ready!
+[2017-07-16 16:42:20.231] [BotEvent] Database: ready!
+[2017-07-16 16:42:20.275] [BotEvent] API: connected!
+[2017-07-16 16:42:20.280] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:42:20.282] [BotEvent] Nickname: set!
+[2017-07-16 16:42:20.300] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:42:20.312] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:42:20.312] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:42:20.313] [BotEvent] Bot is now running!
+[2017-07-16 16:42:25.583] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:42:52.568] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:42:52.568] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:42:52.568] [BotEvent] Shutting down the bot..
+[2017-07-16 16:42:57.784] [Info] -----------------------------------------------------------------
+[2017-07-16 16:42:57.784] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:42:57.785] [BotEvent] Initializing environment..
+[2017-07-16 16:42:57.785] [BotEvent] Environment: ready!
+[2017-07-16 16:42:57.995] [BotEvent] Database: ready!
+[2017-07-16 16:42:58.040] [BotEvent] API: connected!
+[2017-07-16 16:42:58.045] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:42:58.047] [BotEvent] Nickname: set!
+[2017-07-16 16:42:58.066] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:42:58.080] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:42:58.080] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:42:58.081] [BotEvent] Bot is now running!
+[2017-07-16 16:43:03.854] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:45:57.031] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:45:57.031] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:45:57.031] [BotEvent] Shutting down the bot..
+[2017-07-16 16:46:02.284] [Info] -----------------------------------------------------------------
+[2017-07-16 16:46:02.285] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:46:02.285] [BotEvent] Initializing environment..
+[2017-07-16 16:46:02.286] [BotEvent] Environment: ready!
+[2017-07-16 16:46:02.498] [BotEvent] Database: ready!
+[2017-07-16 16:46:02.544] [BotEvent] API: connected!
+[2017-07-16 16:46:02.551] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:46:02.553] [BotEvent] Nickname: set!
+[2017-07-16 16:46:02.570] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:46:02.584] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:46:02.584] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:46:02.585] [BotEvent] Bot is now running!
+[2017-07-16 16:46:09.685] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:47:19.631] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-07-16 16:47:21.764] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:47:21.764] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:47:21.765] [BotEvent] Shutting down the bot..
+[2017-07-16 16:47:27.129] [Info] -----------------------------------------------------------------
+[2017-07-16 16:47:27.129] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:47:27.129] [BotEvent] Initializing environment..
+[2017-07-16 16:47:27.130] [BotEvent] Environment: ready!
+[2017-07-16 16:47:27.344] [BotEvent] Database: ready!
+[2017-07-16 16:47:27.388] [BotEvent] API: connected!
+[2017-07-16 16:47:27.393] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:47:27.395] [BotEvent] Nickname: set!
+[2017-07-16 16:47:27.413] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:47:27.428] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:47:27.429] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:47:27.429] [BotEvent] Bot is now running!
+[2017-07-16 16:47:33.160] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:50:43.830] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:51:39.283] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-07-16 16:51:57.166] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:53:47.687] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:55:12.230] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:55:12.230] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:55:12.230] [BotEvent] Shutting down the bot..
+[2017-07-16 16:55:17.737] [Info] -----------------------------------------------------------------
+[2017-07-16 16:55:17.738] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:55:17.738] [BotEvent] Initializing environment..
+[2017-07-16 16:55:17.738] [BotEvent] Environment: ready!
+[2017-07-16 16:55:17.952] [BotEvent] Database: ready!
+[2017-07-16 16:55:18.002] [BotEvent] API: connected!
+[2017-07-16 16:55:18.007] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:55:18.009] [BotEvent] Nickname: set!
+[2017-07-16 16:55:18.027] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:55:18.043] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:55:18.043] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:55:18.043] [BotEvent] Bot is now running!
+[2017-07-16 16:55:22.806] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:55:52.993] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:55:52.993] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:55:52.993] [BotEvent] Shutting down the bot..
+[2017-07-16 16:55:58.204] [Info] -----------------------------------------------------------------
+[2017-07-16 16:55:58.204] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:55:58.204] [BotEvent] Initializing environment..
+[2017-07-16 16:55:58.205] [BotEvent] Environment: ready!
+[2017-07-16 16:55:58.414] [BotEvent] Database: ready!
+[2017-07-16 16:55:58.460] [BotEvent] API: connected!
+[2017-07-16 16:55:58.465] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:55:58.467] [BotEvent] Nickname: set!
+[2017-07-16 16:55:58.488] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:55:58.501] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:55:58.501] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:55:58.502] [BotEvent] Bot is now running!
+[2017-07-16 16:56:04.275] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:57:00.952] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:57:00.952] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:57:00.952] [BotEvent] Shutting down the bot..
+[2017-07-16 16:57:06.951] [Info] -----------------------------------------------------------------
+[2017-07-16 16:57:06.951] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:57:06.951] [BotEvent] Initializing environment..
+[2017-07-16 16:57:06.952] [BotEvent] Environment: ready!
+[2017-07-16 16:57:07.170] [BotEvent] Database: ready!
+[2017-07-16 16:57:07.214] [BotEvent] API: connected!
+[2017-07-16 16:57:07.220] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:57:07.223] [BotEvent] Nickname: set!
+[2017-07-16 16:57:07.244] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:57:07.257] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:57:07.257] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:57:07.258] [BotEvent] Bot is now running!
+[2017-07-16 16:57:11.878] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 16:59:17.394] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 16:59:17.394] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 16:59:17.394] [BotEvent] Shutting down the bot..
+[2017-07-16 16:59:23.045] [Info] -----------------------------------------------------------------
+[2017-07-16 16:59:23.045] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 16:59:23.045] [BotEvent] Initializing environment..
+[2017-07-16 16:59:23.046] [BotEvent] Environment: ready!
+[2017-07-16 16:59:23.244] [BotEvent] Database: ready!
+[2017-07-16 16:59:23.289] [BotEvent] API: connected!
+[2017-07-16 16:59:23.294] [BotEvent] Server-Query: Logged in!
+[2017-07-16 16:59:23.296] [BotEvent] Nickname: set!
+[2017-07-16 16:59:23.313] [BotEvent] Event-Listener: registered!
+[2017-07-16 16:59:23.328] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 16:59:23.328] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 16:59:23.329] [BotEvent] Bot is now running!
+[2017-07-16 16:59:27.650] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:00:10.927] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:00:20.575] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:00:20.575] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:00:20.575] [BotEvent] Shutting down the bot..
+[2017-07-16 17:02:32.941] [Info] -----------------------------------------------------------------
+[2017-07-16 17:02:32.942] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:02:32.942] [BotEvent] Initializing environment..
+[2017-07-16 17:02:32.943] [BotEvent] Environment: ready!
+[2017-07-16 17:02:33.120] [BotEvent] Database: ready!
+[2017-07-16 17:02:33.163] [BotEvent] API: connected!
+[2017-07-16 17:02:33.168] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:02:33.171] [BotEvent] Nickname: set!
+[2017-07-16 17:02:33.185] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:02:33.196] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:02:33.196] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:02:33.196] [BotEvent] Bot is now running!
+[2017-07-16 17:02:38.641] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:02:44.783] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Multigaming/League of Legends/Team 2} to {/Multigaming/League of Legends/Team 1}
+[2017-07-16 17:03:02.093] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:04:00.231] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:04:00.231] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:04:00.232] [BotEvent] Shutting down the bot..
+[2017-07-16 17:04:06.669] [Info] -----------------------------------------------------------------
+[2017-07-16 17:04:06.670] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:04:06.670] [BotEvent] Initializing environment..
+[2017-07-16 17:04:06.670] [BotEvent] Environment: ready!
+[2017-07-16 17:04:06.845] [BotEvent] Database: ready!
+[2017-07-16 17:04:06.892] [BotEvent] API: connected!
+[2017-07-16 17:04:06.897] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:04:06.899] [BotEvent] Nickname: set!
+[2017-07-16 17:04:06.916] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:04:06.930] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:04:06.930] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:04:06.931] [BotEvent] Bot is now running!
+[2017-07-16 17:04:37.689] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:04:39.787] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:04:39.787] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:04:39.788] [BotEvent] Shutting down the bot..
+[2017-07-16 17:04:44.788] [Info] -----------------------------------------------------------------
+[2017-07-16 17:04:44.788] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:04:44.788] [BotEvent] Initializing environment..
+[2017-07-16 17:04:44.789] [BotEvent] Environment: ready!
+[2017-07-16 17:04:44.969] [BotEvent] Database: ready!
+[2017-07-16 17:04:45.005] [BotEvent] API: connected!
+[2017-07-16 17:04:45.010] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:04:45.012] [BotEvent] Nickname: set!
+[2017-07-16 17:04:45.028] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:04:45.039] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:04:45.039] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:04:45.040] [BotEvent] Bot is now running!
+[2017-07-16 17:04:49.956] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:08:19.830] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:08:19.830] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:08:19.831] [BotEvent] Shutting down the bot..
+[2017-07-16 17:08:34.539] [Info] -----------------------------------------------------------------
+[2017-07-16 17:08:34.539] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:08:34.539] [BotEvent] Initializing environment..
+[2017-07-16 17:08:34.540] [BotEvent] Environment: ready!
+[2017-07-16 17:08:34.721] [BotEvent] Database: ready!
+[2017-07-16 17:08:34.758] [BotEvent] API: connected!
+[2017-07-16 17:08:34.763] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:08:34.765] [BotEvent] Nickname: set!
+[2017-07-16 17:08:34.780] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:08:34.791] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:08:34.791] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:08:34.792] [BotEvent] Bot is now running!
+[2017-07-16 17:10:27.317] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:10:29.551] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:10:29.551] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:10:29.551] [BotEvent] Shutting down the bot..
+[2017-07-16 17:10:50.186] [Info] -----------------------------------------------------------------
+[2017-07-16 17:10:50.186] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:10:50.186] [BotEvent] Initializing environment..
+[2017-07-16 17:10:50.187] [BotEvent] Environment: ready!
+[2017-07-16 17:10:50.354] [BotEvent] Database: ready!
+[2017-07-16 17:10:50.388] [BotEvent] API: connected!
+[2017-07-16 17:10:50.395] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:10:50.397] [BotEvent] Nickname: set!
+[2017-07-16 17:10:50.412] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:10:50.423] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:10:50.423] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:10:50.424] [BotEvent] Bot is now running!
+[2017-07-16 17:10:58.474] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:11:44.727] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:12:33.175] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:12:33.175] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:12:33.175] [BotEvent] Shutting down the bot..
+[2017-07-16 17:12:40.656] [Info] -----------------------------------------------------------------
+[2017-07-16 17:12:40.656] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:12:40.656] [BotEvent] Initializing environment..
+[2017-07-16 17:12:40.657] [BotEvent] Environment: ready!
+[2017-07-16 17:12:40.831] [BotEvent] Database: ready!
+[2017-07-16 17:12:40.876] [BotEvent] API: connected!
+[2017-07-16 17:12:40.881] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:12:40.883] [BotEvent] Nickname: set!
+[2017-07-16 17:12:40.897] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:12:40.908] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:12:40.908] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:12:40.909] [BotEvent] Bot is now running!
+[2017-07-16 17:13:18.290] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:13:20.587] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:13:20.588] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:13:20.588] [BotEvent] Shutting down the bot..
+[2017-07-16 17:13:28.182] [Info] -----------------------------------------------------------------
+[2017-07-16 17:13:28.182] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:13:28.182] [BotEvent] Initializing environment..
+[2017-07-16 17:13:28.183] [BotEvent] Environment: ready!
+[2017-07-16 17:13:28.355] [BotEvent] Database: ready!
+[2017-07-16 17:13:28.401] [BotEvent] API: connected!
+[2017-07-16 17:13:28.406] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:13:28.408] [BotEvent] Nickname: set!
+[2017-07-16 17:13:28.424] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:13:28.434] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:13:28.434] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:13:28.435] [BotEvent] Bot is now running!
+[2017-07-16 17:14:16.820] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:14:19.228] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:14:19.229] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:14:19.229] [BotEvent] Shutting down the bot..
+[2017-07-16 17:14:23.958] [Info] -----------------------------------------------------------------
+[2017-07-16 17:14:23.958] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:14:23.958] [BotEvent] Initializing environment..
+[2017-07-16 17:14:23.959] [BotEvent] Environment: ready!
+[2017-07-16 17:14:24.136] [BotEvent] Database: ready!
+[2017-07-16 17:14:24.177] [BotEvent] API: connected!
+[2017-07-16 17:14:24.182] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:14:24.184] [BotEvent] Nickname: set!
+[2017-07-16 17:14:24.198] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:14:24.209] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:14:24.209] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:14:24.210] [BotEvent] Bot is now running!
+[2017-07-16 17:14:33.547] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:15:47.955] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:15:47.956] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:15:47.956] [BotEvent] Shutting down the bot..
+[2017-07-16 17:15:52.854] [Info] -----------------------------------------------------------------
+[2017-07-16 17:15:52.855] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:15:52.855] [BotEvent] Initializing environment..
+[2017-07-16 17:15:52.855] [BotEvent] Environment: ready!
+[2017-07-16 17:15:53.028] [BotEvent] Database: ready!
+[2017-07-16 17:15:53.073] [BotEvent] API: connected!
+[2017-07-16 17:15:53.079] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:15:53.081] [BotEvent] Nickname: set!
+[2017-07-16 17:15:53.093] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:15:53.105] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:15:53.105] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:15:53.106] [BotEvent] Bot is now running!
+[2017-07-16 17:16:27.956] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:17:00.695] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:17:02.806] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:17:02.806] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:17:02.807] [BotEvent] Shutting down the bot..
+[2017-07-16 17:17:08.773] [Info] -----------------------------------------------------------------
+[2017-07-16 17:17:08.774] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:17:08.774] [BotEvent] Initializing environment..
+[2017-07-16 17:17:08.775] [BotEvent] Environment: ready!
+[2017-07-16 17:17:08.952] [BotEvent] Database: ready!
+[2017-07-16 17:17:08.993] [BotEvent] API: connected!
+[2017-07-16 17:17:08.998] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:17:09.000] [BotEvent] Nickname: set!
+[2017-07-16 17:17:09.016] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:17:09.028] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:17:09.028] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:17:09.029] [BotEvent] Bot is now running!
+[2017-07-16 17:17:13.971] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:17:35.386] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:19:02.085] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:19:02.085] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:19:02.085] [BotEvent] Shutting down the bot..
+[2017-07-16 17:19:06.983] [Info] -----------------------------------------------------------------
+[2017-07-16 17:19:06.983] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:19:06.983] [BotEvent] Initializing environment..
+[2017-07-16 17:19:06.984] [BotEvent] Environment: ready!
+[2017-07-16 17:19:07.152] [BotEvent] Database: ready!
+[2017-07-16 17:19:07.194] [BotEvent] API: connected!
+[2017-07-16 17:19:07.201] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:19:07.203] [BotEvent] Nickname: set!
+[2017-07-16 17:19:07.219] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:19:07.230] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:19:07.230] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:19:07.231] [BotEvent] Bot is now running!
+[2017-07-16 17:19:11.963] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:30:55.559] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:30:55.559] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:30:55.559] [BotEvent] Shutting down the bot..
+[2017-07-16 17:31:01.317] [Info] -----------------------------------------------------------------
+[2017-07-16 17:31:01.318] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:31:01.318] [BotEvent] Initializing environment..
+[2017-07-16 17:31:01.318] [BotEvent] Environment: ready!
+[2017-07-16 17:31:01.492] [BotEvent] Database: ready!
+[2017-07-16 17:31:01.536] [BotEvent] API: connected!
+[2017-07-16 17:31:01.541] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:31:01.543] [BotEvent] Nickname: set!
+[2017-07-16 17:31:01.557] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:31:01.567] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:31:01.567] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:31:01.568] [BotEvent] Bot is now running!
+[2017-07-16 17:31:06.029] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:31:35.664] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:31:47.830] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-07-16 17:32:45.552] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-07-16 17:33:46.190] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:33:46.190] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:33:46.190] [BotEvent] Shutting down the bot..
+[2017-07-16 17:43:23.802] [Info] -----------------------------------------------------------------
+[2017-07-16 17:43:23.802] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:43:23.803] [BotEvent] Initializing environment..
+[2017-07-16 17:43:23.803] [BotEvent] Environment: ready!
+[2017-07-16 17:43:24.013] [BotEvent] Database: ready!
+[2017-07-16 17:43:24.050] [BotEvent] API: connected!
+[2017-07-16 17:43:24.056] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:43:24.058] [BotEvent] Nickname: set!
+[2017-07-16 17:43:24.073] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:43:24.088] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:43:24.088] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:43:24.089] [BotEvent] Bot is now running!
+[2017-07-16 17:43:28.662] [Command Error] Could not resolve command by label !list ; !list features
+[2017-07-16 17:43:40.656] [Command fired] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] failed to use command !shutdown
+[2017-07-16 17:43:47.971] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:43:47.971] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:43:47.972] [BotEvent] Shutting down the bot..
+[2017-07-16 17:50:56.848] [Info] -----------------------------------------------------------------
+[2017-07-16 17:50:56.848] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:50:56.849] [BotEvent] Initializing environment..
+[2017-07-16 17:50:56.849] [BotEvent] Environment: ready!
+[2017-07-16 17:50:57.015] [BotEvent] Database: ready!
+[2017-07-16 17:50:57.056] [BotEvent] API: connected!
+[2017-07-16 17:50:57.061] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:50:57.063] [BotEvent] Nickname: set!
+[2017-07-16 17:50:57.078] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:50:57.092] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:50:57.093] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:50:57.093] [BotEvent] Bot is now running!
+[2017-07-16 17:50:57.703] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:50:57.703] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:50:57.703] [BotEvent] Shutting down the bot..
+[2017-07-16 17:51:08.839] [Info] -----------------------------------------------------------------
+[2017-07-16 17:51:08.839] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:51:08.839] [BotEvent] Initializing environment..
+[2017-07-16 17:51:08.840] [BotEvent] Environment: ready!
+[2017-07-16 17:51:09.018] [BotEvent] Database: ready!
+[2017-07-16 17:51:09.059] [BotEvent] API: connected!
+[2017-07-16 17:51:09.066] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:51:09.068] [BotEvent] Nickname: set!
+[2017-07-16 17:51:09.085] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:51:09.104] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:51:09.104] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:51:09.104] [BotEvent] Bot is now running!
+[2017-07-16 17:51:52.404] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:51:52.405] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:51:52.405] [BotEvent] Shutting down the bot..
+[2017-07-16 17:51:58.253] [Info] -----------------------------------------------------------------
+[2017-07-16 17:51:58.254] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:51:58.254] [BotEvent] Initializing environment..
+[2017-07-16 17:51:58.254] [BotEvent] Environment: ready!
+[2017-07-16 17:51:58.425] [BotEvent] Database: ready!
+[2017-07-16 17:51:58.463] [BotEvent] API: connected!
+[2017-07-16 17:51:58.467] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:51:58.469] [BotEvent] Nickname: set!
+[2017-07-16 17:51:58.485] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:51:58.499] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:51:58.499] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:51:58.500] [BotEvent] Bot is now running!
+[2017-07-16 17:52:11.678] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:52:11.678] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:52:11.678] [BotEvent] Shutting down the bot..
+[2017-07-16 17:52:46.707] [Info] -----------------------------------------------------------------
+[2017-07-16 17:52:46.707] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:52:46.707] [BotEvent] Initializing environment..
+[2017-07-16 17:52:46.708] [BotEvent] Environment: ready!
+[2017-07-16 17:52:46.883] [BotEvent] Database: ready!
+[2017-07-16 17:52:46.927] [BotEvent] API: connected!
+[2017-07-16 17:52:46.932] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:52:46.933] [BotEvent] Nickname: set!
+[2017-07-16 17:52:46.948] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:52:46.960] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:52:46.960] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:52:46.961] [BotEvent] Bot is now running!
+[2017-07-16 17:53:08.600] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-07-16 17:53:08.601] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:53:08.601] [BotEvent] Shutting down the bot..
+[2017-07-16 17:53:42.498] [Info] -----------------------------------------------------------------
+[2017-07-16 17:53:42.499] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-07-16 17:53:42.499] [BotEvent] Initializing environment..
+[2017-07-16 17:53:42.499] [BotEvent] Environment: ready!
+[2017-07-16 17:53:42.673] [BotEvent] Database: ready!
+[2017-07-16 17:53:42.719] [BotEvent] API: connected!
+[2017-07-16 17:53:42.724] [BotEvent] Server-Query: Logged in!
+[2017-07-16 17:53:42.726] [BotEvent] Nickname: set!
+[2017-07-16 17:53:42.738] [BotEvent] Event-Listener: registered!
+[2017-07-16 17:53:42.749] [BotEvent] Feature: CommandManager has been activated.
+[2017-07-16 17:53:42.749] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-07-16 17:53:42.749] [BotEvent] Bot is now running!
+[2017-07-16 17:54:00.359] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-07-16 17:54:00.360] [BotEvent] Shutting down the bot..

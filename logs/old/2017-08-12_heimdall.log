@@ -1,0 +1,20 @@
+-----------------------------------------------------------------
+[2017-08-12 17:19:00.096] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-12 17:19:00.096] [BotEvent] Initializing environment..
+[2017-08-12 17:19:00.099] [BotEvent] Environment: ready!
+[2017-08-12 17:19:00.289] [BotEvent] Database: ready!
+[2017-08-12 17:19:00.334] [BotEvent] API: connected!
+[2017-08-12 17:19:00.344] [BotEvent] Server-Query: Logged in!
+[2017-08-12 17:19:00.353] [BotEvent] Nickname: set!
+[2017-08-12 17:19:00.375] [BotEvent] Event-Listener: registered!
+[2017-08-12 17:19:00.572] [ClientJoinEvent] [Bot] Thor [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-12 17:19:00.577] [ClientJoinEvent] [Bot] Heimdall [SERVER-QUERY] [serveradmin] 
+[2017-08-12 17:19:00.583] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-12 17:19:00.584] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-12 17:19:00.584] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-12 17:19:00.618] [BotEvent] Bot is now running!
+[2017-08-12 17:21:12.492] [BotEvent] Receiving shutdown command from console.
+[2017-08-12 17:21:12.492] [BotEvent] Shutting down the bot..
+[2017-08-12 17:21:12.535] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-12 17:21:12.535] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-12 17:21:12.535] [BotEvent] Feature: CommandManager has been deactivated.

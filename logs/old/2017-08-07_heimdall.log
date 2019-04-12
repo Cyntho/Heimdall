@@ -1,0 +1,613 @@
+[2017-08-07 14:08:53.613] [Info] -----------------------------------------------------------------
+[2017-08-07 14:08:53.613] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:08:53.614] [BotEvent] Initializing environment..
+[2017-08-07 14:08:53.614] [BotEvent] Environment: ready!
+[2017-08-07 14:08:55.855] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/ilchdev using credentials user=[ilchDEVsql2016 ] pass=[Toop558!]
+[2017-08-07 14:08:55.856] [BotEvent] Database: ready!
+[2017-08-07 14:08:55.962] [BotEvent] API: connected!
+[2017-08-07 14:08:55.969] [BotCritical] Could not login with teamspeak query credentials!
+[2017-08-07 14:09:16.825] [Info] -----------------------------------------------------------------
+[2017-08-07 14:09:16.826] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:09:16.826] [BotEvent] Initializing environment..
+[2017-08-07 14:09:16.827] [BotEvent] Environment: ready!
+[2017-08-07 14:09:16.979] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/ilchdev using credentials user=[ilchDEVsql2016 ] pass=[Toop558!]
+[2017-08-07 14:09:16.979] [BotEvent] Database: ready!
+[2017-08-07 14:09:17.015] [BotEvent] API: connected!
+[2017-08-07 14:09:17.019] [BotCritical] Could not login with teamspeak query credentials!
+[2017-08-07 14:33:40.703] [Info] -----------------------------------------------------------------
+[2017-08-07 14:33:40.704] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:33:40.704] [BotEvent] Initializing environment..
+[2017-08-07 14:33:40.704] [BotEvent] Environment: ready!
+[2017-08-07 14:33:40.857] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/ilchdev using credentials user=[ilchDEVsql2016 ] pass=[Toop558!]
+[2017-08-07 14:33:40.857] [BotEvent] Database: ready!
+[2017-08-07 14:33:40.892] [BotEvent] API: connected!
+[2017-08-07 14:33:40.896] [BotCritical] Could not login with teamspeak query credentials!
+[2017-08-07 14:34:41.532] [Info] -----------------------------------------------------------------
+[2017-08-07 14:34:41.532] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:34:41.532] [BotEvent] Initializing environment..
+[2017-08-07 14:34:41.533] [BotEvent] Environment: ready!
+[2017-08-07 14:34:41.685] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/ilchdev using credentials user=[ilchDEVsql2016 ] pass=[Toop558!]
+[2017-08-07 14:34:41.685] [BotEvent] Database: ready!
+[2017-08-07 14:34:41.721] [BotEvent] API: connected!
+[2017-08-07 14:34:41.726] [BotEvent] Server-Query: Logged in!
+[2017-08-07 14:34:41.733] [BotEvent] Nickname: set!
+[2017-08-07 14:34:41.758] [BotEvent] Event-Listener: registered!
+[2017-08-07 14:34:41.777] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 14:34:41.791] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 14:34:41.793] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 14:34:41.793] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 14:34:41.794] [BotEvent] Bot is now running!
+[2017-08-07 14:35:02.940] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 14:35:08.614] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-07 14:36:30.440] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 14:36:30.440] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 14:36:30.440] [BotEvent] Shutting down the bot..
+[2017-08-07 14:38:36.785] [Info] -----------------------------------------------------------------
+[2017-08-07 14:38:36.785] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:38:36.785] [BotEvent] Initializing environment..
+[2017-08-07 14:38:36.786] [BotEvent] Environment: ready!
+[2017-08-07 14:38:36.947] [Database Error] Could not establish connection to jdbc:mysql://localhost:3306/ilchdev using credentials user=[tsb-heimdall ] pass=[nFHoBpffE8PAbc9z]
+[2017-08-07 14:38:36.947] [BotEvent] Database: ready!
+[2017-08-07 14:38:36.982] [BotEvent] API: connected!
+[2017-08-07 14:38:36.988] [BotEvent] Server-Query: Logged in!
+[2017-08-07 14:38:36.989] [BotEvent] Nickname: set!
+[2017-08-07 14:38:37.013] [BotEvent] Event-Listener: registered!
+[2017-08-07 14:38:37.032] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 14:38:37.049] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 14:38:37.051] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 14:38:37.051] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 14:38:37.051] [BotEvent] Bot is now running!
+[2017-08-07 14:38:44.919] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 14:38:44.919] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 14:38:44.919] [BotEvent] Shutting down the bot..
+[2017-08-07 14:39:00.582] [Info] -----------------------------------------------------------------
+[2017-08-07 14:39:00.582] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:39:00.582] [BotEvent] Initializing environment..
+[2017-08-07 14:39:00.583] [BotEvent] Environment: ready!
+[2017-08-07 14:39:00.780] [BotEvent] Database: ready!
+[2017-08-07 14:39:00.818] [BotEvent] API: connected!
+[2017-08-07 14:39:00.822] [BotEvent] Server-Query: Logged in!
+[2017-08-07 14:39:00.824] [BotEvent] Nickname: set!
+[2017-08-07 14:39:00.849] [BotEvent] Event-Listener: registered!
+[2017-08-07 14:39:00.868] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 14:39:00.886] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 14:39:00.887] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 14:39:00.888] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 14:39:00.888] [BotEvent] Bot is now running!
+[2017-08-07 14:39:12.293] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 14:39:20.279] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-07 14:39:24.365] [ClientMovedEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] went from {/Lobby} to {/Twitch Stream - Borin}
+[2017-08-07 14:40:55.932] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 14:40:55.932] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 14:40:55.932] [BotEvent] Shutting down the bot..
+[2017-08-07 14:41:12.244] [Info] -----------------------------------------------------------------
+[2017-08-07 14:41:12.244] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:41:12.244] [BotEvent] Initializing environment..
+[2017-08-07 14:41:12.245] [BotEvent] Environment: ready!
+[2017-08-07 14:41:12.416] [BotEvent] Database: ready!
+[2017-08-07 14:41:12.452] [BotEvent] API: connected!
+[2017-08-07 14:41:12.457] [BotEvent] Server-Query: Logged in!
+[2017-08-07 14:41:12.459] [BotEvent] Nickname: set!
+[2017-08-07 14:41:12.483] [BotEvent] Event-Listener: registered!
+[2017-08-07 14:41:12.505] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-08-07 14:41:12.520] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 14:41:12.521] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 14:41:12.521] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 14:41:12.522] [BotEvent] Bot is now running!
+[2017-08-07 14:41:56.671] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 14:41:56.671] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 14:41:56.671] [BotEvent] Shutting down the bot..
+[2017-08-07 14:43:51.329] [Info] -----------------------------------------------------------------
+[2017-08-07 14:43:51.329] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 14:43:51.330] [BotEvent] Initializing environment..
+[2017-08-07 14:43:51.330] [BotEvent] Environment: ready!
+[2017-08-07 14:43:51.499] [BotEvent] Database: ready!
+[2017-08-07 14:43:51.532] [BotEvent] API: connected!
+[2017-08-07 14:43:51.538] [BotEvent] Server-Query: Logged in!
+[2017-08-07 14:43:51.540] [BotEvent] Nickname: set!
+[2017-08-07 14:43:51.562] [BotEvent] Event-Listener: registered!
+[2017-08-07 14:43:51.582] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Twitch Stream - Borin}
+[2017-08-07 14:43:51.599] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 14:43:51.600] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 14:43:51.601] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 14:43:51.601] [BotEvent] Bot is now running!
+[2017-08-07 14:44:00.172] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 14:44:00.172] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 14:44:00.172] [BotEvent] Shutting down the bot..
+[2017-08-07 16:42:50.761] [Info] -----------------------------------------------------------------
+[2017-08-07 16:42:50.761] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 16:42:50.761] [BotEvent] Initializing environment..
+[2017-08-07 16:42:50.761] [BotEvent] Environment: ready!
+[2017-08-07 16:42:50.960] [BotEvent] Database: ready!
+[2017-08-07 16:42:51.005] [BotEvent] API: connected!
+[2017-08-07 16:42:51.011] [BotEvent] Server-Query: Logged in!
+[2017-08-07 16:42:51.013] [BotEvent] Nickname: set!
+[2017-08-07 16:42:51.036] [BotEvent] Event-Listener: registered!
+[2017-08-07 16:42:51.055] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 16:42:51.072] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 16:42:51.074] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 16:42:51.074] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 16:42:51.075] [BotEvent] Bot is now running!
+[2017-08-07 16:43:25.894] [BotEvent] Receiving !off command from Admin.. Shutting down the bot.
+[2017-08-07 16:43:25.894] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 16:43:25.894] [BotEvent] Shutting down the bot..
+[2017-08-07 16:44:23.761] [Info] -----------------------------------------------------------------
+[2017-08-07 16:44:23.761] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 16:44:23.761] [BotEvent] Initializing environment..
+[2017-08-07 16:44:23.762] [BotEvent] Environment: ready!
+[2017-08-07 16:44:23.944] [BotEvent] Database: ready!
+[2017-08-07 16:44:23.979] [BotEvent] API: connected!
+[2017-08-07 16:44:23.985] [BotEvent] Server-Query: Logged in!
+[2017-08-07 16:44:23.986] [BotEvent] Nickname: set!
+[2017-08-07 16:44:24.011] [BotEvent] Event-Listener: registered!
+[2017-08-07 16:44:24.029] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 16:44:24.045] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 16:44:24.047] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 16:44:24.047] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 16:44:24.047] [BotEvent] Bot is now running!
+[2017-08-07 16:44:52.467] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 16:44:52.468] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 16:44:52.468] [BotEvent] Shutting down the bot..
+[2017-08-07 17:32:49.757] [Info] -----------------------------------------------------------------
+[2017-08-07 17:32:49.757] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:32:49.757] [BotEvent] Initializing environment..
+[2017-08-07 17:32:49.758] [BotEvent] Environment: ready!
+[2017-08-07 17:32:49.934] [BotEvent] Database: ready!
+[2017-08-07 17:32:49.974] [BotEvent] API: connected!
+[2017-08-07 17:32:49.979] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:32:49.981] [BotEvent] Nickname: set!
+[2017-08-07 17:32:50.004] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:32:50.022] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:32:50.038] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:32:50.040] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:32:50.040] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:32:50.040] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:32:50.041] [BotEvent] Bot is now running!
+[2017-08-07 17:32:57.123] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 17:33:02.159] [ClientJoinEvent] Error handling onClientJoin in UserHistoryFeature.
+[2017-08-07 17:34:38.858] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:34:38.858] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:34:38.858] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:34:38.858] [BotEvent] Shutting down the bot..
+[2017-08-07 17:34:44.711] [Info] -----------------------------------------------------------------
+[2017-08-07 17:34:44.712] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:34:44.712] [BotEvent] Initializing environment..
+[2017-08-07 17:34:44.712] [BotEvent] Environment: ready!
+[2017-08-07 17:34:44.884] [BotEvent] Database: ready!
+[2017-08-07 17:34:44.920] [BotEvent] API: connected!
+[2017-08-07 17:34:44.925] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:34:44.926] [BotEvent] Nickname: set!
+[2017-08-07 17:34:44.951] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:34:44.971] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:34:44.987] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 17:34:44.998] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:34:44.999] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:34:45.000] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:34:45.000] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:34:45.000] [BotEvent] Bot is now running!
+[2017-08-07 17:34:49.911] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-07 17:35:04.896] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:35:10.042] [ClientJoinEvent] Error handling onClientJoin in UserHistoryFeature.
+[2017-08-07 17:35:34.324] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:35:34.324] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:35:34.324] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:35:34.324] [BotEvent] Shutting down the bot..
+[2017-08-07 17:35:45.992] [Info] -----------------------------------------------------------------
+[2017-08-07 17:35:45.993] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:35:45.993] [BotEvent] Initializing environment..
+[2017-08-07 17:35:45.993] [BotEvent] Environment: ready!
+[2017-08-07 17:35:46.175] [BotEvent] Database: ready!
+[2017-08-07 17:35:46.214] [BotEvent] API: connected!
+[2017-08-07 17:35:46.221] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:35:46.223] [BotEvent] Nickname: set!
+[2017-08-07 17:35:46.249] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:35:46.270] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:35:46.288] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:35:46.300] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:35:46.302] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:35:46.303] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:35:46.303] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:35:46.304] [BotEvent] Bot is now running!
+[2017-08-07 17:35:50.958] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 17:35:51.030] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:35:52.053] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:36:27.596] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:36:27.596] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:36:27.596] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:36:27.596] [BotEvent] Shutting down the bot..
+[2017-08-07 17:41:47.986] [Info] -----------------------------------------------------------------
+[2017-08-07 17:41:47.986] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:41:47.986] [BotEvent] Initializing environment..
+[2017-08-07 17:41:47.987] [BotEvent] Environment: ready!
+[2017-08-07 17:41:48.195] [BotEvent] Database: ready!
+[2017-08-07 17:41:48.234] [BotEvent] API: connected!
+[2017-08-07 17:41:48.240] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:41:48.242] [BotEvent] Nickname: set!
+[2017-08-07 17:41:48.269] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:41:48.291] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:41:48.308] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:41:48.320] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:41:48.322] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:41:48.322] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:41:48.322] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:41:48.323] [BotEvent] Bot is now running!
+[2017-08-07 17:41:56.098] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:41:57.574] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:42:05.074] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 17:42:53.252] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 17:42:57.842] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-07 17:43:01.508] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:43:02.985] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:43:17.058] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:43:17.058] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:43:17.059] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:43:17.059] [BotEvent] Shutting down the bot..
+[2017-08-07 17:44:05.290] [Info] -----------------------------------------------------------------
+[2017-08-07 17:44:05.291] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:44:05.291] [BotEvent] Initializing environment..
+[2017-08-07 17:44:05.291] [BotEvent] Environment: ready!
+[2017-08-07 17:44:05.496] [BotEvent] Database: ready!
+[2017-08-07 17:44:05.538] [BotEvent] API: connected!
+[2017-08-07 17:44:05.545] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:44:05.548] [BotEvent] Nickname: set!
+[2017-08-07 17:44:05.575] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:44:05.597] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:44:05.614] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:44:05.615] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:44:05.616] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:44:05.616] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:44:05.616] [BotEvent] Bot is now running!
+[2017-08-07 17:44:09.205] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:44:10.696] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:44:12.650] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 17:44:35.961] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:44:35.961] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:44:35.961] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:44:35.961] [BotEvent] Shutting down the bot..
+[2017-08-07 17:44:43.296] [Info] -----------------------------------------------------------------
+[2017-08-07 17:44:43.297] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:44:43.297] [BotEvent] Initializing environment..
+[2017-08-07 17:44:43.297] [BotEvent] Environment: ready!
+[2017-08-07 17:44:43.474] [BotEvent] Database: ready!
+[2017-08-07 17:44:43.512] [BotEvent] API: connected!
+[2017-08-07 17:44:43.518] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:44:43.521] [BotEvent] Nickname: set!
+[2017-08-07 17:44:43.546] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:44:43.568] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:44:43.589] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:44:43.591] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:44:43.591] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:44:43.591] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:44:43.592] [BotEvent] Bot is now running!
+[2017-08-07 17:44:54.678] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-08-07 17:44:55.714] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:44:59.269] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-08-07 17:48:40.403] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:48:40.403] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:48:40.403] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:48:40.403] [BotEvent] Shutting down the bot..
+[2017-08-07 17:48:49.206] [Info] -----------------------------------------------------------------
+[2017-08-07 17:48:49.207] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 17:48:49.207] [BotEvent] Initializing environment..
+[2017-08-07 17:48:49.208] [BotEvent] Environment: ready!
+[2017-08-07 17:48:49.380] [BotEvent] Database: ready!
+[2017-08-07 17:48:49.416] [BotEvent] API: connected!
+[2017-08-07 17:48:49.421] [BotEvent] Server-Query: Logged in!
+[2017-08-07 17:48:49.422] [BotEvent] Nickname: set!
+[2017-08-07 17:48:49.445] [BotEvent] Event-Listener: registered!
+[2017-08-07 17:48:49.467] [ClientJoinEvent] Xida [ 2n8nOljLkhD0i+mVCDyU/4zfjwU=] logged in into {/Lobby}
+[2017-08-07 17:48:49.484] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 17:48:49.486] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 17:48:49.486] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 17:48:49.486] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 17:48:49.486] [BotEvent] Bot is now running!
+[2017-08-07 17:48:54.977] [ClientLeaveEvent] Xida [2n8nOljLkhD0i+mVCDyU/4zfjwU=] has left the server.
+[2017-08-07 17:48:55.068] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 17:48:56.562] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:49:04.185] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 17:49:04.252] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 17:49:05.290] [ClientJoinEvent] Successfully handled onClientJoin in UserHistoryFeature.
+[2017-08-07 17:49:40.614] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 17:49:40.615] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 17:49:40.615] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 17:49:40.615] [BotEvent] Shutting down the bot..
+[2017-08-07 18:05:27.534] [Info] -----------------------------------------------------------------
+[2017-08-07 18:05:27.534] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 18:05:27.534] [BotEvent] Initializing environment..
+[2017-08-07 18:05:27.535] [BotEvent] Environment: ready!
+[2017-08-07 18:05:27.706] [BotEvent] Database: ready!
+[2017-08-07 18:05:27.743] [BotEvent] API: connected!
+[2017-08-07 18:05:27.749] [BotEvent] Server-Query: Logged in!
+[2017-08-07 18:05:27.752] [BotEvent] Nickname: set!
+[2017-08-07 18:05:27.779] [BotEvent] Event-Listener: registered!
+[2017-08-07 18:05:27.798] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 18:05:27.813] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 18:05:27.815] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 18:05:27.816] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 18:05:27.816] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 18:05:27.816] [BotEvent] Bot is now running!
+[2017-08-07 18:05:32.241] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 18:05:42.731] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 18:05:48.470] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 18:06:02.645] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 18:06:19.340] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 18:06:19.340] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 18:06:19.341] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 18:06:19.341] [BotEvent] Shutting down the bot..
+[2017-08-07 18:13:20.007] [Info] -----------------------------------------------------------------
+[2017-08-07 18:13:20.007] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 18:13:20.007] [BotEvent] Initializing environment..
+[2017-08-07 18:13:20.008] [BotEvent] Environment: ready!
+[2017-08-07 18:13:20.189] [BotEvent] Database: ready!
+[2017-08-07 18:13:20.226] [BotEvent] API: connected!
+[2017-08-07 18:13:20.231] [BotEvent] Server-Query: Logged in!
+[2017-08-07 18:13:20.233] [BotEvent] Nickname: set!
+[2017-08-07 18:13:20.255] [BotEvent] Event-Listener: registered!
+[2017-08-07 18:13:20.274] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 18:13:20.291] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 18:13:20.293] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 18:13:20.294] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 18:13:20.294] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 18:13:20.295] [BotEvent] Bot is now running!
+[2017-08-07 18:13:30.740] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-08-07 18:13:36.390] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-08-07 18:14:22.960] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 18:14:22.960] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 18:14:22.960] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 18:14:22.960] [BotEvent] Shutting down the bot..
+[2017-08-07 18:53:03.920] [Info] -----------------------------------------------------------------
+[2017-08-07 18:53:03.921] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 18:53:03.921] [BotEvent] Initializing environment..
+[2017-08-07 18:53:03.921] [BotEvent] Environment: ready!
+[2017-08-07 18:53:04.095] [BotEvent] Database: ready!
+[2017-08-07 18:53:04.133] [BotEvent] API: connected!
+[2017-08-07 18:53:04.138] [BotEvent] Server-Query: Logged in!
+[2017-08-07 18:53:04.139] [BotEvent] Nickname: set!
+[2017-08-07 18:53:04.166] [BotEvent] Event-Listener: registered!
+[2017-08-07 18:53:04.187] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 18:53:04.204] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 18:53:04.206] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 18:53:04.206] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 18:53:04.206] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 18:53:04.207] [BotEvent] Bot is now running!
+[2017-08-07 18:53:18.263] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 18:53:23.055] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 18:55:42.393] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 18:55:42.393] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 18:55:42.393] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 18:55:42.393] [BotEvent] Shutting down the bot..
+[2017-08-07 18:55:48.125] [Info] -----------------------------------------------------------------
+[2017-08-07 18:55:48.125] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 18:55:48.125] [BotEvent] Initializing environment..
+[2017-08-07 18:55:48.126] [BotEvent] Environment: ready!
+[2017-08-07 18:55:48.318] [BotEvent] Database: ready!
+[2017-08-07 18:55:48.360] [BotEvent] API: connected!
+[2017-08-07 18:55:48.366] [BotEvent] Server-Query: Logged in!
+[2017-08-07 18:55:48.369] [BotEvent] Nickname: set!
+[2017-08-07 18:55:48.396] [BotEvent] Event-Listener: registered!
+[2017-08-07 18:55:48.420] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 18:55:48.439] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 18:55:48.441] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 18:55:48.441] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 18:55:48.441] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 18:55:48.442] [BotEvent] Bot is now running!
+[2017-08-07 18:55:52.766] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 18:55:56.863] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 18:57:37.117] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 18:57:37.117] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 18:57:37.117] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 18:57:37.117] [BotEvent] Shutting down the bot..
+[2017-08-07 18:58:08.190] [Info] -----------------------------------------------------------------
+[2017-08-07 18:58:08.191] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 18:58:08.191] [BotEvent] Initializing environment..
+[2017-08-07 18:58:08.191] [BotEvent] Environment: ready!
+[2017-08-07 18:58:08.370] [BotEvent] Database: ready!
+[2017-08-07 18:58:08.408] [BotEvent] API: connected!
+[2017-08-07 18:58:08.413] [BotEvent] Server-Query: Logged in!
+[2017-08-07 18:58:08.415] [BotEvent] Nickname: set!
+[2017-08-07 18:58:08.439] [BotEvent] Event-Listener: registered!
+[2017-08-07 18:58:08.457] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 18:58:08.472] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 18:58:08.473] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 18:58:08.473] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 18:58:08.474] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 18:58:08.474] [BotEvent] Bot is now running!
+[2017-08-07 18:58:12.112] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 18:58:14.744] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:36:09.822] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:36:09.824] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:36:09.824] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:36:09.824] [BotEvent] Shutting down the bot..
+[2017-08-07 20:38:30.527] [Info] -----------------------------------------------------------------
+[2017-08-07 20:38:30.527] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:38:30.527] [BotEvent] Initializing environment..
+[2017-08-07 20:38:30.528] [BotEvent] Environment: ready!
+[2017-08-07 20:38:30.697] [BotEvent] Database: ready!
+[2017-08-07 20:38:30.732] [BotEvent] API: connected!
+[2017-08-07 20:38:30.738] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:38:30.741] [BotEvent] Nickname: set!
+[2017-08-07 20:38:30.766] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:38:30.785] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:38:30.800] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:38:30.802] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:38:30.802] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:38:30.802] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:38:30.803] [BotEvent] Bot is now running!
+[2017-08-07 20:38:52.702] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:38:59.668] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:40:02.674] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:40:02.675] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:40:02.675] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:40:02.675] [BotEvent] Shutting down the bot..
+[2017-08-07 20:40:09.823] [Info] -----------------------------------------------------------------
+[2017-08-07 20:40:09.824] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:40:09.824] [BotEvent] Initializing environment..
+[2017-08-07 20:40:09.825] [BotEvent] Environment: ready!
+[2017-08-07 20:40:09.992] [BotEvent] Database: ready!
+[2017-08-07 20:40:10.028] [BotEvent] API: connected!
+[2017-08-07 20:40:10.034] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:40:10.035] [BotEvent] Nickname: set!
+[2017-08-07 20:40:10.060] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:40:10.077] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:40:10.094] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:40:10.096] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:40:10.096] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:40:10.096] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:40:10.096] [BotEvent] Bot is now running!
+[2017-08-07 20:40:13.977] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-08-07 20:40:24.394] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-08-07 20:40:51.148] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:40:51.148] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:40:51.148] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:40:51.149] [BotEvent] Shutting down the bot..
+[2017-08-07 20:41:02.292] [Info] -----------------------------------------------------------------
+[2017-08-07 20:41:02.292] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:41:02.293] [BotEvent] Initializing environment..
+[2017-08-07 20:41:02.293] [BotEvent] Environment: ready!
+[2017-08-07 20:41:02.464] [BotEvent] Database: ready!
+[2017-08-07 20:41:02.496] [BotEvent] API: connected!
+[2017-08-07 20:41:02.501] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:41:02.503] [BotEvent] Nickname: set!
+[2017-08-07 20:41:02.527] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:41:02.548] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:41:02.564] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:41:02.566] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:41:02.566] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:41:02.566] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:41:02.567] [BotEvent] Bot is now running!
+[2017-08-07 20:41:07.982] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-08-07 20:41:10.705] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-08-07 20:41:59.270] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:42:25.124] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:42:25.124] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:42:25.125] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:42:25.125] [BotEvent] Shutting down the bot..
+[2017-08-07 20:42:52.458] [Info] -----------------------------------------------------------------
+[2017-08-07 20:42:52.458] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:42:52.458] [BotEvent] Initializing environment..
+[2017-08-07 20:42:52.459] [BotEvent] Environment: ready!
+[2017-08-07 20:42:52.634] [BotEvent] Database: ready!
+[2017-08-07 20:42:52.672] [BotEvent] API: connected!
+[2017-08-07 20:42:52.678] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:42:52.680] [BotEvent] Nickname: set!
+[2017-08-07 20:42:52.703] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:42:52.722] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:42:52.736] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:42:52.738] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:42:52.738] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:42:52.738] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:42:52.738] [BotEvent] Bot is now running!
+[2017-08-07 20:43:02.676] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:43:14.296] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:43:14.297] [Database Error] [UserHistoryFeature::Logout] Error updating database
+[2017-08-07 20:43:26.950] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:43:26.950] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:43:26.951] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:43:26.951] [BotEvent] Shutting down the bot..
+[2017-08-07 20:44:00.273] [Info] -----------------------------------------------------------------
+[2017-08-07 20:44:00.273] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:44:00.273] [BotEvent] Initializing environment..
+[2017-08-07 20:44:00.274] [BotEvent] Environment: ready!
+[2017-08-07 20:44:00.450] [BotEvent] Database: ready!
+[2017-08-07 20:44:00.489] [BotEvent] API: connected!
+[2017-08-07 20:44:00.494] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:44:00.497] [BotEvent] Nickname: set!
+[2017-08-07 20:44:00.520] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:44:00.539] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:44:00.554] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:44:00.556] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:44:00.556] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:44:00.557] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:44:00.557] [BotEvent] Bot is now running!
+[2017-08-07 20:44:09.127] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:44:13.874] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:44:13.874] [Database Error] [UserHistoryFeature::Logout] Error updating database
+[2017-08-07 20:45:20.112] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:45:20.112] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:45:20.112] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:45:20.112] [BotEvent] Shutting down the bot..
+[2017-08-07 20:45:26.309] [Info] -----------------------------------------------------------------
+[2017-08-07 20:45:26.310] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:45:26.310] [BotEvent] Initializing environment..
+[2017-08-07 20:45:26.310] [BotEvent] Environment: ready!
+[2017-08-07 20:45:26.493] [BotEvent] Database: ready!
+[2017-08-07 20:45:26.529] [BotEvent] API: connected!
+[2017-08-07 20:45:26.534] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:45:26.536] [BotEvent] Nickname: set!
+[2017-08-07 20:45:26.557] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:45:26.575] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:45:26.590] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:45:26.591] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:45:26.591] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:45:26.591] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:45:26.592] [BotEvent] Bot is now running!
+[2017-08-07 20:45:30.104] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:45:33.201] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:45:47.168] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:45:47.168] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:45:47.168] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:45:47.168] [BotEvent] Shutting down the bot..
+[2017-08-07 20:46:18.081] [Info] -----------------------------------------------------------------
+[2017-08-07 20:46:18.081] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 20:46:18.081] [BotEvent] Initializing environment..
+[2017-08-07 20:46:18.082] [BotEvent] Environment: ready!
+[2017-08-07 20:46:18.245] [BotEvent] Database: ready!
+[2017-08-07 20:46:18.277] [BotEvent] API: connected!
+[2017-08-07 20:46:18.282] [BotEvent] Server-Query: Logged in!
+[2017-08-07 20:46:18.284] [BotEvent] Nickname: set!
+[2017-08-07 20:46:18.309] [BotEvent] Event-Listener: registered!
+[2017-08-07 20:46:18.327] [ClientJoinEvent] Malte_3 [ OwPw01bTdzgBLAdaHMkNG5mEnO4=] logged in into {/Lobby}
+[2017-08-07 20:46:18.342] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 20:46:18.343] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 20:46:18.343] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 20:46:18.344] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 20:46:18.344] [BotEvent] Bot is now running!
+[2017-08-07 20:46:34.333] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:46:38.070] [ClientLeaveEvent] Malte_2 [0PvjRFUOhjSmOeIy7YgBBq9CC78=] has left the server.
+[2017-08-07 20:46:49.993] [ClientLeaveEvent] Malte_3 [OwPw01bTdzgBLAdaHMkNG5mEnO4=] has left the server.
+[2017-08-07 20:47:08.584] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 20:50:06.455] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 20:50:06.456] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 20:50:06.456] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 20:50:06.456] [BotEvent] Shutting down the bot..
+[2017-08-07 21:02:38.611] [Info] -----------------------------------------------------------------
+[2017-08-07 21:02:38.612] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 21:02:38.612] [BotEvent] Initializing environment..
+[2017-08-07 21:02:38.613] [BotEvent] Environment: ready!
+[2017-08-07 21:02:38.785] [BotEvent] Database: ready!
+[2017-08-07 21:02:38.822] [BotEvent] API: connected!
+[2017-08-07 21:02:38.828] [BotEvent] Server-Query: Logged in!
+[2017-08-07 21:02:38.830] [BotEvent] Nickname: set!
+[2017-08-07 21:02:38.855] [BotEvent] Event-Listener: registered!
+[2017-08-07 21:02:38.873] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 21:02:38.888] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 21:02:38.890] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 21:02:38.890] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 21:02:38.890] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 21:02:38.890] [BotEvent] Bot is now running!
+[2017-08-07 21:03:03.638] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 21:03:03.638] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 21:03:03.638] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 21:03:03.638] [BotEvent] Shutting down the bot..
+[2017-08-07 21:03:11.999] [Info] -----------------------------------------------------------------
+[2017-08-07 21:03:11.999] [BotEvent] Trying to start new Bot Instance [DEBUG MODE]
+[2017-08-07 21:03:11.999] [BotEvent] Initializing environment..
+[2017-08-07 21:03:12.000] [BotEvent] Environment: ready!
+[2017-08-07 21:03:12.170] [BotEvent] Database: ready!
+[2017-08-07 21:03:12.204] [BotEvent] API: connected!
+[2017-08-07 21:03:12.209] [BotEvent] Server-Query: Logged in!
+[2017-08-07 21:03:12.211] [BotEvent] Nickname: set!
+[2017-08-07 21:03:12.236] [BotEvent] Event-Listener: registered!
+[2017-08-07 21:03:12.255] [ClientJoinEvent] [Bot] Heimdall [ serveradmin] logged in into {/Lobby}
+[2017-08-07 21:03:12.271] [ClientJoinEvent] Malte_2 [ 0PvjRFUOhjSmOeIy7YgBBq9CC78=] logged in into {/Lobby}
+[2017-08-07 21:03:12.272] [BotEvent] Feature: CommandManager has been activated.
+[2017-08-07 21:03:12.272] [BotEvent] Feature: UserHistoryFeature has been activated.
+[2017-08-07 21:03:12.272] [BotEvent] Feature: WelcomeMessageFeature has been activated.
+[2017-08-07 21:03:12.273] [BotEvent] Bot is now running!
+[2017-08-07 21:03:15.859] [ClientJoinEvent] Malte_1 [ EZC9cW9ri2+2nWulkuaG+FOrM68=] logged in into {/Lobby}
+[2017-08-07 21:03:37.010] [BotError] Could not resolve TS3User by id '5'
+[2017-08-07 21:03:41.176] [ClientLeaveEvent] Malte_1 [EZC9cW9ri2+2nWulkuaG+FOrM68=] has left the server.
+[2017-08-07 21:04:30.644] [BotEvent] Receiving shutdown command from console.
+[2017-08-07 21:04:30.645] [BotEvent] Feature: UserHistoryFeature has been deactivated.
+[2017-08-07 21:04:30.645] [BotEvent] Feature: WelcomeMessageFeature has been deactivated.
+[2017-08-07 21:04:30.645] [BotEvent] Shutting down the bot..
