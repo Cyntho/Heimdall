@@ -86,6 +86,10 @@ public class BotLogger {
         log(LogLevelType.DBG,  "Current Log-file: " + currentLogFile);
     }
 
+    public void log(LogEntry entry){
+        log(entry.getType(), entry.getMsg());
+    }
+
     public void log(LogLevelType lvl, String msg) {
 
         if (!validate()) return;

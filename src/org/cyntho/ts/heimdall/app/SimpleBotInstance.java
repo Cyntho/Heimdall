@@ -7,6 +7,7 @@ import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.database.DatabaseConnector;
 import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
 import org.cyntho.ts.heimdall.logging.BotLogger;
+import org.cyntho.ts.heimdall.logging.LogEntry;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 
 
@@ -34,10 +35,10 @@ public abstract class SimpleBotInstance {
 
     /* Runtime */
     boolean stopRequest;
-    private int currentChannelId;
-    private int botRuntimeId;
-    private long startupTime;
-    private String nickname;
+    int currentChannelId;
+    int botRuntimeId;
+    long startupTime;
+    String nickname;
 
     private final String instanceIdentifier;
     private final boolean forceSingleInstance;
@@ -119,11 +120,16 @@ public abstract class SimpleBotInstance {
     }
 
 
+    /* Public final methods */
+    public final synchronized void log(LogLevelType type, String msg){
+        Bot.logStack.push(new LogEntry(type, msg));
+    }
+
+
     /* Public abstract methods */
 
     public abstract void start();
     public abstract void stop();
-    public abstract void log(LogLevelType lvl, String msg);
 
     public abstract SimpleBotInstance clone();
 

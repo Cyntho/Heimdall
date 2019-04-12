@@ -3,6 +3,7 @@ package org.cyntho.ts.heimdall.app;
 import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.features.BaseFeature;
 import org.cyntho.ts.heimdall.logging.BotLogger;
+import org.cyntho.ts.heimdall.logging.LogEntry;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 
@@ -26,10 +27,12 @@ public class Bot  {
     public static String CONTACT = "info@cyntho.org";
 
     public static SimpleBotInstance mainInstance;
+    public static volatile boolean StopRequest;
 
-    public static volatile Stack<String> logStack;
+    static volatile Stack<LogEntry> logStack;
+
     private static volatile BotLogger logger;
-    private static volatile BotConfig config;
+    public static volatile BotConfig config;
 
     // TODO: Fix issue of changing bot's name when multiple bot instances are running
 
@@ -37,6 +40,8 @@ public class Bot  {
 
         // TODO: Printing out some information for the user (like console commands etc.)
         TimeZone.setDefault(TimeZone.getTimeZone("GMT"));
+
+        StopRequest = false;
 
         boolean directInputHandled = false;
 
@@ -57,6 +62,17 @@ public class Bot  {
 
         try {
             config = new BotConfig();
+
+            boolean logToFile = config.getBoolean("bot.logToFile", true);
+            if (DEBUG_MODE){
+                logger = new BotLogger(logToFile, LogLevelType.DBG);
+            } else {
+                logger = new BotLogger(logToFile, LogLevelType.INFO);
+            }
+
+            Thread loggerThread = new Thread(new LoggerRunnable());
+            loggerThread.start();
+
         } catch (IOException e){
             System.out.println("Critical Error: Unable to create/read config file.");
             if (DEBUG_MODE){
@@ -65,10 +81,47 @@ public class Bot  {
             System.exit(1);
         }
 
+
+
+
+
+
         if (DEBUG_MODE && !directInputHandled){
             handleDirectInput();
         }
     }
+
+    /**
+     * Little helper thread that deals with the program-wide logging.
+     * Every Thread that needs to log something (here: every implementation of SimpleBotInstance)
+     * will automatically call the ::log(.) method that puts the message
+     * on the stack. This thread will then iterate over the stack and periodically pull all
+     * messages and log them according to the settings specified in the config file.
+     *
+     * @see SimpleBotInstance
+     * @see BotLogger
+     */
+    private static class LoggerRunnable implements Runnable {
+        @Override
+        public void run(){
+            while (!StopRequest){
+                try {
+                    while (!logStack.isEmpty()){
+                        logger.log(logStack.pop());
+                    }
+                    Thread.sleep(1000);
+                } catch (InterruptedException e){
+                    if (DEBUG_MODE){
+                        e.printStackTrace();
+                    } else {
+                        System.out.println("Error in Logger Thread!");
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
     public static HeimdallOld heimdall;
