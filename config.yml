@@ -33,7 +33,7 @@ bot:
   logToFile: true
   logToDatabase: true
   logFileZip: false
-  nick: '[Bot] Heimdall'
+  nick: '[Bot] HeimdallOld'
   goOnlineMessage: ''     # Leave empty to deactivate message
   goOfflineMessage: ''                        # Leave empty to deactivate message
 

@@ -1,9 +1,12 @@
 package org.cyntho.ts.heimdall.app;
 
+import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.features.BaseFeature;
+import org.cyntho.ts.heimdall.logging.BotLogger;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 
+import java.io.IOException;
 import java.util.*;
 
 import static java.lang.Boolean.TRUE;
@@ -22,15 +25,18 @@ public class Bot  {
     public static String AUTHOR = "Xida";
     public static String CONTACT = "info@cyntho.org";
 
+    public static SimpleBotInstance mainInstance;
+
+    public static volatile Stack<String> logStack;
+    private static volatile BotLogger logger;
+    private static volatile BotConfig config;
+
     // TODO: Fix issue of changing bot's name when multiple bot instances are running
 
     public static void main(String[] args){
 
         // TODO: Printing out some information for the user (like console commands etc.)
         TimeZone.setDefault(TimeZone.getTimeZone("GMT"));
-
-        heimdall = new Heimdall();
-        heimdall.start();
 
         boolean directInputHandled = false;
 
@@ -49,12 +55,23 @@ public class Bot  {
 
         }
 
+        try {
+            config = new BotConfig();
+        } catch (IOException e){
+            System.out.println("Critical Error: Unable to create/read config file.");
+            if (DEBUG_MODE){
+                e.printStackTrace();
+            }
+            System.exit(1);
+        }
+
         if (DEBUG_MODE && !directInputHandled){
             handleDirectInput();
         }
     }
 
-    public static Heimdall heimdall;
+
+    public static HeimdallOld heimdall;
 
 
     private static void handleDirectInput(){

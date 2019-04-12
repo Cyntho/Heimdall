@@ -21,7 +21,7 @@ public class Tester {
     private static class TestRunner implements Runnable {
 
         Thread instance;
-        Heimdall heimdall = new Heimdall();
+        HeimdallOld heimdall = new HeimdallOld();
 
         @Override
         public void run() {
