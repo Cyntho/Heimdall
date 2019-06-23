@@ -26,6 +26,8 @@ import org.cyntho.ts.heimdall.util.StringParser;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -54,8 +56,16 @@ public class Heimdall extends SimpleBotInstance {
         super.ts3Config = new TS3Config();
     }
 
+    /* Public GETTER */
+    public UserManager getUserManager() { return this.userManager; }
+    public FeatureManager getFeatureManager() { return this.featureManager; }
+    public CommandManager getCommandManager() { return this.commandManager; }
+    public PermissionManager getPermissionManager() { return this.permissionManager; }
+    public DatabaseConnector getDb() { return this.db; }
 
-
+    public String getUpTimeFormatted(SimpleDateFormat format){
+        return format.format(new Date(System.currentTimeMillis() - getUptime()));
+    }
 
     @Override
     public void start(){
@@ -76,13 +86,13 @@ public class Heimdall extends SimpleBotInstance {
         }
 
         // Initialize configuration
-        this.ts3Config.setFloodRate(botConfig.getFloodRate());
-        this.ts3Config.setHost(botConfig.getQryHost());
-        this.ts3Config.setQueryPort(botConfig.getQryPort());
-        this.ts3Config.setDebugLevel(Level.OFF);
-        this.ts3Config.setCommandTimeout(botConfig.getServerCommandTimeout());
+        ts3Config.setFloodRate(botConfig.getFloodRate());
+        ts3Config.setHost(botConfig.getQryHost());
+        ts3Config.setQueryPort(botConfig.getQryPort());
+        ts3Config.setDebugLevel(Level.OFF);
+        ts3Config.setCommandTimeout(botConfig.getServerCommandTimeout());
 
-        this.ts3Config.setDebugToFile(false);
+        ts3Config.setDebugToFile(false);
 
 
 
@@ -90,15 +100,15 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // Initialize Database configuration
-        this.db = new DatabaseConnector(this.botConfig);
+        db = new DatabaseConnector(this.botConfig);
 
         // Check on startup, if database tables need to be created using resource file
         try {
             if (!(DatabaseSetup.doSetup())){
-                this.log(LogLevelType.DATABASE_ERROR, "Error while initializing database");
+                log(LogLevelType.DATABASE_ERROR, "Error while initializing database");
             }
         } catch (Exception e){
-            this.log(LogLevelType.DATABASE_ERROR, e.getMessage());
+            log(LogLevelType.DATABASE_ERROR, e.getMessage());
             System.out.println("exiting..");
             System.exit(1);
         }
@@ -106,33 +116,33 @@ public class Heimdall extends SimpleBotInstance {
         log(LogLevelType.BOT_EVENT, "Database: ready!");
 
         // Initialize API
-        this.ts3Query = new TS3Query(this.ts3Config);
+        ts3Query = new TS3Query(ts3Config);
         try {
-            this.ts3Query.connect();
+            ts3Query.connect();
         } catch (TS3ConnectionFailedException e){
-            this.log(LogLevelType.BOT_ERROR, "API: Could not connect to the Teamspeak 3 Server. Make sure it is running!");
+            log(LogLevelType.BOT_ERROR, "API: Could not connect to the Teamspeak 3 Server. Make sure it is running!");
             stop();
             return;
         }
 
-        this.ts3Api = this.ts3Query.getApi();
+        ts3Api = ts3Query.getApi();
         log(LogLevelType.BOT_EVENT, "API: connected!");
 
         // Login with server query
-        if (!this.ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass())){
-            this.ts3Query.exit();
+        if (!ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass())){
+            ts3Query.exit();
             log(LogLevelType.BOT_CRITICAL, "Could not login with teamspeak query credentials!");
             System.exit(1);
         }
 
         try {
-            this.ts3Api.selectVirtualServerById(botConfig.getServerId());
+            ts3Api.selectVirtualServerById(botConfig.getServerId());
         } catch (Exception e){
             int tmp = botConfig.getServerId();
             log(LogLevelType.BOT_CRITICAL, "Could neither use server-id '" + tmp + "' nor default '1'. Make sure your server is running!");
             try {
-                this.ts3Query.exit();
-                this.ts3Api.logout();
+                ts3Query.exit();
+                ts3Api.logout();
                 System.exit(1);
             } catch (Exception ignore) { /* ignore */ }
         }
@@ -147,7 +157,7 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // Try to set nickname
-        if (!this.ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
+        if (!ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
             log(LogLevelType.BOT_ERROR, "The bot's specified nickname is already in use. Trying to kick user...");
 
             for (Client client : ts3Api.getClients()){
@@ -155,10 +165,10 @@ public class Heimdall extends SimpleBotInstance {
                     if (client.isServerQueryClient()){
                         log(LogLevelType.BOT_ERROR, "Could not kick the user, since its a server query client!");
                     } else {
-                        if(this.ts3Api.kickClientFromServer("This username is reserved!", client)){
+                        if(ts3Api.kickClientFromServer("This username is reserved!", client)){
                             log(LogLevelType.BOT_EVENT, "User has been kicked. Trying again to use nickname..");
 
-                            if (!this.ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
+                            if (!ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
                                 log(LogLevelType.BOT_ERROR, "Still not able to set nickname.. Shutting down!");
                                 stop();
                                 System.exit(1);
@@ -173,7 +183,7 @@ public class Heimdall extends SimpleBotInstance {
                 }
             }
         }
-        this.nickname = this.botConfig.getString("bot.nick", "[Bot] HeimdallOld");
+        nickname = botConfig.getString("bot.nick", "[Bot] HeimdallOld");
         log(LogLevelType.BOT_EVENT, "Nickname: set!");
 
 
@@ -187,16 +197,16 @@ public class Heimdall extends SimpleBotInstance {
 
         // Register Event-Listener
         TS3Listener listener = new GlobalListener();
-        this.ts3Api.addTS3Listeners(listener);
+        ts3Api.addTS3Listeners(listener);
         log(LogLevelType.BOT_EVENT, "Event-Listener: registered!");
 
 
         // Register features
-        this.featureManager = new FeatureManager();
+        featureManager = new FeatureManager();
 
         // --> userHistory
         if (botConfig.getBoolean("features.userHistory", true)){
-            this.featureManager.register(new UserHistoryFeature());
+            featureManager.register(new UserHistoryFeature());
         }
 
         // --> customWelcomeMessages
@@ -206,44 +216,56 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // Load user manager
-        this.userManager = new UserManager();
-        this.userManager.refreshUserList();
+        userManager = new UserManager(this);
+        userManager.refreshUserList();
 
 
         // Load Permission Manager
-        this.permissionManager = new PermissionManager();
+        //permissionManager = new PermissionManager();
 
-        this.ts3Api.registerAllEvents();
+        ts3Api.registerAllEvents();
 
         //
         // TODO --> webNotifications
 
 
         /* Register commands */
-        this.commandManager = new CommandManager();
-        commandManager.registerCommand(new CmdGetPath());
-        commandManager.registerCommand(new CmdShutdown());
-        commandManager.registerCommand(new CmdHasPermission());
-        commandManager.registerCommand(new CmdList());
+        commandManager = new CommandManager();
+        if (botConfig.getBoolean("commands.debug", false) && DEBUG_MODE)
+            commandManager.registerCommand(new CmdDebug());
 
-        commandManager.registerCommand(new CmdUpdateDescription());
+        if (botConfig.getBoolean("commands.hasPermission", true))
+            commandManager.registerCommand(new CmdHasPermission());
 
-        if (DEBUG_MODE) { commandManager.registerCommand(new CmdDebug()); }
+        /*if (botConfig.getBoolean("commands.list", true))
+            commandManager.registerCommand(new CmdList());*/
 
-        commandManager.activate();
+        if (botConfig.getBoolean("commands.getPath", false))
+            commandManager.registerCommand(new CmdGetPath());
 
+        if (botConfig.getBoolean("commands.setLevel", true))
+            commandManager.registerCommand(new CmdSetLevel());
+
+        if (botConfig.getBoolean("commands.shutdown", false))
+            commandManager.registerCommand(new CmdShutdown());
+
+        if (botConfig.getBoolean("commands.updateDescription", false))
+            commandManager.registerCommand(new CmdUpdateDescription());
+
+        // TODO: Command to do backup
 
         // Activate all features
+        featureManager.register(commandManager);
         featureManager.activateAll();
 
 
 
         // Set own runtime Id
-        this.botRuntimeId = this.ts3Api.whoAmI().getId();
+        botRuntimeId = ts3Api.whoAmI().getId();
 
 
         // Set the default channel's description to be a TS-Link to this bot's Identity
-        setChannelDescription(this.currentChannelId, true);
+        setChannelDescription(currentChannelId, true);
 
 
 
@@ -265,7 +287,38 @@ public class Heimdall extends SimpleBotInstance {
 
     @Override
     public void stop(){
+        super.stopRequest = true;
 
+        try {
+            log(LogLevelType.BOT_EVENT, "Shutting down bot instance " + getInstanceIdentifier());
+
+            this.featureManager.deactivateAll();
+            this.commandManager.deactivate();
+
+            if (ts3Api != null){
+
+                for (Channel channel : ts3Api.getChannels()){
+                    if (channel.isDefault()){
+                        setChannelDescription(channel.getId(), false);
+                        break;
+                    }
+                }
+
+                String offlineMessage = botConfig.getString("bot.offlineMessage", "ERR_NONE");
+                if (!offlineMessage.equalsIgnoreCase("ERR_NONE"))
+                    ts3Api.sendServerMessage(PlaceHolder.handleBotPlaceholder(offlineMessage));
+
+                ts3Api.unregisterAllEvents();
+                ts3Api.logout();
+            }
+
+            if (ts3Query != null)
+                ts3Query.exit();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        log(LogLevelType.BOT_EVENT, getInstanceIdentifier() + " is now offline");
     }
 
 
@@ -276,7 +329,7 @@ public class Heimdall extends SimpleBotInstance {
 
 
     // todo: make image path dynamic (config/db/param?)
-    private void setChannelDescription(int channelID, boolean online){
+    public void setChannelDescription(int channelID, boolean online){
 
         String nickPre = this.nickname;
         String nickTemp = "000_" + getRandomString(10) + "_000";

@@ -39,7 +39,6 @@ public class UserHistoryFeature extends BaseFeature {
             listener = new UserHistoryListener(this);
 
             Bot.heimdall.getApi().addTS3Listeners(listener);
-            Bot.heimdall.getApi().registerAllEvents();
 
             super.active = true;
             Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="teamspeak_heimdall@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.15">
     <root id="1"/>
     <schema id="2" parent="1" name="teamspeak_heimdall">
       <Current>1</Current>

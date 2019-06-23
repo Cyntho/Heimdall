@@ -1,6 +1,7 @@
 package org.cyntho.ts.heimdall.app;
 
 import org.cyntho.ts.heimdall.config.BotConfig;
+import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
 import org.cyntho.ts.heimdall.features.BaseFeature;
 import org.cyntho.ts.heimdall.logging.BotLogger;
 import org.cyntho.ts.heimdall.logging.LogEntry;
@@ -26,12 +27,12 @@ public class Bot  {
     public static String AUTHOR = "Xida";
     public static String CONTACT = "info@cyntho.org";
 
-    public static SimpleBotInstance mainInstance;
-    public static volatile boolean StopRequest;
+    public static Heimdall heimdall;
+    public static volatile boolean stopRequest;
 
     static volatile Stack<LogEntry> logStack;
 
-    private static volatile BotLogger logger;
+    public static volatile BotLogger logger;
     public static volatile BotConfig config;
 
     // TODO: Fix issue of changing bot's name when multiple bot instances are running
@@ -41,9 +42,10 @@ public class Bot  {
         // TODO: Printing out some information for the user (like console commands etc.)
         TimeZone.setDefault(TimeZone.getTimeZone("GMT"));
 
-        StopRequest = false;
+        stopRequest = false;
+        logStack = new Stack<>();
 
-        boolean directInputHandled = false;
+        boolean handleDirectInput = false;
 
         if (args != null && args.length > 0){
 
@@ -53,8 +55,7 @@ public class Bot  {
                 }
 
                 if (s.equalsIgnoreCase("-h")){
-                    handleDirectInput();
-                    directInputHandled = true;
+                    handleDirectInput = true;
                 }
             }
 
@@ -81,12 +82,14 @@ public class Bot  {
             System.exit(1);
         }
 
+        try {
+            heimdall = new Heimdall();
+            heimdall.start();
+        } catch (SingleInstanceViolationException e){
+            e.printStackTrace();
+        }
 
-
-
-
-
-        if (DEBUG_MODE && !directInputHandled){
+        if (DEBUG_MODE || handleDirectInput){
             handleDirectInput();
         }
     }
@@ -104,7 +107,7 @@ public class Bot  {
     private static class LoggerRunnable implements Runnable {
         @Override
         public void run(){
-            while (!StopRequest){
+            while (!stopRequest){
                 try {
                     while (!logStack.isEmpty()){
                         logger.log(logStack.pop());
@@ -121,17 +124,23 @@ public class Bot  {
         }
     }
 
+    public static void log(LogLevelType type, String msg){
+        log(type, msg, heimdall);
+    }
+
+    public static void log(LogLevelType type, String msg, SimpleBotInstance instance){
+        logStack.push(new LogEntry(type, msg, instance));
+    }
 
 
 
-    public static HeimdallOld heimdall;
 
 
     private static void handleDirectInput(){
 
         Scanner scanner = new Scanner(System.in);
 
-        while (!heimdall.stopRequest){
+        while (stopRequest){
 
             String input = scanner.nextLine();
 

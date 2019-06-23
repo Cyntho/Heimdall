@@ -153,9 +153,7 @@ public class HeimdallOld {
     public long getUpTime() {
         return System.currentTimeMillis() - this.upTime;
     }
-    public String getUpTimeFormatted(SimpleDateFormat format){
-        return format.format(new Date(getUpTime()));
-    }
+
 
 
     /* Helper functions */
@@ -163,9 +161,9 @@ public class HeimdallOld {
         if (!this.logger.validate()){
             this.logger.close();
             this.logger = this.logger.generateInstance();
-            this.logger.log(LogLevelType.INFO, "Creating new log file after midnight.");
+            //this.logger.log(LogLevelType.INFO, "Creating new log file after midnight.");
         }
-        this.logger.log(lvl, msg);
+        //this.logger.log(lvl, msg);
     }
 
 

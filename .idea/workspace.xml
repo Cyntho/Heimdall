@@ -6,14 +6,78 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58189cf2-8fd1-4ac5-a68b-70f1e52792d5" name="Default" comment="First step of center logger/config and to force a single-instance of the bot">
-      <change afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java" afterDir="false" />
+    <list default="true" id="58189cf2-8fd1-4ac5-a68b-70f1e52792d5" name="Default" comment="Updating Bot hierarchy">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a12f95e3-ac71-41b2-b664-d37df3751e1c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a12f95e3-ac71-41b2-b664-d37df3751e1c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a63bb266-03e5-410f-a529-646b45edd7be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a63bb266-03e5-410f-a529-646b45edd7be.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Heimdall_jar/Heimdall.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Heimdall_jar/Heimdall.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/Bot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/Heimdall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/Tester$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/Tester$TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/Tester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/BaseCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/BaseCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdDebug.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdDebug.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdGetPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdGetPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdHasPermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdHasPermission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdShutdown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdShutdown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdUpdateDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/commands/CmdUpdateDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/BotConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/BotConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/CustomConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/CustomConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/YAML/file/YamlConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/YAML/file/YamlConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/DatabaseConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/DatabaseConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/DatabaseSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/DatabaseSetup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/SilentDatabaseConnector$SilentDatabaseExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/SilentDatabaseConnector$SilentDatabaseExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/CommandListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/CommandListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/GlobalListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/GlobalListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/UserHistoryListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/UserHistoryListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/WelcomeMessageListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/events/WelcomeMessageListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/exceptions/DatabaseAuthException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/exceptions/DatabaseAuthException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/BaseFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/BaseFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/autoPromotion/AutoPromotionFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/autoPromotion/AutoPromotionFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/runners/ClientRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/userSurveillance/runners/ClientRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessageFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessageFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/BotLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/BotLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/LogArchive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/LogArchive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/LogDatabaseEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/logging/LogDatabaseEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/PermissionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/PermissionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/permissions/PermissionGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/permissions/PermissionGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserDescription$TS3UserDescriptionData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserDescription$TS3UserDescriptionData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserPermissions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/TS3UserPermissions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/UserGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/UserGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/net/NetSendObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/net/NetSendObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/ChannelManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/ChannelManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/DebugLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/DebugLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/PlaceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heimdall/org/cyntho/ts/heimdall/util/PlaceHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/GlobalListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/GlobalListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/UserHistoryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/UserHistoryListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogArchive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogArchive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,85 +114,62 @@
     <favorites_list name="Heimdall" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52699053">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/serverStatistics/ServerStatisticsFeature.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="26" column="41" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="41" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1854#1855#0" expanded="true" />
-                    <element signature="e#1881#1882#0" expanded="true" />
-                    <element signature="method#setChannelDescription#0;class#Heimdall#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#handleDirectInput#0;class#Bot#0" />
-                    <element signature="method#poke#0;class#Bot#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="671">
-                  <caret line="174" selection-start-line="174" selection-end-line="174" />
-                  <folding>
-                    <element signature="method#stop#0;class#Heimdall#0" />
-                    <element signature="e#12568#12569#0" expanded="true" />
-                    <element signature="e#12631#12632#0" expanded="true" />
-                    <element signature="e#12694#12695#0" expanded="true" />
-                    <element signature="e#12753#12754#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3893">
+              <caret line="262" column="29" selection-start-line="262" selection-start-column="29" selection-end-line="262" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#stop#0;class#Heimdall#0" />
+                <element signature="method#setChannelDescription#0;class#Heimdall#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1605#1606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/permissions/PermissionCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/permissions/PermissionGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,13 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3UserDescription.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/DebugLogger.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/DebugLogger.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/UserHistoryListener.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/compression/Tar.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/Surveillance.yml" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/runners/ClientRunner.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/StringParser.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/DatabaseConnector.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/webPermissionIntegration/WebPermissionIntegrationFeature.java" />
@@ -180,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/NetSendObjectTest.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/streaming/DataPacket.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/Tester.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java" />
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/PlaceHolder.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/Heimdall.java" />
@@ -192,12 +225,9 @@
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/Bot.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/LogFileListener.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Tester.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/BaseCommand.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdList.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/PermissionManager.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/CustomConfig.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/BotConfig.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceConfig.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3User.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/autoPromotion/AutoPromotionFeature.java" />
@@ -206,20 +236,31 @@
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/serverStatistics/ServerStatisticsFeature.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Thor.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/exceptions/SingleInstanceViolationException.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java" />
-        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogArchive.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/BotConfig.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/UserHistoryListener.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/GlobalListener.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.java" />
         <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/BaseCommand.java" />
+        <option value="$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="691" />
-    <option name="y" value="81" />
-    <option name="width" value="1096" />
-    <option name="height" value="986" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -249,43 +290,7 @@
               <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="serverStatistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +298,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="heimdall" type="462c0819:PsiDirectoryNode" />
               <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="permissions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heimdall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="heimdall" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Heimdall" type="b2602c69:ProjectViewProjectNode" />
@@ -548,7 +568,16 @@
       <workItem from="1554392108979" duration="3540000" />
       <workItem from="1554401159344" duration="1663000" />
       <workItem from="1554549747900" duration="50000" />
-      <workItem from="1555063864566" duration="5501000" />
+      <workItem from="1555063864566" duration="5557000" />
+      <workItem from="1555172023810" duration="1021000" />
+      <workItem from="1555176311280" duration="9425000" />
+      <workItem from="1555238291426" duration="5043000" />
+      <workItem from="1555318067464" duration="5091000" />
+      <workItem from="1556200970061" duration="449000" />
+      <workItem from="1559497606123" duration="60000" />
+      <workItem from="1561107144721" duration="4060000" />
+      <workItem from="1561293967951" duration="1363000" />
+      <workItem from="1561296084511" duration="956000" />
     </task>
     <task id="LOCAL-00001" summary="First step of center logger/config and to force a single-instance of the bot">
       <created>1555067879100</created>
@@ -557,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555067879100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updating Bot hierarchy">
+      <created>1555069627940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555069627940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300623000" />
+    <option name="totallyTimeSpent" value="328147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +612,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49569893" visible="true" weight="0.21002132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49569893" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -586,12 +622,12 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719395" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
+      <window_info anchor="bottom" x="-1050" y="-446" width="998" height="602" id="Run" order="2" sideWeight="0.49946696" type="WINDOWED" weight="0.17226435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.17226435" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3261105" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
@@ -615,297 +651,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First step of center logger/config and to force a single-instance of the bot" />
-    <option name="LAST_COMMIT_MESSAGE" value="First step of center logger/config and to force a single-instance of the bot" />
+    <MESSAGE value="Updating Bot hierarchy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Bot hierarchy" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/streaming/IDataStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/streaming/ISendAble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://P:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="375" column="18" selection-start-line="375" selection-start-column="18" selection-end-line="375" selection-end-column="18" />
-          <folding>
-            <element signature="e#15711#15712#0" expanded="true" />
-            <element signature="e#15747#15748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://P:/Program Files/Java/jdk1.8.0_101/src.zip!/java/sql/SQLException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-823">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/DatabaseSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://P:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3UserDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/NetSendObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="method#getInt#0;class#NetSendObject#0" />
-            <element signature="method#getLong#0;class#NetSendObject#0" />
-            <element signature="method#getFloat#0;class#NetSendObject#0" />
-            <element signature="method#getDouble#0;class#NetSendObject#0" />
-            <element signature="method#getChar#0;class#NetSendObject#0" />
-            <element signature="method#getString#0;class#NetSendObject#0" />
-            <element signature="method#getBoolean#0;class#NetSendObject#0" />
-            <element signature="method#getObject#0;class#NetSendObject#0" />
-            <element signature="method#getSerialized#0;class#NetSendObject#0" />
-            <element signature="e#7340#7341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/api/wrapper/Wrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/api/event/BaseEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/api/event/ChannelMovedEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/api/event/TS3Listener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/GlobalListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserSurveillanceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/LogFileListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/autoPromotion/AutoPermissionCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdDebug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdGetPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdHasPermission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="72" column="43" lean-forward="true" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-          <folding>
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/PermissionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/BaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/CustomConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#220#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/autoPromotion/AutoPromotionFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userSurveillance/UserSurveillanceListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/DatabaseConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/BaseFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#531#581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/serverStatistics/ServerStatisticsListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/exceptions/DatabaseAuthException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -924,64 +677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogDatabaseEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/serverStatistics/ServerStatisticsFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-          <folding>
-            <element signature="e#2965#2966#0" expanded="true" />
-            <element signature="e#2985#2986#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleDirectInput#0;class#Bot#0" />
-            <element signature="method#poke#0;class#Bot#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -992,10 +691,312 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/serverStatistics/ServerStatisticsFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogArchive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/StringParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="127" selection-start-column="4" selection-end-line="136" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/PlaceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/DebugLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/NumberConversations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3UserPermissions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://P:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/net/streaming/ISendAble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/BotLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+          <folding>
+            <element signature="e#2835#2836#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
+            <element signature="e#3854#3855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3UserMetaWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3UserDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/UserOfflineCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="69" column="49" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="69" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/util/ChannelManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/logging/LogLevelType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/FeatureManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/BaseFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/BotConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2778#2779#0" expanded="true" />
+            <element signature="e#2846#2847#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/CustomConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#poke#0;class#Bot#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/WelcomeMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/CommandListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/database/SilentDatabaseConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/TS3Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1443">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding>
+            <element signature="e#3640#3641#0" expanded="true" />
+            <element signature="e#3680#3681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/EventManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/teamspeak3-api-1.0.14-with-dependencies.jar!/com/github/theholywaffle/teamspeak3/TS3Api.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="268" column="46" lean-forward="true" selection-start-line="268" selection-start-column="46" selection-end-line="268" selection-end-column="46" />
+          <folding>
+            <element signature="e#15497#15498#0" expanded="true" />
+            <element signature="e#15565#15566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/userHistory/UserHistoryFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/features/welcomeMessages/WelcomeMessageFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="method#register#0;class#UserManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/CommandManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/GlobalListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/events/UserHistoryListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="416">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
           <folding>
             <element signature="e#476#477#0" expanded="true" />
             <element signature="e#503#504#0" expanded="true" />
@@ -1003,53 +1004,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3User.java">
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/BotConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/SimpleBotInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="1045">
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/HeimdallOld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-          <folding>
-            <element signature="method#stop#0;class#Heimdall#0" />
-            <element signature="e#12568#12569#0" expanded="true" />
-            <element signature="e#12631#12632#0" expanded="true" />
-            <element signature="e#12694#12695#0" expanded="true" />
-            <element signature="e#12753#12754#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/app/Heimdall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="3893">
+          <caret line="262" column="29" selection-start-line="262" selection-start-column="29" selection-end-line="262" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="method#stop#0;class#Heimdall#0" />
             <element signature="method#setChannelDescription#0;class#Heimdall#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/config/defaultBotConfig.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/permissions/PermissionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/permissions/PermissionGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/BaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/user/TS3User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+          <folding>
+            <element signature="e#4614#4615#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/manager/PermissionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+          <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cyntho/ts/heimdall/commands/CmdSetLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1072,7 +1107,6 @@
             <option name="proportions">
               <list>
                 <option value="0.3" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1120,7 +1154,6 @@
             <option name="proportions">
               <list>
                 <option value="0.3" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1140,7 +1173,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql-connector-java-8.0.13</last-edited>
+          <last-edited>guava-19.0-javadoc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

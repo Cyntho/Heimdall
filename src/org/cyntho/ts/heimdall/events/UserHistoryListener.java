@@ -21,6 +21,7 @@ public class UserHistoryListener implements TS3Listener {
 
 
 
+
         // Get the TS3User object from the event (if it has been registered yet)
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
         if (user != null){
@@ -67,8 +68,17 @@ public class UserHistoryListener implements TS3Listener {
 
                 feature.updateNicknameAlias(user);
             }
+
+            updateData(user);
         }
     }
+
+
+    private void updateData(TS3User user){
+        System.out.println(user.getClientInfo().getAvatar());
+    }
+
+
 
     /* (Here) unused events */
     @Override public void onTextMessage(TextMessageEvent e) {}

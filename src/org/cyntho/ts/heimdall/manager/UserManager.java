@@ -2,6 +2,7 @@ package org.cyntho.ts.heimdall.manager;
 
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.app.SimpleBotInstance;
 import org.cyntho.ts.heimdall.features.userHistory.UserHistoryFeature;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
@@ -28,8 +29,11 @@ public class UserManager {
     private Map<Integer, Boolean> crossRefQueries;
     private Map<Integer, String> crossRefRuntimeId;
 
+    private SimpleBotInstance instance;
+
     // Constructor
-    public UserManager(){
+    public UserManager(SimpleBotInstance instance){
+        this.instance = instance;
         this.userList = new ArrayList<>();
         this.adminUUIDs = new ArrayList<>();
         this.crossRefQueries = new HashMap<>();
@@ -39,23 +43,24 @@ public class UserManager {
     // (re-) load admins from config file
     private synchronized void refreshAdminList(){
         this.adminUUIDs.clear();
-        this.adminUUIDs = Bot.heimdall.getBotConfig().getStringList("admins");
+        this.adminUUIDs = instance.getBotConfig().getStringList("admins");
     }
 
     public synchronized void refreshUserList(){
         this.userList.clear();
-        for (Client client : Bot.heimdall.getApi().getClients()){
+        for (Client client : instance.getApi().getClients()){
             TS3User user = new TS3User(client);
             register(user, true);
         }
     }
 
-    public void register(TS3User user, boolean startUp){
+    public synchronized void register(TS3User user, boolean startUp){
         // Prevent duplicate entries
         // (Although this could only happen, if the bot remained running while the Teamspeak server got restarted)
         if (crossRefRuntimeId.containsKey(user.getRuntimeId())){
-            Bot.heimdall.log(LogLevelType.BOT_CRITICAL, "Registered duplicate runtime ids! Did the Teamspeak server restart? - Refreshing..");
-            Bot.heimdall.getUserManager().refreshUserList();
+            Bot.log(LogLevelType.BOT_CRITICAL, "Registered duplicate runtime ids! Did the Teamspeak server restart? - Refreshing..");
+            refreshUserList();
+            refreshAdminList();
             // TODO: Implement check when the last refresh happened to prevent spamming!!
             return;
         }
@@ -118,10 +123,10 @@ public class UserManager {
         }
 
         // Print the log message to the console (and file, if logToFile active)
-        Bot.heimdall.log(LogLevelType.CLIENT_JOIN_EVENT, logMessage);
+        instance.log(LogLevelType.CLIENT_JOIN_EVENT, logMessage);
     }
 
-    public boolean unregister(int runtimeId){
+    public synchronized boolean unregister(int runtimeId){
 
         TS3User user = null;
         for (TS3User candidate : userList){
@@ -133,7 +138,7 @@ public class UserManager {
 
         // If the user cannot be resolved, log an error message and return false
         if (user == null){
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Unable to unregister user with id = {" + runtimeId + "} - Cannot resolve TS3User Object");
+            instance.log(LogLevelType.BOT_ERROR, "Unable to unregister user with id = {" + runtimeId + "} - Cannot resolve TS3User Object");
             return false;
         }
 
@@ -197,9 +202,7 @@ public class UserManager {
         this.crossRefQueries.remove(user.getRuntimeId());
         this.crossRefRuntimeId.remove(user.getRuntimeId());
 
-        if (this.adminUUIDs.contains(user.getClientUUID())){
-            this.adminUUIDs.remove(user.getClientUUID());
-        }
+        this.adminUUIDs.remove(user.getClientUUID());
 
         this.userList.remove(user);
 

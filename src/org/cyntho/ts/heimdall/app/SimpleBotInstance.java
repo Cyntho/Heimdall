@@ -4,11 +4,11 @@ import com.github.theholywaffle.teamspeak3.TS3Api;
 import com.github.theholywaffle.teamspeak3.TS3Config;
 import com.github.theholywaffle.teamspeak3.TS3Query;
 import org.cyntho.ts.heimdall.config.BotConfig;
-import org.cyntho.ts.heimdall.database.DatabaseConnector;
 import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
-import org.cyntho.ts.heimdall.logging.BotLogger;
 import org.cyntho.ts.heimdall.logging.LogEntry;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
+
+import java.io.IOException;
 
 
 /**
@@ -62,10 +62,15 @@ public abstract class SimpleBotInstance {
 
     /* ForceSingleInstance handling */
     private void init() throws SingleInstanceViolationException {
-        if (forceSingleInstance && Bot.mainInstance != null){
-            throw new SingleInstanceViolationException(Bot.mainInstance);
+        if (forceSingleInstance && Bot.heimdall != null){
+            throw new SingleInstanceViolationException(Bot.heimdall);
         } else if (forceSingleInstance){
-            Bot.mainInstance = this;
+            //TODO: Bot.heimdall = this;
+            try {
+                botConfig = new BotConfig();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -122,7 +127,7 @@ public abstract class SimpleBotInstance {
 
     /* Public final methods */
     public final synchronized void log(LogLevelType type, String msg){
-        Bot.logStack.push(new LogEntry(type, msg));
+        Bot.logStack.push(new LogEntry(type, msg, this));
     }
 
 

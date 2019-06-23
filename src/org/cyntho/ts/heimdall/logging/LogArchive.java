@@ -32,7 +32,7 @@ public class LogArchive {
         for (File f : files){
 
             // Skip currently used log file
-            if (!(f.getName().equalsIgnoreCase(Bot.heimdall.getLogger().getCurrentLogFile()))){
+            if (!(f.getName().equalsIgnoreCase(Bot.logger.getCurrentLogFile()))){
 
                 try {
 

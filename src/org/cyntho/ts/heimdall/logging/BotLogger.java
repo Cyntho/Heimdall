@@ -1,6 +1,7 @@
 package org.cyntho.ts.heimdall.logging;
 
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.app.SimpleBotInstance;
 import org.cyntho.ts.heimdall.compression.Tar;
 
 import java.io.*;
@@ -28,7 +29,6 @@ public class BotLogger {
     private DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
     private boolean logToFile;
-    private String logFilePathAbsolute;
     private File logFileObject;
 
     private PrintWriter fileWriter;
@@ -77,20 +77,18 @@ public class BotLogger {
 
         if (logToFile) {
             this.logFileObject = new File(pathToFile);
-            this.logFilePathAbsolute = logFileObject.getAbsolutePath();
 
             this.fileWriter.println("-----------------------------------------------------------------");
         }
 
         this.currentLogFile = pathToFile.replace("/logs/", "");
-        log(LogLevelType.DBG,  "Current Log-file: " + currentLogFile);
     }
 
     public void log(LogEntry entry){
-        log(entry.getType(), entry.getMsg());
+        log(entry.getType(), entry.getMsg(), entry.getInstance());
     }
 
-    public void log(LogLevelType lvl, String msg) {
+    public void log(LogLevelType lvl, String msg, SimpleBotInstance instance) {
 
         if (!validate()) return;
 
@@ -104,6 +102,7 @@ public class BotLogger {
             StringBuilder out = new StringBuilder();
             out.append("[").append(consoleLogFormat.format(new Date())).append("] ");
             out.append("[").append(lvl).append("] ");
+            out.append("[").append(instance.getInstanceIdentifier()).append("] ");
             out.append(msg);
 
 

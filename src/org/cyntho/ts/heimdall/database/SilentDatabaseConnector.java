@@ -44,6 +44,22 @@ public class SilentDatabaseConnector {
         System.out.println("initialized should be true");
     }
 
+    public void test(int targetDatabaseId, String avatarMd5){
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("UPDATE client_properties SET VALUE = ? WHERE ident = 'client_flag_avatar' AND id = ?");
+            stmt.setString(1, avatarMd5);
+            stmt.setInt(2, targetDatabaseId);
+
+            stmt.execute();
+
+
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+    }
+
 
     public boolean updateChannelDescription(int channelID, String description){
 

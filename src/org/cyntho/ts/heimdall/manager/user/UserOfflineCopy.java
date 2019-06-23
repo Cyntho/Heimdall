@@ -61,16 +61,13 @@ public class UserOfflineCopy implements ISendAble {
     }
 
     public String toString(){
-        StringBuilder sb = new StringBuilder();
 
-        sb.append("\t").append("nickname: ").append(nickname);
-        sb.append("\t").append("uuid: ").append(uuid);
-        sb.append("\t").append("runtimeId: ").append(runtimeId);
-        sb.append("\t").append("clientDatabaseId: ").append(clientDatabaseId);
-        sb.append("\t").append("description: ").append(description);
-        sb.append("\t").append("user: ").append("comming soon");
-
-        return sb.toString();
+        return "\t" + "nickname: " + nickname +
+                "\t" + "uuid: " + uuid +
+                "\t" + "runtimeId: " + runtimeId +
+                "\t" + "clientDatabaseId: " + clientDatabaseId +
+                "\t" + "description: " + description +
+                "\t" + "user: " + "comming soon";
     }
 
 }

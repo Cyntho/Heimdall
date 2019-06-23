@@ -3,11 +3,15 @@ package org.cyntho.ts.heimdall.events;
 import com.github.theholywaffle.teamspeak3.api.PrivilegeKeyType;
 import com.github.theholywaffle.teamspeak3.api.event.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
+import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.database.SilentDatabaseConnector;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 import org.cyntho.ts.heimdall.util.ChannelManagement;
 import org.cyntho.ts.heimdall.util.StringParser;
+
+import java.util.List;
 
 /**
  * @author      Xida

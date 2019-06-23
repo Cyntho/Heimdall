@@ -33,9 +33,25 @@ bot:
   logToFile: true
   logToDatabase: true
   logFileZip: false
-  nick: '[Bot] HeimdallOld'
-  goOnlineMessage: ''     # Leave empty to deactivate message
-  goOfflineMessage: ''                        # Leave empty to deactivate message
+  nick: '[Bot] Heimdall'
+  goOnlineMessage: 'Debug: Online!'     # Leave empty to deactivate message
+  goOfflineMessage: 'Debug: Offline!'    # Leave empty to deactivate message
+
+# Commands that are disabled here are unavailable during runtime
+# even if assigned to groups in the permission.yml
+commands:
+  debug: false
+  getPath: false
+  hasPermission: true
+  list:
+    features: true
+    users: true
+  setLevel: true
+  shutdown: false
+  updateDescription: false
+  doBackup: false
+
+
 
 # A list of administrators, who will be able to ignore any restriction (@see: permissions.yml)
 admins:
