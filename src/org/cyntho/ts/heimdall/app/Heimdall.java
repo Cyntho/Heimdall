@@ -249,8 +249,6 @@ public class Heimdall extends SimpleBotInstance {
         if (botConfig.getBoolean("commands.shutdown", false))
             commandManager.registerCommand(new CmdShutdown());
 
-        if (botConfig.getBoolean("commands.updateDescription", false))
-            commandManager.registerCommand(new CmdUpdateDescription());
 
         // TODO: Command to do backup
 

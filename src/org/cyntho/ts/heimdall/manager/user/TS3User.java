@@ -32,7 +32,6 @@ public class TS3User implements ISendAble {
     private String metaOperatingSystem;
     private String metaCountry;
     private int metaConnections;
-    private TS3UserDescription description;
 
     // Multi-Instance handling
     private TS3User parentInstance = null;
@@ -79,7 +78,6 @@ public class TS3User implements ISendAble {
         this.metaCountry = info.getCountry();
         this.metaOperatingSystem = info.getPlatform();
         this.metaVersion = info.getVersion();
-        this.description = new TS3UserDescription(this);
 
         // MultiInstance handling
         this.childInstances = new ArrayList<>();
@@ -127,7 +125,6 @@ public class TS3User implements ISendAble {
     public String getMetaOperatingSystem() { return this.metaOperatingSystem; }
     public String getMetaCountry() { return this.metaCountry; }
     public int getMetaConnections() { return this.metaConnections; }
-    public TS3UserDescription getDescription() { return this.description; }
 
 
     public UserOfflineCopy getOfflineCopy() { return this.offlineCopy; }
@@ -275,7 +272,6 @@ public class TS3User implements ISendAble {
         o.setString("metaOperatingSystem", metaOperatingSystem);
         o.setString("metaCountry", metaCountry);
         o.setInteger("metaConnections", metaConnections);
-        o.setSerialized("description", description);
 
         o.setSerialized("parentInstance", parentInstance);
 

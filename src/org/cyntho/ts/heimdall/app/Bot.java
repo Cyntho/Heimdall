@@ -158,21 +158,12 @@ public class Bot  {
                         }
                     } else if (input.equalsIgnoreCase("list users")) {
                         for (TS3User u : heimdall.getUserManager().getUserList()) {
-                            System.out.println("\t" + u.getRuntimeId() + "\t" + u.getOfflineCopy().getNickname() + " [" + u.getOfflineCopy().getUUID() + "] " + u.getLoginDate() + " " + u.getDescription());
+                            System.out.println("\t" + u.getRuntimeId() + "\t" + u.getOfflineCopy().getNickname() + " [" + u.getOfflineCopy().getUUID() + "] " + u.getLoginDate());
                         }
                     } else if (input.startsWith("poke")) {
                         poke(input.split(" "));
                     } else if (input.startsWith("test")) {
 
-                        TS3User cyn = Bot.heimdall.getUserManager().getUserByUUID("2n8nOljLkhD0i+mVCDyU/4zfjwU=");
-                        if (cyn != null){
-                            String raw = cyn.getClientInfo().getDescription();
-                            Map<String, Object> map = cyn.getDescription().getAll();
-                            System.out.println("raw: " + raw);
-                            for (Map.Entry<String, Object> entry : map.entrySet()){
-                                System.out.println("Key: " +entry.getKey() + " - " + entry.getValue().toString());
-                            }
-                        }
 
                     } else if (input.startsWith("enc")){
 
