@@ -28,12 +28,15 @@ public class Bot  {
     public static String CONTACT = "info@cyntho.org";
 
     public static Heimdall heimdall;
-    public static volatile boolean stopRequest;
+    private static volatile boolean stopRequest;
 
-    static volatile Stack<LogEntry> logStack;
+    static volatile Queue<LogEntry> logStack;
 
     public static volatile BotLogger logger;
     public static volatile BotConfig config;
+
+    private static volatile Thread loggerThread;
+    private static volatile Thread inputThread;
 
     // TODO: Fix issue of changing bot's name when multiple bot instances are running
 
@@ -43,9 +46,10 @@ public class Bot  {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT"));
 
         stopRequest = false;
-        logStack = new Stack<>();
+        logStack = new LinkedList<>();
 
         boolean handleDirectInput = false;
+        boolean install = false;
 
         if (args != null && args.length > 0){
 
@@ -57,6 +61,10 @@ public class Bot  {
                 if (s.equalsIgnoreCase("-h")){
                     handleDirectInput = true;
                 }
+
+                if (s.equalsIgnoreCase("-i")){
+                    install = true;
+                }
             }
 
         }
@@ -65,14 +73,12 @@ public class Bot  {
             config = new BotConfig();
 
             boolean logToFile = config.getBoolean("bot.logToFile", true);
-            if (DEBUG_MODE){
-                logger = new BotLogger(logToFile, LogLevelType.DBG);
-            } else {
-                logger = new BotLogger(logToFile, LogLevelType.INFO);
-            }
+            boolean logToDb   = config.getBoolean("bot.logToDb", false);
 
-            Thread loggerThread = new Thread(new LoggerRunnable());
-            loggerThread.start();
+            logger = new BotLogger(logToFile, logToDb, (DEBUG_MODE ? LogLevelType.DBG : LogLevelType.INFO));
+
+            loggerThread = new Thread(new LoggerRunnable());
+
 
         } catch (IOException e){
             System.out.println("Critical Error: Unable to create/read config file.");
@@ -82,15 +88,19 @@ public class Bot  {
             System.exit(1);
         }
 
+
+        if (DEBUG_MODE || handleDirectInput){
+            inputThread = new Thread(new DirectInputRunnable());
+        }
+
+        loggerThread.start();
+        inputThread.start();
+
         try {
             heimdall = new Heimdall();
             heimdall.start();
         } catch (SingleInstanceViolationException e){
             e.printStackTrace();
-        }
-
-        if (DEBUG_MODE || handleDirectInput){
-            handleDirectInput();
         }
     }
 
@@ -107,10 +117,12 @@ public class Bot  {
     private static class LoggerRunnable implements Runnable {
         @Override
         public void run(){
-            while (!stopRequest){
+            while (!stopRequest || !logStack.isEmpty()){
                 try {
                     while (!logStack.isEmpty()){
-                        logger.log(logStack.pop());
+                        LogEntry e = logStack.poll();
+                        if (e != null && !e.getMsg().equalsIgnoreCase(""))
+                            logger.log(e);
                     }
                     Thread.sleep(1000);
                 } catch (InterruptedException e){
@@ -124,55 +136,94 @@ public class Bot  {
         }
     }
 
+    private static class DirectInputRunnable implements Runnable {
+        @Override
+        public void run(){
+            log(LogLevelType.DBG, "Starting 'DirectInputRunnable'");
+            Scanner scanner = new Scanner(System.in);
+            String input = "";
+
+            while (!stopRequest){
+                try {
+                    input = scanner.nextLine();
+
+                    if (input.equalsIgnoreCase("shutdown")){
+                        heimdall.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from console.");
+                        heimdall.stop();
+                        stopRequest = true;
+                        break;
+                    } else if (input.equalsIgnoreCase("list features")){
+                        for (BaseFeature f : heimdall.getFeatureManager().getFeatures()){
+                            System.out.println("\t" + f.getName() + ": " + f.isActive());
+                        }
+                    } else if (input.equalsIgnoreCase("list users")) {
+                        for (TS3User u : heimdall.getUserManager().getUserList()) {
+                            System.out.println("\t" + u.getRuntimeId() + "\t" + u.getOfflineCopy().getNickname() + " [" + u.getOfflineCopy().getUUID() + "] " + u.getLoginDate() + " " + u.getDescription());
+                        }
+                    } else if (input.startsWith("poke")) {
+                        poke(input.split(" "));
+                    } else if (input.startsWith("test")) {
+
+                        TS3User cyn = Bot.heimdall.getUserManager().getUserByUUID("2n8nOljLkhD0i+mVCDyU/4zfjwU=");
+                        if (cyn != null){
+                            String raw = cyn.getClientInfo().getDescription();
+                            Map<String, Object> map = cyn.getDescription().getAll();
+                            System.out.println("raw: " + raw);
+                            for (Map.Entry<String, Object> entry : map.entrySet()){
+                                System.out.println("Key: " +entry.getKey() + " - " + entry.getValue().toString());
+                            }
+                        }
+
+                    } else if (input.startsWith("enc")){
+
+                        TS3User cyn = Bot.heimdall.getUserManager().getUserByUUID("2n8nOljLkhD0i+mVCDyU/4zfjwU=");
+                        if (cyn != null){
+
+                            System.out.println("Avatar: " + cyn.getClientInfo().getAvatar());
+
+                        }
+
+                    } else {
+                        System.out.println("Invalid command: " + input);
+                    }
+                } catch (Exception e){
+                    if (DEBUG_MODE){
+                        e.printStackTrace();
+                    }
+                }
+            }
+            scanner.close();
+            log(LogLevelType.DBG, "Stopping 'DirectInputRunnable'");
+        }
+    }
+
     public static void log(LogLevelType type, String msg){
         log(type, msg, heimdall);
     }
 
     public static void log(LogLevelType type, String msg, SimpleBotInstance instance){
-        logStack.push(new LogEntry(type, msg, instance));
+        logStack.add(new LogEntry(type, msg, instance));
     }
 
+    public static void stop(){
+        stopRequest = true;
+        if (!heimdall.stopRequested())
+            heimdall.stop();
 
-
-
-
-    private static void handleDirectInput(){
-
-        Scanner scanner = new Scanner(System.in);
-
-        while (stopRequest){
-
-            String input = scanner.nextLine();
-
-            if (input.equalsIgnoreCase("shutdown")){
-                heimdall.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from console.");
-                heimdall.stop();
-            } else if (input.equalsIgnoreCase("list features")){
-                for (BaseFeature f : heimdall.getFeatureManager().getFeatures()){
-                    System.out.println("\t" + f.getName() + ": " + f.isActive());
-                }
-            } else if (input.equalsIgnoreCase("list users")) {
-                for (TS3User u : heimdall.getUserManager().getUserList()) {
-                    System.out.println("\t" + u.getRuntimeId() + "\t" + u.getOfflineCopy().getNickname() + " [" + u.getOfflineCopy().getUUID() + "] " + u.getLoginDate() + " " + u.getDescription());
-                }
-            } else if (input.startsWith("poke")) {
-                poke(input.split(" "));
-            } else if (input.startsWith("test")){
-
-                TS3User user = Bot.heimdall.getUserManager().getUserList().get(0);
-
-                String stream = user.createNetSendObject().generateDataStream();
-
-                System.out.println(stream);
-
-            } else {
-                System.out.println("Invalid command: " + input);
-            }
-
+        try {
+            inputThread.join();
+            loggerThread.join();
+        } catch (InterruptedException e){
+            e.printStackTrace();
         }
-
-        scanner.close();
+        System.exit(0);
     }
+
+    public static boolean stopRequested(){
+        return stopRequest;
+    }
+
+
 
     private static void poke(String[] args){
         // poke <-u | -c | -a> <-uuid | -chId> <[-m] msg>

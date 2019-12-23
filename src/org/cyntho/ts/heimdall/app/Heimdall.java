@@ -7,6 +7,7 @@ import com.github.theholywaffle.teamspeak3.api.event.TS3Listener;
 import com.github.theholywaffle.teamspeak3.api.exception.TS3ConnectionFailedException;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
+import com.github.theholywaffle.teamspeak3.api.wrapper.ServerGroup;
 import org.cyntho.ts.heimdall.commands.*;
 import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.database.DatabaseConnector;
@@ -39,14 +40,13 @@ public class Heimdall extends SimpleBotInstance {
 
     /* >> Runtime */
     private volatile DatabaseConnector db;
+    private volatile boolean stopReq = false;
 
     /* >> Manager */
     private volatile UserManager userManager;
     private volatile FeatureManager featureManager;
     private volatile CommandManager commandManager;
     private volatile PermissionManager permissionManager;
-
-
 
 
     /* Constructor for the main Bot */
@@ -283,11 +283,15 @@ public class Heimdall extends SimpleBotInstance {
             System.out.println(onlineMessage);
         }
 
+
+        for  (ServerGroup g : ts3Api.getServerGroups()){
+
+        }
+
     }
 
     @Override
     public void stop(){
-        super.stopRequest = true;
 
         try {
             log(LogLevelType.BOT_EVENT, "Shutting down bot instance " + getInstanceIdentifier());
@@ -319,6 +323,15 @@ public class Heimdall extends SimpleBotInstance {
         }
 
         log(LogLevelType.BOT_EVENT, getInstanceIdentifier() + " is now offline");
+        stopReq = true;
+
+        if (Bot.stopRequested())
+            Bot.stop();
+    }
+
+
+    public boolean stopRequested() {
+        return stopReq;
     }
 
 
@@ -326,6 +339,8 @@ public class Heimdall extends SimpleBotInstance {
     public Heimdall clone(){
         return null;
     }
+
+
 
 
     // todo: make image path dynamic (config/db/param?)

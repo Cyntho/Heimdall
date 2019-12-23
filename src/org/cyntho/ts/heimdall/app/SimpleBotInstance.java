@@ -34,7 +34,6 @@ public abstract class SimpleBotInstance {
     BotConfig botConfig;
 
     /* Runtime */
-    boolean stopRequest;
     int currentChannelId;
     int botRuntimeId;
     long startupTime;
@@ -92,10 +91,6 @@ public abstract class SimpleBotInstance {
         return this.instanceIdentifier;
     }
 
-    public final boolean isStopRequest(){
-        return this.stopRequest;
-    }
-
     public final int getCurrentChannelId(){
         return this.currentChannelId;
     }
@@ -127,7 +122,7 @@ public abstract class SimpleBotInstance {
 
     /* Public final methods */
     public final synchronized void log(LogLevelType type, String msg){
-        Bot.logStack.push(new LogEntry(type, msg, this));
+        Bot.logStack.add(new LogEntry(type, msg, this));
     }
 
 

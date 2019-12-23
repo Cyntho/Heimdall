@@ -68,6 +68,7 @@ public enum LogLevelType {
 
     private final String name;
     private final int value;
+    public static final long VERSION = 0x01;
 
     LogLevelType(String type, int value){
         this.name = type;

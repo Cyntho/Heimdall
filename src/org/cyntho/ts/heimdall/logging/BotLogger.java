@@ -5,11 +5,13 @@ import org.cyntho.ts.heimdall.app.SimpleBotInstance;
 import org.cyntho.ts.heimdall.compression.Tar;
 
 import java.io.*;
+import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 
+import static org.cyntho.ts.heimdall.app.Bot.DEBUG_MODE;
 import static org.cyntho.ts.heimdall.util.PlaceHolder.getDayOfMonth;
 
 /**
@@ -29,17 +31,19 @@ public class BotLogger {
     private DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
     private boolean logToFile;
+    private boolean logToDb;
     private File logFileObject;
 
     private PrintWriter fileWriter;
     private LogLevelType logLevel;
 
 
-    public BotLogger(boolean logToFile, LogLevelType lvl) {
+    public BotLogger(boolean logToFile, boolean logToDb, LogLevelType lvl) {
 
         this.dayOfMonth = getDayOfMonth();
 
         this.logToFile = logToFile;
+        this.logToDb = logToDb;
         this.logLevel = lvl;
 
         PrintWriter out = null;
@@ -85,16 +89,25 @@ public class BotLogger {
     }
 
     public void log(LogEntry entry){
-        log(entry.getType(), entry.getMsg(), entry.getInstance());
+        log(entry, logToDb);
     }
 
-    public void log(LogLevelType lvl, String msg, SimpleBotInstance instance) {
+    public void log(LogEntry entry, boolean skipDb){
+        log(entry.getType(), entry.getMsg(), entry.getInstance(), skipDb);
+    }
+
+    public void log(LogLevelType lvl, String msg, SimpleBotInstance instance){
+        log(lvl, msg, instance, false);
+    }
+
+
+    public void log(LogLevelType lvl, String msg, SimpleBotInstance instance, boolean skipDb) {
 
         if (!validate()) return;
 
         if (lvl.getValue() > this.logLevel.getValue()) {
 
-            if (lvl.getValue() == 0 && !Bot.DEBUG_MODE) {
+            if (lvl.getValue() == 0 && !DEBUG_MODE) {
                 // Only print debug messages if in debug mode! (makes sense o_0)
                 return;
             }
@@ -115,12 +128,58 @@ public class BotLogger {
             System.out.println(out.toString());
         }
 
+        if (!skipDb){
+            logDb(lvl, msg, instance, null, null);
+        }
+
     }
 
     public boolean validate() {
         return this.dayOfMonth == getDayOfMonth();
     }
 
+
+    public void logDb(LogLevelType lvl,
+                      String msg,
+                      SimpleBotInstance instance,
+                      String invokerUUID,
+                      String targetUUID){
+
+        if (Bot.heimdall.getDb() == null || !this.logToDb) return;
+
+        String sql = "INSERT INTO prefix_log (LogLevelType, " +
+                "LogLevelVersion, " +
+                "Server, " +
+                "InvokerUUID, " +
+                "TargetUUID, " +
+                "time, " +
+                "msg) VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+        Object[] params = {lvl.getName(),
+                LogLevelType.VERSION,
+                Bot.heimdall.getApi().getServerInfo().getId(),
+                invokerUUID,
+                targetUUID,
+                System.currentTimeMillis(),
+                msg};
+
+        ResultSet set = Bot.heimdall.getDb().executeQuery(sql, params);
+
+        if (set == null && DEBUG_MODE){
+            String prep = String.format("INSERT INTO prefix_log (LogLevelType, " +
+                    "LogLevelVersion, " +
+                    "Server, " +
+                    "InvokerUUID, " +
+                    "TargetUUID, " +
+                    "time, " +
+                    "msg) VALUES (%s, %d, %d, %s, %s, %d, %s)",
+                    lvl.getName(), LogLevelType.VERSION, Bot.heimdall.getApi().getServerInfo().getId(),
+                    invokerUUID, targetUUID, System.currentTimeMillis(), msg);
+            log(lvl, prep, instance, true);
+        }
+
+
+    }
 
     public void close() {
         if (this.logToFile) {
@@ -148,7 +207,7 @@ public class BotLogger {
     }
 
     public BotLogger generateInstance() {
-        return new BotLogger(this.logToFile, this.logLevel);
+        return new BotLogger(this.logToFile, this.logToDb, this.logLevel);
     }
 
 

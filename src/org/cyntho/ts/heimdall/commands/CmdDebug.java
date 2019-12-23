@@ -2,7 +2,9 @@ package org.cyntho.ts.heimdall.commands;
 
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.database.SilentDatabaseConnector;
+import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
+import org.cyntho.ts.heimdall.util.RC4Crypto;
 
 public class CmdDebug extends BaseCommand {
 
@@ -17,19 +19,18 @@ public class CmdDebug extends BaseCommand {
 
         System.out.println("debug..");
 
-        // Updating "public talk 2", channel id: 58
+        String raw = Bot.heimdall.getApi().getClientInfo(invoker.getClientInfo().getId()).getDescription();
+        System.out.println("descr. raw: " + raw);
 
-        SilentDatabaseConnector silent = new SilentDatabaseConnector(Bot.heimdall.getBotConfig());
+        String dec = null;
 
-        System.out.println("initialized");
-
-        boolean success = silent.updateChannelDescription(58, "This was added silently");
-
-        if (success){
-            System.out.println("Success!");
-        } else {
-            System.out.println("Failure!");
+        try {
+            dec = RC4Crypto.decrypt(raw.getBytes(), "43a136a6-2bdb-4e9e-85f9-bc755699ac21");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+        System.out.println("dec: " + dec);
 
         return true;
     }

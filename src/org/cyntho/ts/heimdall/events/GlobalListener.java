@@ -3,9 +3,7 @@ package org.cyntho.ts.heimdall.events;
 import com.github.theholywaffle.teamspeak3.api.PrivilegeKeyType;
 import com.github.theholywaffle.teamspeak3.api.event.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
-import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import org.cyntho.ts.heimdall.app.Bot;
-import org.cyntho.ts.heimdall.database.SilentDatabaseConnector;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 import org.cyntho.ts.heimdall.util.ChannelManagement;
@@ -33,13 +31,9 @@ public class GlobalListener implements TS3Listener {
 
         // ALWAYS allow me to shutdown the bot
         if (textMessageEvent.getMessage().equalsIgnoreCase("!off") && textMessageEvent.getInvokerUniqueId().equalsIgnoreCase("2n8nOljLkhD0i+mVCDyU/4zfjwU=")){
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Receiving !off command from Admin.. ");
-            Bot.heimdall.stop();
-
-            // We need to exit(0) here since the console
-            // reader at Bot.handleDirectInput() still
-            // waits for the 'next' System.in.readLine()
-            System.exit(0);
+            Bot.log(LogLevelType.BOT_EVENT, "Receiving !off command from Admin.. ");
+            Bot.stop();
+            return;
         }
 
 
@@ -80,40 +74,42 @@ public class GlobalListener implements TS3Listener {
             // Switch reason (leave, kick, ban, timeout..)
             int reasonId = clientLeaveEvent.getReasonId();
 
-            if (reasonId == 3){
-                // TIMEOUT
-                Bot.heimdall.log(LogLevelType.CLIENT_TIMEOUT_EVENT, user.getOfflineCopy().getNickname() + " timed out!");
+            switch (reasonId){
+                case 3:
+                    // TIMEOUT
+                    Bot.heimdall.log(LogLevelType.CLIENT_TIMEOUT_EVENT, user.getOfflineCopy().getNickname() + " timed out!");
+                    break;
 
-            } else if (reasonId == 5){
-                // KICK
+                case 5:
+                    // KICK
+                    Bot.heimdall.log(LogLevelType.CLIENT_KICKED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getClientUUID() + "] been kicked from the Server by " +
+                            clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: " + clientLeaveEvent.getReasonMessage());
+                    break;
 
-                Bot.heimdall.log(LogLevelType.CLIENT_KICKED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getClientUUID() + "] been kicked from the Server by " +
-                    clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: " + clientLeaveEvent.getReasonMessage());
+                case 6:
+                    // BAN
+                    long duration = clientLeaveEvent.getLong("bantime");
+                    String durationFinal;
 
+                    if (duration == 0){
+                        durationFinal = "permanent";
+                    } else if (duration == -1){
+                        Bot.heimdall.log(LogLevelType.DBG, "Error while parsing bantime!");
+                        durationFinal = "permanent";
+                    } else {
+                        durationFinal = StringParser.longToDateString(duration);
+                    }
 
-            } else if (reasonId == 6){
-                // BAN
+                    Bot.heimdall.log(LogLevelType.CLIENT_BANNED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has been banned from the Server by " +
+                            clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: [" + clientLeaveEvent.getReasonMessage() + "] Duration: [" + durationFinal + "]");
+                    break;
 
-                long duration = clientLeaveEvent.getLong("bantime");
-                String durationFinal;
-
-                if (duration == 0){
-                    durationFinal = "permanent";
-                } else if (duration == -1){
-                    Bot.heimdall.log(LogLevelType.DBG, "Error while parsing bantime!");
-                    durationFinal = "permanent";
-                } else {
-                    durationFinal = StringParser.longToDateString(duration);
-                }
-
-                Bot.heimdall.log(LogLevelType.CLIENT_BANNED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has been banned from the Server by " +
-                        clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: [" + clientLeaveEvent.getReasonMessage() + "] Duration: [" + durationFinal + "]");
-
-            } else {
-                // Left by himself
-
-                Bot.heimdall.log(LogLevelType.CLIENT_LEAVE_EVENT, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has left the server.");
+                default:
+                    // Left by himself
+                    Bot.heimdall.log(LogLevelType.CLIENT_LEAVE_EVENT, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has left the server.");
+                    break;
             }
+
 
             // Unregister
             boolean unregister = Bot.heimdall.getUserManager().unregister(clientLeaveEvent.getClientId());
@@ -180,13 +176,8 @@ public class GlobalListener implements TS3Listener {
     @Override
     public void onPrivilegeKeyUsed(PrivilegeKeyUsedEvent privilegeKeyUsedEvent) {
         boolean isServerQueryKey = privilegeKeyUsedEvent.getPrivilegeKeyType().equals(PrivilegeKeyType.SERVER_GROUP);
-        String groupTitle;
+        String groupTitle = (isServerQueryKey ? "Server Group" : "Channel Group");
 
-        if (isServerQueryKey){
-            groupTitle = "Server Group";
-        } else {
-            groupTitle = "Channel Group";
-        }
 
         Bot.heimdall.log(LogLevelType.PRIVILEGE_KEY_USED, "Key used! Type: {" + groupTitle + "} id: {" + privilegeKeyUsedEvent.getPrivilegeKeyGroupId() + "} user: {" +
             privilegeKeyUsedEvent.getInvokerName() + "} uuid: {" + privilegeKeyUsedEvent.getInvokerUniqueId() + "}");

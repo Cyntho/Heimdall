@@ -117,41 +117,4 @@ public class BotConfig extends CustomConfig {
     public int getServerCommandTimeout()  { return getInt("server.commandTimeout", DEFAULT_SERVER_COMMAND_TIMEOUT); }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

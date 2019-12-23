@@ -83,9 +83,9 @@ public class HeimdallOld {
         boolean logToFile = this.botConfig.getBoolean("bot.logToFile", true);
 
         if (DEBUG_MODE){
-            this.logger = new BotLogger(logToFile, LogLevelType.DBG);
+            this.logger = new BotLogger(logToFile, false, LogLevelType.DBG);
         } else {
-            this.logger = new BotLogger(logToFile, LogLevelType.INFO);
+            this.logger = new BotLogger(logToFile, false, LogLevelType.INFO);
         }
     }
 

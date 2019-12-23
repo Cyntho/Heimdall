@@ -10,13 +10,13 @@ database:
   port: 3306
   database: 'teamspeak_heimdall'
   prefix: 'tsb'
-  local: 'D:\tools\Teamspeak-Server-3.5.0\teamspeak3-server_win64\ts3server.sqlitedb'
+  local: 'D:\tools\Teamspeak-Server-3.5.0\teamspeak3-server_win64\ts3server.sqlitedb' #ToDo: Remove for deployment
 
 
 # Teamspeak Server Query configuration
 query:
   username: serveradmin
-  password: t9YB9C1f
+  password: Y04l5RyR
   host: 127.0.0.1
   port: 10011
   floodRate: UNLIMITED
@@ -31,16 +31,16 @@ server:
 # General bot settings
 bot:
   logToFile: true
-  logToDatabase: true
+  logToDb: true
   logFileZip: false
   nick: '[Bot] Heimdall'
-  goOnlineMessage: 'Debug: Online!'     # Leave empty to deactivate message
-  goOfflineMessage: 'Debug: Offline!'    # Leave empty to deactivate message
+  goOnlineMessage: ''     # Leave empty to deactivate message
+  goOfflineMessage: ''    # Leave empty to deactivate message
 
 # Commands that are disabled here are unavailable during runtime
 # even if assigned to groups in the permission.yml
 commands:
-  debug: false
+  debug: true
   getPath: false
   hasPermission: true
   list:

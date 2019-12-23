@@ -3,6 +3,8 @@ package org.cyntho.ts.heimdall.manager.user;
 
 import com.github.theholywaffle.teamspeak3.api.ClientProperty;
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.logging.LogLevelType;
+import org.cyntho.ts.heimdall.util.RC4Crypto;
 
 import java.io.*;
 import java.util.Base64;
@@ -19,10 +21,10 @@ public class TS3UserDescription implements Serializable {
      *
      * TODO: implement encryption
      */
-    private final static String pw = "43a136a6-2bdb-4e9e-85f9-bc755699ac21";
+
 
     private final TS3User user;
-    private TS3UserDescriptionData data;
+    public TS3UserDescriptionData data;
 
     TS3UserDescription(TS3User user) {
         this.user = user;
@@ -35,15 +37,20 @@ public class TS3UserDescription implements Serializable {
             data = new TS3UserDescriptionData(tmp);
         }
 
+
+
     }
 
     private void update(){
         if (this.data != null){
             try {
+                System.out.println("runtime: " + this.user.getRuntimeId() );
                 Bot.heimdall.getApi().editClient(this.user.getRuntimeId(), Collections.singletonMap(ClientProperty.CLIENT_DESCRIPTION, this.data.toString()));
             } catch (NullPointerException e){
                 e.printStackTrace();
             }
+        } else {
+            System.out.println("data null");
         }
     }
 
@@ -76,78 +83,7 @@ public class TS3UserDescription implements Serializable {
 
     //------------------------------------------------
 
-    public final class TS3UserDescriptionData implements Serializable {
 
-        private final static long serialVersionUID = 2;
-
-        Map<String, Object> data;
-
-        private boolean registered;
-        private long registerDate;
-
-        private String nameBoard;
-
-
-
-        TS3UserDescriptionData(){
-            data = new HashMap<>();
-        }
-
-        TS3UserDescriptionData(String base){
-            data = new HashMap<>();
-
-            try {
-
-                byte[] b = Base64.getDecoder().decode(base);
-                ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(b));
-
-                Object o = ois.readObject();
-                ois.close();
-
-                if (o instanceof Map){
-                    this.data = (Map<String, Object>) o;
-                } else {
-                    System.out.println("error casting object to map");
-                }
-
-            } catch (Exception e) {
-                System.out.println("error while casting user description");
-
-            }
-        }
-
-
-        public Map<String, Object> getMap(){
-            return this.data;
-        }
-
-        public void put(String key, Object value) {
-            this.data.put(key, value);
-        }
-
-        public Object get(String key){
-            return this.data.get(key);
-        }
-
-        @Override
-        public String toString(){
-
-            try {
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                ObjectOutputStream oos = new ObjectOutputStream(stream);
-
-                oos.writeObject(this);
-                oos.close();
-
-                return Base64.getEncoder().encodeToString(stream.toByteArray());
-
-            } catch (IOException e){
-                e.printStackTrace();
-            }
-            return "";
-        }
-
-    }
 
 
 

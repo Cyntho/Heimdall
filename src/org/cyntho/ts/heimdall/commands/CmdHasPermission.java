@@ -14,7 +14,7 @@ public class CmdHasPermission extends BaseCommand {
     @Override
     public boolean execute(TS3User invoker, String[] args) {
 
-        Bot.heimdall.log(LogLevelType.DBG, "Firing !hasPermission command.");
+        Bot.log(LogLevelType.DBG, "Firing !hasPermission command.");
 
         // check if runtimeID is submitted
         try {
@@ -46,7 +46,7 @@ public class CmdHasPermission extends BaseCommand {
             }
         }
 
-        Bot.heimdall.log(LogLevelType.DBG, "test");
+        Bot.log(LogLevelType.DBG, "test");
 
         return false;
     }
