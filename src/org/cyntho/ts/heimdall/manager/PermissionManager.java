@@ -29,7 +29,7 @@ public class PermissionManager {
         this.admins = new ArrayList<>();
 
         // Load groups
-        Bot.heimdall.log(LogLevelType.DBG, "Initializing permission groups.. ");
+        Bot.log(LogLevelType.DBG, "Initializing permission groups.. ");
         int counter = 0;
 
         try {
@@ -40,13 +40,13 @@ public class PermissionManager {
 
             while (resultSet.next()){
                 PermissionGroup group = new PermissionGroup(resultSet.getInt("id"));
-                Bot.heimdall.log(LogLevelType.DBG, "Initialized Permission Group: " + group.getName());
+                Bot.log(LogLevelType.DBG, "Initialized Permission Group: " + group.getName());
                 counter++;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        Bot.heimdall.log(LogLevelType.DBG, "Done initializing permission groups. " + counter + " loaded.");
+        Bot.log(LogLevelType.DBG, "Done initializing permission groups. " + counter + " loaded.");
 
 
         // Load memberships
@@ -72,7 +72,7 @@ public class PermissionManager {
                 String s = user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] to group " + membership.get(user.getOfflineCopy().getUUID());
                 user.setPermissionGroupId(membership.get(user.getOfflineCopy().getUUID()));
 
-                Bot.heimdall.log(LogLevelType.DBG, "Assigning " + s);
+                Bot.log(LogLevelType.DBG, "Assigning " + s);
             }
 
         } catch (SQLException e){

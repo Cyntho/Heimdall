@@ -1,7 +1,7 @@
 package org.cyntho.ts.heimdall.commands;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
@@ -18,7 +18,7 @@ public class CmdShutdown extends BaseCommand {
     public boolean execute(@NotNull TS3User invoker, @Nullable String[] args){
 
         if (invoker.isAdmin() || invoker.isHost() || invoker.hasPermission("shutdown")){
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from user " + invoker.getOfflineCopy().getNickname() + " [" + invoker.getOfflineCopy().getUUID() + "]");
+            Bot.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from user " + invoker.getOfflineCopy().getNickname() + " [" + invoker.getOfflineCopy().getUUID() + "]");
             Bot.heimdall.stop();
             return true;
         }

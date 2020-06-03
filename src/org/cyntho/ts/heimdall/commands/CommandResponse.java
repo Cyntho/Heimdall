@@ -2,17 +2,16 @@ package org.cyntho.ts.heimdall.commands;
 
 public enum CommandResponse {
 
-    COMMAND_SUCCESS ("Success", 0x000),
-    FAILURE_PERMISSION ("FailurePermission", 0x001);
+    SUCCESS(0x000),
+    HIDDEN(0x001),
+    FAILURE(0x002);
 
 
-    private final String name;
     private final long value;
 
-    CommandResponse(final String n, final long value){
-        this.name = n;
+    CommandResponse(final long value){
         this.value = value;
     }
 
-
+    public long getValue() { return value; }
 }

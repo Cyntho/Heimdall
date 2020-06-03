@@ -71,8 +71,6 @@ public class PlaceHolder {
     public static String handleBotPlaceholder(String raw){
         String tmp = raw;
 
-        System.out.println("Raw: " + raw);
-
         try {
             Map<String, String> base = new HashMap<>();
 
@@ -94,7 +92,6 @@ public class PlaceHolder {
                 tmp = tmp.replaceAll(key, base.get(key));
             }
 
-            System.out.println("Converted to: " + tmp);
         } catch (Exception e){
             if (Bot.DEBUG_MODE){
                 e.printStackTrace();

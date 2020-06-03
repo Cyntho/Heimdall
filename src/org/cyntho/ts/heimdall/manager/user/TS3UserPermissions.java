@@ -47,7 +47,7 @@ public class TS3UserPermissions {
             }
 
         } catch (SQLException e){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Could not receive special permissions for user " + owner.getOfflineCopy().getUUID());
+            Bot.log(LogLevelType.DATABASE_ERROR, "Could not receive special permissions for user " + owner.getOfflineCopy().getUUID());
         }
     }
 

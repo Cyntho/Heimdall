@@ -4,6 +4,9 @@ import com.github.theholywaffle.teamspeak3.api.event.ClientJoinEvent;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import com.github.theholywaffle.teamspeak3.api.wrapper.ClientInfo;
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.commands.BaseCommand;
+import org.cyntho.ts.heimdall.commands.CommandResponse;
+import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.permissions.PermissionGroup;
 import org.cyntho.ts.heimdall.net.NetSendObject;
 import org.cyntho.ts.heimdall.net.streaming.ISendAble;
@@ -247,7 +250,24 @@ public class TS3User implements ISendAble {
         }
     }
 
+    public void sendCommandFeedback(CommandResponse response, BaseCommand command, String message){
+        switch (response){
+            case SUCCESS:
+                if (!message.equalsIgnoreCase(""))
+                    sendPrivateMessage(message);
+                break;
 
+            case FAILURE:
+                if (hasPermission("command.feedback")){
+                    sendPrivateMessage("Error executing command.");
+                    command.sendUsage(this);
+                }
+                break;
+
+            default:
+                Bot.log(LogLevelType.COMMAND_ERROR, "Denied '" + getNickname() + "' [" + clientUUID + "' to use command " + command.getLabel());
+        }
+    }
 
 
     /* ISendAble implementations */

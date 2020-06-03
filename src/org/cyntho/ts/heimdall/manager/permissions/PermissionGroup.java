@@ -64,7 +64,7 @@ public class PermissionGroup {
                 e.printStackTrace();
             }
         } else {
-            Bot.heimdall.log(LogLevelType.BOT_CRITICAL, "Error initializing PermissionGroup {" + this.id + "}");
+            Bot.log(LogLevelType.BOT_CRITICAL, "Error initializing PermissionGroup {" + this.id + "}");
         }
     }
 

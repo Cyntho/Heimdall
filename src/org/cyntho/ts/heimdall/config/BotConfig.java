@@ -1,5 +1,6 @@
 package org.cyntho.ts.heimdall.config;
 
+import com.github.theholywaffle.teamspeak3.TS3Query.FloodRate;
 import com.github.theholywaffle.teamspeak3.TS3Query;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
@@ -14,29 +15,29 @@ import java.util.logging.Level;
 public class BotConfig extends CustomConfig {
 
     // Database Defaults
-    private static String DEFAULT_DB_HOST = "localhost";
-    private static String DEFAULT_DB_USER = "username";
-    private static String DEFAULT_DB_PASS = "password";
-    private static String DEFAULT_DB_BASE = "database";
-    private static int    DEFAULT_DB_PORT = 3306;
+    private static final String DEFAULT_DB_HOST = "localhost";
+    private static final String DEFAULT_DB_USER = "username";
+    private static final String DEFAULT_DB_PASS = "password";
+    private static final String DEFAULT_DB_BASE = "database";
+    private static final int    DEFAULT_DB_PORT = 3306;
 
     // Query Defaults
-    private static String             DEFAULT_QRY_USER       = "serveradmin";
-    private static String             DEFAULT_QRY_PASS       = "password";
-    private static String             DEFAULT_QRY_HOST       = "localhost";
-    private static int                DEFAULT_QRY_PORT       = 10011;
-    private static TS3Query.FloodRate DEFAULT_QRY_FLOOD_RATE = TS3Query.FloodRate.DEFAULT;
+    private static final String             DEFAULT_QRY_USER       = "serveradmin";
+    private static final String             DEFAULT_QRY_PASS       = "password";
+    private static final String             DEFAULT_QRY_HOST       = "localhost";
+    private static final int                DEFAULT_QRY_PORT       = 10011;
+    private static final TS3Query.FloodRate DEFAULT_QRY_FLOOD_RATE = FloodRate.DEFAULT;
 
-    private static int    DEFAULT_SERVER_ID              = 1;
-    private static int    DEFAULT_SERVER_COMMAND_TIMEOUT = 4000;
-    private static Level  DEFAULT_SERVER_DEBUG_LEVEL     = Level.INFO;
+    private static final int    DEFAULT_SERVER_ID              = 1;
+    private static final int    DEFAULT_SERVER_COMMAND_TIMEOUT = 4000;
+    private static final Level  DEFAULT_SERVER_DEBUG_LEVEL     = Level.INFO;
 
 
     public BotConfig() throws IOException{
         super("defaultBotConfig.yml", "config.yml");
 
         if (!initialized){
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not load config.yml file!");
+            Bot.log(LogLevelType.BOT_ERROR, "Could not load config.yml file!");
         }
     }
 
@@ -71,7 +72,7 @@ public class BotConfig extends CustomConfig {
 
     public int getQryPort() { return getInt("query.port", DEFAULT_QRY_PORT); }
 
-    public TS3Query.FloodRate getFloodRate(){
+    public FloodRate getFloodRate(){
         String tmp = getString("query.floodRate", null);
 
         if (tmp == null || tmp == ""){
@@ -79,15 +80,15 @@ public class BotConfig extends CustomConfig {
         }
 
         if (tmp.equalsIgnoreCase("UNLIMITED")){
-            return TS3Query.FloodRate.UNLIMITED;
+            return FloodRate.UNLIMITED;
         }
 
         // Custom value?
         try {
             int i = Integer.parseInt(tmp, 10);
-            return TS3Query.FloodRate.custom(i);
+            return FloodRate.custom(i);
         } catch (NumberFormatException e){
-            return TS3Query.FloodRate.DEFAULT;
+            return FloodRate.DEFAULT;
         }
     }
 

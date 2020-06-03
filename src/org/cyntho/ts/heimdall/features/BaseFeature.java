@@ -30,18 +30,18 @@ public abstract class BaseFeature {
     protected final boolean tryToggleStatus(boolean toActive){
         if (toActive){
             if (active){
-                Bot.heimdall.log(LogLevelType.BOT_EVENT, "Could not activate " + name + ", since it's already running!");
+                Bot.log(LogLevelType.BOT_EVENT, "Could not activate " + name + ", since it's already running!");
                 return false;
             } else {
-                Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + name + " has been enabled.");
+                Bot.log(LogLevelType.BOT_EVENT, "Feature: " + name + " has been enabled.");
                 return true;
             }
         } else {
             if (!active){
-                Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not deactivate" + name + ", since it's not running!");
+                Bot.log(LogLevelType.BOT_ERROR, "Could not deactivate" + name + ", since it's not running!");
                 return false;
             } else {
-                Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + name + " has been disabled.");
+                Bot.log(LogLevelType.BOT_EVENT, "Feature: " + name + " has been disabled.");
                 return true;
             }
         }

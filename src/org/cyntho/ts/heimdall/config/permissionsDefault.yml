@@ -1,0 +1,36 @@
+# Set your user groups and permissions here.
+# See reference.yml for a full list of permissions
+
+guest:
+  serverGroupId: 0
+  channel:
+    - 1
+    - 2
+    - 3
+    - 28
+    - 29
+
+public-gamer:
+  serverGroupId: 1
+  channel:
+    - 19*
+  inherit: 'guest'
+
+regular:
+  serverGroupId: 2
+  inherit: 'public-gamer'
+
+moderator:
+  serverGroupId: 3
+  inherit: 'public-gamer'
+  permissions:
+    - commands.help
+    - commands.lock
+
+admin:
+  serverGroupId: 5
+  permissions:
+    - '*'
+  channel:
+    - '*'
+

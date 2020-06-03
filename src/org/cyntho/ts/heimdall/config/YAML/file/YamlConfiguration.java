@@ -180,7 +180,7 @@ public class YamlConfiguration extends FileConfiguration {
         try {
             config.load(stream);
         } catch (Exception ex) {
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Cannot load configuration from stream");
+            Bot.log(LogLevelType.BOT_ERROR, "Cannot load configuration from stream");
         }
 
         return config;
@@ -194,7 +194,7 @@ public class YamlConfiguration extends FileConfiguration {
         try {
             config.load(reader);
         } catch (Exception ex) {
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Cannot load configuration from stream");
+            Bot.log(LogLevelType.BOT_ERROR, "Cannot load configuration from stream");
         }
 
         return config;

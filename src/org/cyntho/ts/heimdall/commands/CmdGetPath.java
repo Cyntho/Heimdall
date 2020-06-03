@@ -59,7 +59,7 @@ public class CmdGetPath extends BaseCommand {
                 return true;
             }
         } else {
-            Bot.heimdall.log(LogLevelType.COMMAND_ERROR, "Insufficient permissions.");
+            Bot.log(LogLevelType.COMMAND_ERROR, "Insufficient permissions.");
         }
 
         return false;

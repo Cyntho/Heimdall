@@ -111,18 +111,16 @@ public abstract class SimpleBotInstance {
         return this.nickname;
     }
 
+    public final void setNickname(String n){
+        this.nickname = n;
+    }
+
     public final boolean isParent() {
         return this.parent == null;
     }
 
     public final SimpleBotInstance getParent(){
         return this.parent;
-    }
-
-
-    /* Public final methods */
-    public final synchronized void log(LogLevelType type, String msg){
-        Bot.logStack.add(new LogEntry(type, msg, this));
     }
 
 

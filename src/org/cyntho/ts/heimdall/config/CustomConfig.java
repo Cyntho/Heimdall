@@ -1,9 +1,10 @@
 package org.cyntho.ts.heimdall.config;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import org.cyntho.ts.heimdall.config.YAML.file.FileConfiguration;
 import org.cyntho.ts.heimdall.config.YAML.file.YamlConfiguration;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -23,8 +24,10 @@ public abstract class CustomConfig {
     protected final boolean initialized;
 
 
-    @Nullable private String internPath;
-    @NotNull  private String externalPath;
+    @Nullable
+    private String internPath;
+    @NotNull
+    private String externalPath;
 
 
     /* Constructor */
@@ -61,7 +64,7 @@ public abstract class CustomConfig {
         return YamlConfiguration.loadConfiguration(new File(externalPath));
     }
 
-    @Nullable final FileConfiguration getFileConfiguration() {
+    @Nullable public final FileConfiguration getFileConfiguration() {
         return this.fileConfiguration;
     }
 

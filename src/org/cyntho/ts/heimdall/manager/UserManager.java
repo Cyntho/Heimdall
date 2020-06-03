@@ -123,7 +123,7 @@ public class UserManager {
         }
 
         // Print the log message to the console (and file, if logToFile active)
-        instance.log(LogLevelType.CLIENT_JOIN_EVENT, logMessage);
+        Bot.log(LogLevelType.CLIENT_JOIN_EVENT, logMessage);
     }
 
     public synchronized boolean unregister(int runtimeId){
@@ -138,7 +138,7 @@ public class UserManager {
 
         // If the user cannot be resolved, log an error message and return false
         if (user == null){
-            instance.log(LogLevelType.BOT_ERROR, "Unable to unregister user with id = {" + runtimeId + "} - Cannot resolve TS3User Object");
+            Bot.log(LogLevelType.BOT_ERROR, "Unable to unregister user with id = {" + runtimeId + "} - Cannot resolve TS3User Object");
             return false;
         }
 

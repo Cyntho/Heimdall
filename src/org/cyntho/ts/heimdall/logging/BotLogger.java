@@ -102,7 +102,6 @@ public class BotLogger {
 
 
     public void log(LogLevelType lvl, String msg, SimpleBotInstance instance, boolean skipDb) {
-
         if (!validate()) return;
 
         if (lvl.getValue() > this.logLevel.getValue()) {

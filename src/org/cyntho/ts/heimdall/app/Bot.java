@@ -23,14 +23,14 @@ public class Bot  {
 
     public static boolean DEBUG_MODE = TRUE; // TODO: Change to default FALSE for deployment
 
-    public static String VERSION = "1.7";
+    public static String VERSION = "1.8.0";
     public static String AUTHOR = "Xida";
     public static String CONTACT = "info@cyntho.org";
 
     public static Heimdall heimdall;
     private static volatile boolean stopRequest;
 
-    static volatile Queue<LogEntry> logStack;
+    private static volatile Queue<LogEntry> logStack;
 
     public static volatile BotLogger logger;
     public static volatile BotConfig config;
@@ -63,7 +63,7 @@ public class Bot  {
                 }
 
                 if (s.equalsIgnoreCase("-i")){
-                    install = true;
+                    install = true; //ToDo
                 }
             }
 
@@ -75,8 +75,8 @@ public class Bot  {
             boolean logToFile = config.getBoolean("bot.logToFile", true);
             boolean logToDb   = config.getBoolean("bot.logToDb", false);
 
-            logger = new BotLogger(logToFile, logToDb, (DEBUG_MODE ? LogLevelType.DBG : LogLevelType.INFO));
 
+            logger = new BotLogger(logToFile, logToDb, (DEBUG_MODE ? LogLevelType.DBG : LogLevelType.INFO));
             loggerThread = new Thread(new LoggerRunnable());
 
 
@@ -85,7 +85,7 @@ public class Bot  {
             if (DEBUG_MODE){
                 e.printStackTrace();
             }
-            System.exit(1);
+            //System.exit(1);
         }
 
 
@@ -93,14 +93,20 @@ public class Bot  {
             inputThread = new Thread(new DirectInputRunnable());
         }
 
+        logStack.add(new LogEntry(LogLevelType.DBG, "Test Entry", heimdall));
+
+        loggerThread.setDaemon(true);
+        inputThread.setDaemon(true);
+
         loggerThread.start();
         inputThread.start();
+
 
         try {
             heimdall = new Heimdall();
             heimdall.start();
         } catch (SingleInstanceViolationException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -117,14 +123,16 @@ public class Bot  {
     private static class LoggerRunnable implements Runnable {
         @Override
         public void run(){
-            while (!stopRequest || !logStack.isEmpty()){
+            while (!stopRequest){
                 try {
                     while (!logStack.isEmpty()){
                         LogEntry e = logStack.poll();
-                        if (e != null && !e.getMsg().equalsIgnoreCase(""))
+                        if (e != null && !e.getMsg().equalsIgnoreCase("")){
                             logger.log(e);
+                        }
+
                     }
-                    Thread.sleep(1000);
+                    Thread.sleep(10);
                 } catch (InterruptedException e){
                     if (DEBUG_MODE){
                         e.printStackTrace();
@@ -133,6 +141,7 @@ public class Bot  {
                     }
                 }
             }
+            System.out.println("LoggerRunnable stopped.");
         }
     }
 
@@ -148,9 +157,7 @@ public class Bot  {
                     input = scanner.nextLine();
 
                     if (input.equalsIgnoreCase("shutdown")){
-                        heimdall.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from console.");
-                        heimdall.stop();
-                        stopRequest = true;
+                        log(LogLevelType.BOT_EVENT, "Receiving shutdown command from console.");
                         break;
                     } else if (input.equalsIgnoreCase("list features")){
                         for (BaseFeature f : heimdall.getFeatureManager().getFeatures()){
@@ -163,7 +170,7 @@ public class Bot  {
                     } else if (input.startsWith("poke")) {
                         poke(input.split(" "));
                     } else if (input.startsWith("test")) {
-
+                        System.out.println("testing...");
 
                     } else if (input.startsWith("enc")){
 
@@ -184,7 +191,8 @@ public class Bot  {
                 }
             }
             scanner.close();
-            log(LogLevelType.DBG, "Stopping 'DirectInputRunnable'");
+            System.out.println("DirectInputRunnable stopped.");
+            stop();
         }
     }
 
@@ -198,15 +206,32 @@ public class Bot  {
 
     public static void stop(){
         stopRequest = true;
-        if (!heimdall.stopRequested())
-            heimdall.stop();
 
+        heimdall.stop();
+
+        System.out.println("Shutting down InputThread..." + inputThread.getState().toString());
         try {
-            inputThread.join();
-            loggerThread.join();
-        } catch (InterruptedException e){
+            if (inputThread.getState() != Thread.State.TERMINATED){
+                inputThread.join();
+            }
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Shutting down LoggerThread..." + loggerThread.getState().toString());
+        try {
+            if (loggerThread.getState() != Thread.State.TERMINATED){
+                loggerThread.join();
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        while (!logStack.isEmpty()){
+            logger.log(logStack.poll());
+        }
+
+        System.out.println("End of Bot.stop()"); // ToDo
         System.exit(0);
     }
 

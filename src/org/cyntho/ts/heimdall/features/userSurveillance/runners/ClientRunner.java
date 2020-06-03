@@ -32,7 +32,6 @@ public class ClientRunner implements UserSurveillanceBaseRunner {
 
         final TS3Config cfg = new TS3Config();
         cfg.setHost(Bot.heimdall.getBotConfig().getDbHost());
-        cfg.setDebugToFile(false);
         cfg.setCommandTimeout(Bot.heimdall.getBotConfig().getServerCommandTimeout());
         cfg.setFloodRate(Bot.heimdall.getBotConfig().getFloodRate());
 

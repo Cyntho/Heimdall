@@ -45,7 +45,7 @@ public class DatabaseConnector {
         try {
             initialize();
         } catch (DatabaseAuthException e){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, e.getMessage());
+            Bot.log(LogLevelType.DATABASE_ERROR, e.getMessage());
         }
     }
 
@@ -56,7 +56,7 @@ public class DatabaseConnector {
                 // Class.forName("com.mysql.jdbc.Driver"); // DEPRECATED
                 Class.forName("com.mysql.cj.jdbc.Driver");
             } catch (ClassNotFoundException e){
-                Bot.heimdall.log(LogLevelType.BOT_CRITICAL, "Unable to load mysql driver class!");
+                Bot.log(LogLevelType.BOT_CRITICAL, "Unable to load mysql driver class!");
                 System.exit(1);
             }
 
@@ -69,8 +69,8 @@ public class DatabaseConnector {
         }
     }
 
-    //public String getConnectionString() { return ("jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbBase + "?user=" + dbUser + "&pass=" + dbPass); }
-    public String getConnectionString() { return ("jdbc:mysql://localhost/teamspeak_heimdall?serverTimezone=GMT"); }
+    public String getConnectionString() { return ("jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbBase + "?user=" + dbUser + "&pass=" + dbPass); }
+    //public String getConnectionString() { return ("jdbc:mysql://localhost/teamspeak_heimdall?serverTimezone=GMT"); }
 
     public Connection getConnection() { return this.connection; }
 
@@ -127,7 +127,7 @@ public class DatabaseConnector {
         } catch (NumberFormatException e){
             e.printStackTrace();
         } catch (SQLException e){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Error while executing query: " + qry);
+            Bot.log(LogLevelType.DATABASE_ERROR, "Error while executing query: " + qry);
         }
 
         return null;
@@ -175,9 +175,7 @@ public class DatabaseConnector {
 
         List<String> columns = new ArrayList<>();
 
-
-
-        String qry = "SELECT * FROM " + this.dbPref + "_" + table.getName();
+        String qry = String.format("SELECT * FROM %s_%s", this.dbPref, table.getName());
 
         try {
             Connection con = getConnectionInstance();

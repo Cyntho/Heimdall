@@ -1,7 +1,7 @@
 package org.cyntho.ts.heimdall.commands;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
@@ -36,9 +36,9 @@ public abstract class BaseCommand {
         }
 
         if (success){
-            Bot.heimdall.log(LogLevelType.COMMAND_FIRE, invoker.getOfflineCopy().getNickname() + " used command: '" + params.toString() + "'");
+            Bot.log(LogLevelType.COMMAND_FIRE, invoker.getOfflineCopy().getNickname() + " used command: '" + params.toString() + "'");
         } else {
-            Bot.heimdall.log(LogLevelType.COMMAND_ERROR, invoker.getOfflineCopy().getNickname() + " [" + invoker.getClientUUID() + "] failed to use command " + this.label);
+            Bot.log(LogLevelType.COMMAND_ERROR, invoker.getOfflineCopy().getNickname() + " [" + invoker.getClientUUID() + "] failed to use command " + this.label);
         }
     }
 

@@ -52,7 +52,6 @@ public class Heimdall extends SimpleBotInstance {
     /* Constructor for the main Bot */
     public Heimdall() throws SingleInstanceViolationException {
         super("Heimdall");
-
         super.ts3Config = new TS3Config();
     }
 
@@ -89,11 +88,7 @@ public class Heimdall extends SimpleBotInstance {
         ts3Config.setFloodRate(botConfig.getFloodRate());
         ts3Config.setHost(botConfig.getQryHost());
         ts3Config.setQueryPort(botConfig.getQryPort());
-        ts3Config.setDebugLevel(Level.OFF);
         ts3Config.setCommandTimeout(botConfig.getServerCommandTimeout());
-
-        ts3Config.setDebugToFile(false);
-
 
 
         log(LogLevelType.BOT_EVENT, "Environment: ready!");
@@ -129,11 +124,15 @@ public class Heimdall extends SimpleBotInstance {
         log(LogLevelType.BOT_EVENT, "API: connected!");
 
         // Login with server query
+        /*
         if (!ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass())){
             ts3Query.exit();
             log(LogLevelType.BOT_CRITICAL, "Could not login with teamspeak query credentials!");
             System.exit(1);
         }
+         */
+        ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass());
+
 
         try {
             ts3Api.selectVirtualServerById(botConfig.getServerId());
@@ -143,7 +142,7 @@ public class Heimdall extends SimpleBotInstance {
             try {
                 ts3Query.exit();
                 ts3Api.logout();
-                System.exit(1);
+                //System.exit(1);
             } catch (Exception ignore) { /* ignore */ }
         }
 
@@ -157,6 +156,10 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // Try to set nickname
+        nickname = botConfig.getString("bot.nick", "[Bot] Heimdall");
+        ts3Api.setNickname(nickname);
+
+        /*
         if (!ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
             log(LogLevelType.BOT_ERROR, "The bot's specified nickname is already in use. Trying to kick user...");
 
@@ -184,6 +187,8 @@ public class Heimdall extends SimpleBotInstance {
             }
         }
         nickname = botConfig.getString("bot.nick", "[Bot] HeimdallOld");
+
+         */
         log(LogLevelType.BOT_EVENT, "Nickname: set!");
 
 
@@ -280,12 +285,6 @@ public class Heimdall extends SimpleBotInstance {
         } else if (DEBUG_MODE) {
             System.out.println(onlineMessage);
         }
-
-
-        for  (ServerGroup g : ts3Api.getServerGroups()){
-
-        }
-
     }
 
     @Override
@@ -294,7 +293,10 @@ public class Heimdall extends SimpleBotInstance {
         try {
             log(LogLevelType.BOT_EVENT, "Shutting down bot instance " + getInstanceIdentifier());
 
-            this.featureManager.deactivateAll();
+            try {
+                this.featureManager.deactivateAll();
+            } catch (Exception ignored) {}
+
             this.commandManager.deactivate();
 
             if (ts3Api != null){
@@ -322,9 +324,6 @@ public class Heimdall extends SimpleBotInstance {
 
         log(LogLevelType.BOT_EVENT, getInstanceIdentifier() + " is now offline");
         stopReq = true;
-
-        if (Bot.stopRequested())
-            Bot.stop();
     }
 
 
@@ -386,9 +385,10 @@ public class Heimdall extends SimpleBotInstance {
             map.put(ChannelProperty.CHANNEL_DESCRIPTION, imgLink + " " + nickPre);
             this.ts3Api.editChannel(channelID, map);
         }
+    }
 
-
-
+    public static void log(LogLevelType type, String message){
+        Bot.log(type, message);
     }
 
 

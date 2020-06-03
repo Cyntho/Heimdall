@@ -67,7 +67,7 @@ public class CommandManager extends BaseFeature{
     public void activate(){
         if (!active){
             active = true;
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
+            Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
             this.listener = new CommandListener(this);
             Bot.heimdall.getApi().addTS3Listeners(listener);
         }
@@ -76,7 +76,7 @@ public class CommandManager extends BaseFeature{
     public void deactivate(){
         if (active){
             active = false;
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
+            Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
             try {
                 Bot.heimdall.getApi().removeTS3Listeners(this.listener);
             } catch (Exception e){

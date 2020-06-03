@@ -154,7 +154,7 @@ public class WelcomeMessage {
                             statement.setInt(1, this.id);
                             statement.setString(2, user.getClientUUID());
 
-                            Bot.heimdall.log(DBG, "Welcome-Message expired (remaining = 0) for user " + user.getClientInfo().getNickname() + " [UUID=" +
+                            Bot.log(DBG, "Welcome-Message expired (remaining = 0) for user " + user.getClientInfo().getNickname() + " [UUID=" +
                                     user.getClientUUID() + "] for msg id: " + this.id);
                             statement.execute();
                         }
@@ -176,7 +176,7 @@ public class WelcomeMessage {
                 long now = new java.util.Date().getTime();
 
                 if ((now - validUntil) > 0){
-                    Bot.heimdall.log(DBG, "Welcome message expired! ID: " +this.id);
+                    Bot.log(DBG, "Welcome message expired! ID: " +this.id);
                     return;
                 } else {
                     // TODO: Log validity

@@ -1,6 +1,7 @@
 package org.cyntho.ts.heimdall.manager.user;
 
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.cyntho.ts.heimdall.app.Bot;
 
 import java.sql.ResultSet;

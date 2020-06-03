@@ -27,7 +27,7 @@ public class ChannelManagement {
         ChannelInfo info = Bot.heimdall.getApi().getChannelInfo(id);
 
         if (info == null){
-            Bot.heimdall.log(LogLevelType.COMMAND_ERROR, "Could not get path to channel '" + id + "' - Channel not found");
+            Bot.log(LogLevelType.COMMAND_ERROR, "Could not get path to channel '" + id + "' - Channel not found");
             return null;
         }
 
@@ -61,7 +61,7 @@ public class ChannelManagement {
 
             path = new StringBuilder("{" + path + "}");
         } catch (Exception ex){
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not resolve path to channel '" + id + "'");
+            Bot.log(LogLevelType.BOT_ERROR, "Could not resolve path to channel '" + id + "'");
         }
 
         return path.toString();

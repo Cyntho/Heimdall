@@ -2,13 +2,13 @@
 version: 1.5
 released: 2017-07-14
 
-# Database configuration
+# Database configurationw
 database:
   username: tsb-heimdall
   password: h4Oo5cB5td9WwSF4
   host: 127.0.0.1
   port: 3306
-  database: 'teamspeak_heimdall'
+  database: 'tsb-heimdall'
   prefix: 'tsb'
   local: 'D:\tools\Teamspeak-Server-3.5.0\teamspeak3-server_win64\ts3server.sqlitedb' #ToDo: Remove for deployment
 
@@ -16,11 +16,12 @@ database:
 # Teamspeak Server Query configuration
 query:
   username: serveradmin
-  password: Y04l5RyR
+  password: 7K6h6KgS
   host: 127.0.0.1
   port: 10011
   floodRate: UNLIMITED
   debugLevel: OFF
+  api-key: BABRZuJ7tz97W45G506Z2XnJQGk0uN_U9pZTKRS
 
 # Selection for the server (if running multiple instances)
 server:
@@ -34,11 +35,11 @@ bot:
   logToDb: true
   logFileZip: false
   nick: '[Bot] Heimdall'
-  goOnlineMessage: ''     # Leave empty to deactivate message
-  goOfflineMessage: ''    # Leave empty to deactivate message
+  goOnlineMessage: "Hello all :)"     # Leave empty to deactivate message
+  goOfflineMessage: "Going offline now!"    # Leave empty to deactivate message
 
 # Commands that are disabled here are unavailable during runtime
-# even if assigned to groups in the permission.yml
+# even if assigned to groups in the permissionsDefault.yml
 commands:
   debug: true
   getPath: false
@@ -50,10 +51,13 @@ commands:
   shutdown: false
   updateDescription: false
   doBackup: false
+  stream:
+    channels:
+      - 3
 
 
 
-# A list of administrators, who will be able to ignore any restriction (@see: permissions.yml)
+# A list of administrators, who will be able to ignore any restriction (see: permissionsDefault.yml)
 admins:
   - YourUUIDcomesHere
   - AnotherAdminUUID
@@ -66,6 +70,7 @@ features:
   autoPromotion:
     active: true
     UpdateFrequency: 60000
+  ChannelGroupSystem: true
 
 
 

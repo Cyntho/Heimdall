@@ -35,7 +35,7 @@ public class CommandListener implements TS3Listener{
             TS3User invoker = Bot.heimdall.getUserManager().getUserByRuntimeId(textMessageEvent.getInvokerId());
 
             if (invoker == null){
-                Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not resolve command invoker " + textMessageEvent.toString());
+                Bot.log(LogLevelType.BOT_ERROR, "Could not resolve command invoker " + textMessageEvent.toString());
                 return;
             }
 
@@ -52,11 +52,11 @@ public class CommandListener implements TS3Listener{
                     }
                     Bot.log(LogLevelType.COMMAND_FIRE, textMessageEvent.getMessage());
                 } else {
-                    Bot.heimdall.log(LogLevelType.COMMAND_ERROR, "Could not resolve command by label " + cmdLabel + "; " + textMessageEvent.getMessage());
+                    Bot.log(LogLevelType.COMMAND_ERROR, "Could not resolve command by label " + cmdLabel + "; " + textMessageEvent.getMessage());
                 }
             } else {
                 // Todo: should be asserted and never called?
-                Bot.heimdall.log(LogLevelType.COMMAND_ERROR, "Empty command string: " + textMessageEvent.getMessage());
+                Bot.log(LogLevelType.COMMAND_ERROR, "Empty command string: " + textMessageEvent.getMessage());
             }
 
         }

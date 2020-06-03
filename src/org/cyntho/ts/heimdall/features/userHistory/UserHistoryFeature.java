@@ -1,6 +1,7 @@
 package org.cyntho.ts.heimdall.features.userHistory;
 
 import org.cyntho.ts.heimdall.app.Bot;
+import org.cyntho.ts.heimdall.app.Heimdall;
 import org.cyntho.ts.heimdall.events.UserHistoryListener;
 import org.cyntho.ts.heimdall.features.BaseFeature;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
@@ -41,9 +42,9 @@ public class UserHistoryFeature extends BaseFeature {
             Bot.heimdall.getApi().addTS3Listeners(listener);
 
             super.active = true;
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
+            Heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
         } else {
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not activate UserHistoryFeature, since it's already running!");
+            Heimdall.log(LogLevelType.BOT_ERROR, "Could not activate UserHistoryFeature, since it's already running!");
         }
     }
 
@@ -51,7 +52,12 @@ public class UserHistoryFeature extends BaseFeature {
     public void deactivate() {
         if (super.active){
 
-            Bot.heimdall.getApi().removeTS3Listeners(listener);
+            try {
+                Bot.heimdall.getApi().removeTS3Listeners(listener);
+            } catch (UnsupportedOperationException e){
+                System.out.println("Caught bug error.");
+            }
+
             listener = null;
 
             // Write the current timestamp into the database for each user
