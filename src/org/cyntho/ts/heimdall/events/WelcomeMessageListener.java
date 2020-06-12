@@ -6,7 +6,6 @@ import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.database.DatabaseConnector;
 import org.cyntho.ts.heimdall.features.welcomeMessages.WelcomeMessage;
 import org.cyntho.ts.heimdall.features.welcomeMessages.WelcomeMessageFeature;
-import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 
 import java.sql.ResultSet;
@@ -17,7 +16,7 @@ import java.sql.SQLException;
  */
 public class WelcomeMessageListener implements TS3Listener {
 
-    private WelcomeMessageFeature feature = null;
+    private final WelcomeMessageFeature feature;
     public WelcomeMessageListener(WelcomeMessageFeature f){
         feature = f;
     }
@@ -37,7 +36,6 @@ public class WelcomeMessageListener implements TS3Listener {
             TS3User invoker = Bot.heimdall.getUserManager().getUserByRuntimeId(clientJoinEvent.getClientId());
 
             if (invoker == null){
-                Bot.heimdall.log(LogLevelType.INFO, "Could not handle ClientJoinEvent.");
                 return;
             }
 
