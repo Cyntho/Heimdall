@@ -9,9 +9,9 @@ package org.cyntho.ts.heimdall.util;
  */
 
 @SuppressWarnings({"unused", "WeakerAccess"})
-public final class NumberConversations {
+public final class NumberConversion {
 
-    private NumberConversations() {}
+    private NumberConversion() {}
 
     public static int floor(double num) {
         final int floor = (int) num;
@@ -75,5 +75,6 @@ public final class NumberConversations {
         }
         return Byte.valueOf(object.toString());
     }
+
 
 }

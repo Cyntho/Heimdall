@@ -61,6 +61,7 @@ commands:
 admins:
   - YourUUIDcomesHere
   - AnotherAdminUUID
+  - 3t3UEmZyvl+JVNaR0lEZQlytvXs=
 
 # Activate or deactivate some features
 features:
@@ -70,7 +71,10 @@ features:
   autoPromotion:
     active: true
     UpdateFrequency: 60000
-  ChannelGroupSystem: true
+  ChannelGroupSystem:
+    lockedGroupId: 8  # Usually the guest group.
+    unlockedGroupId: 10
+    updateLimit: 60 # Minimum time before recalculate in Seconds
 
 
 

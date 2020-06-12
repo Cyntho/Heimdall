@@ -11,6 +11,7 @@ import org.cyntho.ts.heimdall.util.ChannelManagement;
 import java.io.IOException;
 import java.util.*;
 
+import static org.cyntho.ts.heimdall.app.Bot.DEBUG_MODE;
 import static org.cyntho.ts.heimdall.logging.LogLevelType.*;
 
 public class PermissionManager {
@@ -18,12 +19,22 @@ public class PermissionManager {
     private List<PermissionGroup> permissionGroups;
     private boolean initialized = false;
 
-    public PermissionManager(){
+    // Update stuff
+    private final Map<String, Long> lastUpdated;
+    private final long minTime = 60000;
+
+    public PermissionManager(boolean refresh){
         permissionGroups = new ArrayList<>();
+        lastUpdated = new HashMap<>();
+
         try {
             load();
+
+            if (refresh){
+                recalculateAll();
+            }
         } catch (IOException e){
-            Bot.log(BOT_CRITICAL, (Bot.DEBUG_MODE ? e.getMessage() : "Error while loading permissions.yml"));
+            Bot.log(BOT_CRITICAL, (DEBUG_MODE ? e.getMessage() : "Error while loading permissions.yml"));
         }
     }
 
@@ -175,7 +186,7 @@ public class PermissionManager {
         for (PermissionGroup p : permissionGroupList){
             String inheritFrom = config.getString(String.format("%s.inherit", p.getName()), "");
             if (inheritFrom.equals("")){
-                System.out.println(String.format("Group '%s' doesnt inherit from any group.", p.getName()));
+                //System.out.println(String.format("Group '%s' doesnt inherit from any group.", p.getName()));
                 continue;
             }
 
@@ -224,46 +235,178 @@ public class PermissionManager {
     }
 
 
-    public void checkPermissions(Client client){
+    public Map<Integer, Boolean> calculateChannelEntrancePermissions(Client client){
 
-        //System.out.println(heimdall.getApi().setClientChannelGroup(groupId, channelId, clientDbId));
+        // ChannelID -> <LastRankApplied, CanJoin>
+        Map<Integer, Map.Entry<Integer, Boolean>> channelPerms = new HashMap<>();
 
-        int clientDbId = client.getDatabaseId();
-        int groupId = Bot.heimdall.getBotConfig().getInt("features.ChannelGroupSystem.unlockedGroupId", -1);
-        if (groupId == -1) return;
+        // ChannelId, CanJoin
+        Map<Integer, Boolean> canJoinMap = new HashMap<>();
+
+        // ChannelId, highestRank
+        Map<Integer, Integer> highestRankMap = new HashMap<>();
 
         int[] serverGroupArray = client.getServerGroups();
 
-        for (PermissionGroup pGroup : permissionGroups){
+        // skip admins and queries
+        if ((client.isServerQueryClient() && client.getId() == Bot.heimdall.getApi().whoAmI().getId() ) || Bot.heimdall.getUserManager().isAdmin(client.getUniqueIdentifier())){
+            for (Channel c : Bot.heimdall.getApi().getChannels()){
+                canJoinMap.put(c.getId(), true);
+            }
+            return canJoinMap;
+        }
+
+
+        // init maps
+        for (Channel c : Bot.heimdall.getApi().getChannels()){
+            canJoinMap.put(c.getId(), false);
+            highestRankMap.put(c.getId(), -1);
+        }
+
+
+        // For each PermissionGroup, iterate over every server Group the client is in
+        // See if the channel is set for that server group and assign the permission
+        // Note the permission group's rank and only override it if the previous rank was lower
+        for (PermissionGroup permissionGroup : this.permissionGroups){
+
+            int permRank = permissionGroup.getRanking();
+
             for (int value : serverGroupArray) {
-                if (pGroup.getServerGroup().getId() == value) {
+                if (permissionGroup.getServerGroup().getId() == value) {
+                    // Iterate over channels
+                    for (Integer channelId : permissionGroup.getChannelMap().keySet()) {
 
-                    for (Integer chId : pGroup.getChannelMap().keySet()) {
+                        if (canJoinMap.get(channelId) != null && highestRankMap.get(channelId) != null) {
 
-                        try {
-                            Bot.heimdall.getApi().setClientChannelGroup(
-                                    groupId,
-                                    chId,
-                                    clientDbId
-                            );
+                            // not set yet
+                            canJoinMap.put(channelId, permissionGroup.getChannelMap().get(channelId));
+                            highestRankMap.put(channelId, permRank);
+                        } else {
 
-                            Bot.log(BOT_EVENT, String.format("Assigned ChannelGroup '%d' in Channel '%d' to user '%s'",
-                                    groupId,
-                                    chId,
-                                    client.getUniqueIdentifier()));
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                            // already set, check if rank higher than before
+                            int currentRank = highestRankMap.get(channelId);
+                            if (currentRank < permissionGroup.getRanking()) {
+
+                                // if so, store new value in both maps
+                                canJoinMap.put(channelId, permissionGroup.getChannelMap().get(channelId));
+                                highestRankMap.put(channelId, permissionGroup.getRanking());
+                            }
                         }
                     }
                 }
             }
         }
 
+        return canJoinMap;
+    }
 
 
+    public void assignChannelPermissions(Client client, Map<Integer, Boolean> permissions){
+
+        int lockedGroupId   = Bot.heimdall.getBotConfig().getInt("features.ChannelGroupSystem.lockedGroupId", -1);
+        int unlockedGroupId = Bot.heimdall.getBotConfig().getInt("features.ChannelGroupSystem.unlockedGroupId", -1);
+
+        if (unlockedGroupId < 0 || lockedGroupId < 0){
+            Bot.log(BOT_ERROR, "Invalid configuration for locked/unlocked Channel Groups.");
+            return;
+        }
+
+        if (client.getDatabaseId() == 1 || client.isServerQueryClient() || Bot.heimdall.getUserManager().isAdmin(client.getUniqueIdentifier())){
+            return;
+        }
+
+        Bot.log(PERMISSION_UPDATE, String.format("Updating channel permissions for client '%s' [%s]",
+                client.getUniqueIdentifier(), client.getNickname()));
+
+        TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(client.getId());
+
+        if (user == null){
+            Bot.log(BOT_ERROR, String.format("PermissionManager: Unable to resolve TS3User by runtime id: %d", client.getId()));
+            return;
+        }
+
+        for (Channel channel : Bot.heimdall.getApi().getChannels()){
+
+            if (permissions.get(channel.getId()) != null){
+
+                // Set channel group
+                int targetGroupId = (permissions.get(channel.getId())) ? unlockedGroupId : lockedGroupId;
+
+                // Check if already in that group
+                boolean inChannelGroup = user.inChannelGroup(channel.getId(), targetGroupId);
+                boolean shouldBeInGroup = permissions.get(channel.getId());
+
+                if (inChannelGroup && shouldBeInGroup){
+                    continue;
+                }
+
+                Bot.heimdall.getApi().setClientChannelGroup(
+                        targetGroupId,
+                        channel.getId(),
+                        client.getDatabaseId());
+
+                // Log it only if in debug mode
+                if (!DEBUG_MODE) continue;
+
+                Bot.log(DBG, String.format((permissions.get(channel.getId()) ? "Allowing" : "Denying") + " Access to Channel '%d' for user '%s' [%s]",
+                        channel.getId(),
+                        client.getNickname(),
+                        client.getUniqueIdentifier()));
+
+            }
+
+        }
 
 
     }
+
+
+    public void recalculate(Client c){
+        if (c.isServerQueryClient()
+                || c.getId() == Bot.heimdall.getApi().whoAmI().getId()
+                || c.getUniqueIdentifier().equalsIgnoreCase(Bot.heimdall.getApi().whoAmI().getUniqueIdentifier())
+                || Bot.heimdall.getUserManager().isAdmin(c.getUniqueIdentifier())
+
+        ){
+            return;
+        }
+        assignChannelPermissions(c, calculateChannelEntrancePermissions(c));
+    }
+
+    public void recalculateAll(){
+        for (Client client : Bot.heimdall.getApi().getClients()){
+            assignChannelPermissions(client, calculateChannelEntrancePermissions(client));
+        }
+    }
+
+    public void updateFor(TS3User user){
+        if (user == null || user.isServerQuery() || user.getRuntimeId() == Bot.heimdall.getApi().whoAmI().getId() || Bot.heimdall.getUserManager().isAdmin(user.getClientUUID())){
+            return;
+        }
+
+        long last = (lastUpdated.get(user.getClientUUID()) == null ? -1 : lastUpdated.get(user.getClientUUID()));
+        long now = System.currentTimeMillis();
+
+        if (last == -1 || last - now > minTime){
+            recalculate(user.getClientInfo());
+            lastUpdated.put(user.getClientUUID(), System.currentTimeMillis());
+
+            Bot.log(BOT_EVENT, String.format("PermissionManager.recalculate() canceled for user '%s' ['%s] due to time limit restrictions",
+                    user.getNickname(),
+                    user.getClientUUID()));
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

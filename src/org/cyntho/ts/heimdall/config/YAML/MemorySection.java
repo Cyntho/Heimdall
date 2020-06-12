@@ -2,7 +2,7 @@ package org.cyntho.ts.heimdall.config.YAML;
 
 import java.util.*;
 
-import static org.cyntho.ts.heimdall.util.NumberConversations.*;
+import static org.cyntho.ts.heimdall.util.NumberConversion.*;
 
 /**
  * Created by Xida on 12.07.2017.

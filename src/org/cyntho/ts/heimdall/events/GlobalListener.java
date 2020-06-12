@@ -5,11 +5,11 @@ import com.github.theholywaffle.teamspeak3.api.event.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
+import org.cyntho.ts.heimdall.manager.PermissionManager;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 import org.cyntho.ts.heimdall.util.ChannelManagement;
 import org.cyntho.ts.heimdall.util.StringParser;
 
-import java.util.List;
 
 /**
  * @author      Xida
@@ -30,8 +30,12 @@ public class GlobalListener implements TS3Listener {
     public void onTextMessage(TextMessageEvent textMessageEvent) {
 
         // ALWAYS allow me to shutdown the bot
-        if (textMessageEvent.getMessage().equalsIgnoreCase("!off") && textMessageEvent.getInvokerUniqueId().equalsIgnoreCase("2n8nOljLkhD0i+mVCDyU/4zfjwU=")){
-            Bot.log(LogLevelType.BOT_EVENT, "Receiving !off command from Admin.. ");
+        if (textMessageEvent.getMessage().equalsIgnoreCase("!off")
+                && (
+                        textMessageEvent.getInvokerUniqueId().equalsIgnoreCase("2n8nOljLkhD0i+mVCDyU/4zfjwU="))
+                    ||  Bot.heimdall.getUserManager().isAdmin(textMessageEvent.getInvokerUniqueId())
+                    ){
+            Bot.log(LogLevelType.BOT_EVENT, String.format("Receiving !off command from Admin '%s' [%s]", textMessageEvent.getInvokerName(), textMessageEvent.getInvokerUniqueId()));
             Bot.stop();
             return;
         }
@@ -68,7 +72,7 @@ public class GlobalListener implements TS3Listener {
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(clientLeaveEvent.getClientId());
 
         if (user == null){
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not resolve TS3User by id '" + clientLeaveEvent.getClientId() + "'");
+            Bot.log(LogLevelType.BOT_ERROR, "Could not resolve TS3User by id '" + clientLeaveEvent.getClientId() + "'");
         } else {
 
             // Switch reason (leave, kick, ban, timeout..)
@@ -77,12 +81,12 @@ public class GlobalListener implements TS3Listener {
             switch (reasonId){
                 case 3:
                     // TIMEOUT
-                    Bot.heimdall.log(LogLevelType.CLIENT_TIMEOUT_EVENT, user.getOfflineCopy().getNickname() + " timed out!");
+                    Bot.log(LogLevelType.CLIENT_TIMEOUT_EVENT, user.getOfflineCopy().getNickname() + " timed out!");
                     break;
 
                 case 5:
                     // KICK
-                    Bot.heimdall.log(LogLevelType.CLIENT_KICKED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getClientUUID() + "] been kicked from the Server by " +
+                    Bot.log(LogLevelType.CLIENT_KICKED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getClientUUID() + "] been kicked from the Server by " +
                             clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: " + clientLeaveEvent.getReasonMessage());
                     break;
 
@@ -94,19 +98,19 @@ public class GlobalListener implements TS3Listener {
                     if (duration == 0){
                         durationFinal = "permanent";
                     } else if (duration == -1){
-                        Bot.heimdall.log(LogLevelType.DBG, "Error while parsing bantime!");
+                        Bot.log(LogLevelType.DBG, "Error while parsing bantime!");
                         durationFinal = "permanent";
                     } else {
                         durationFinal = StringParser.longToDateString(duration);
                     }
 
-                    Bot.heimdall.log(LogLevelType.CLIENT_BANNED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has been banned from the Server by " +
+                    Bot.log(LogLevelType.CLIENT_BANNED_FROM_SERVER, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has been banned from the Server by " +
                             clientLeaveEvent.getInvokerName() + " [" + clientLeaveEvent.getInvokerUniqueId() + "] - Reason: [" + clientLeaveEvent.getReasonMessage() + "] Duration: [" + durationFinal + "]");
                     break;
 
                 default:
                     // Left by himself
-                    Bot.heimdall.log(LogLevelType.CLIENT_LEAVE_EVENT, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has left the server.");
+                    Bot.log(LogLevelType.CLIENT_LEAVE_EVENT, user.getOfflineCopy().getNickname() + " [" + user.getOfflineCopy().getUUID() + "] has left the server.");
                     break;
             }
 
@@ -114,9 +118,11 @@ public class GlobalListener implements TS3Listener {
             // Unregister
             boolean unregister = Bot.heimdall.getUserManager().unregister(clientLeaveEvent.getClientId());
             if (!unregister){
-                Bot.heimdall.log(LogLevelType.CLIENT_LEAVE_EVENT, "Cannot unregister user..");
+                Bot.log(LogLevelType.CLIENT_LEAVE_EVENT, "Cannot unregister user..");
             }
 
+            // Update permissions
+            PermissionManager.updateFor(user);
         }
 
 
@@ -132,7 +138,7 @@ public class GlobalListener implements TS3Listener {
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
 
         if (user == null){
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "GlobalListener.onClientMoved(): Could not resolve user");
+            Bot.log(LogLevelType.BOT_ERROR, "GlobalListener.onClientMoved(): Could not resolve user");
             return;
         }
 
@@ -164,11 +170,14 @@ public class GlobalListener implements TS3Listener {
                 break;
 
             default:
-                Bot.heimdall.log(LogLevelType.BOT_ERROR, "GlobalListener.onClientMoved(): Unhandled reason id '" + reasonId + "'");
+                Bot.log(LogLevelType.BOT_ERROR, "GlobalListener.onClientMoved(): Unhandled reason id '" + reasonId + "'");
                 return;
         }
 
-        Bot.heimdall.log(LogLevelType.CLIENT_MOVED_EVENT, logMessage.toString());
+        // Update permissions
+        PermissionManager.updateFor(user);
+
+        Bot.log(LogLevelType.CLIENT_MOVED_EVENT, logMessage.toString());
     }
 
 
@@ -179,8 +188,11 @@ public class GlobalListener implements TS3Listener {
         String groupTitle = (isServerQueryKey ? "Server Group" : "Channel Group");
 
 
-        Bot.heimdall.log(LogLevelType.PRIVILEGE_KEY_USED, "Key used! Type: {" + groupTitle + "} id: {" + privilegeKeyUsedEvent.getPrivilegeKeyGroupId() + "} user: {" +
+        Bot.log(LogLevelType.PRIVILEGE_KEY_USED, "Key used! Type: {" + groupTitle + "} id: {" + privilegeKeyUsedEvent.getPrivilegeKeyGroupId() + "} user: {" +
             privilegeKeyUsedEvent.getInvokerName() + "} uuid: {" + privilegeKeyUsedEvent.getInvokerUniqueId() + "}");
+
+        // Update permissions
+        PermissionManager.updateFor(Bot.heimdall.getUserManager().getUserByUUID(privilegeKeyUsedEvent.getInvokerUniqueId()));
     }
 
 

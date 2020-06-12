@@ -1,17 +1,22 @@
 package org.cyntho.ts.heimdall.app;
 
+import com.github.theholywaffle.teamspeak3.api.PermissionGroupDatabaseType;
+import com.github.theholywaffle.teamspeak3.api.wrapper.*;
 import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
 import org.cyntho.ts.heimdall.features.BaseFeature;
 import org.cyntho.ts.heimdall.logging.BotLogger;
 import org.cyntho.ts.heimdall.logging.LogEntry;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
+import org.cyntho.ts.heimdall.manager.PermissionManager;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
+import org.cyntho.ts.heimdall.manager.permissions.PermissionGroup;
 
 import java.io.IOException;
 import java.util.*;
 
 import static java.lang.Boolean.TRUE;
+import static org.cyntho.ts.heimdall.logging.LogLevelType.*;
 
 /**
  * The main application for this Bot.
@@ -37,6 +42,8 @@ public class Bot  {
 
     private static volatile Thread loggerThread;
     private static volatile Thread inputThread;
+
+    public static volatile PermissionManager pcm;
 
     // TODO: Fix issue of changing bot's name when multiple bot instances are running
 
@@ -76,7 +83,7 @@ public class Bot  {
             boolean logToDb   = config.getBoolean("bot.logToDb", false);
 
 
-            logger = new BotLogger(logToFile, logToDb, (DEBUG_MODE ? LogLevelType.DBG : LogLevelType.INFO));
+            logger = new BotLogger(logToFile, logToDb, (DEBUG_MODE ? DBG : LogLevelType.INFO));
             loggerThread = new Thread(new LoggerRunnable());
 
 
@@ -85,7 +92,6 @@ public class Bot  {
             if (DEBUG_MODE){
                 e.printStackTrace();
             }
-            //System.exit(1);
         }
 
 
@@ -93,21 +99,33 @@ public class Bot  {
             inputThread = new Thread(new DirectInputRunnable());
         }
 
-        logStack.add(new LogEntry(LogLevelType.DBG, "Test Entry", heimdall));
-
-        loggerThread.setDaemon(true);
-        inputThread.setDaemon(true);
-
         loggerThread.start();
         inputThread.start();
-
 
         try {
             heimdall = new Heimdall();
             heimdall.start();
         } catch (SingleInstanceViolationException e){
-            System.out.println(e.getMessage());
+            log(BOT_ERROR, e.getMessage());
         }
+
+        log(DBG,"Waiting 2 Seconds to load permissions.yml");
+        Thread permLoader = new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
+            Bot.pcm = new PermissionManager(true);
+
+            if (pcm.isInitialized()){
+                log(BOT_EVENT, "Loaded permissions.yml");
+            } else {
+                log(BOT_ERROR, "Error loading permissions.yml");
+            }
+        });
+
+        permLoader.start();
     }
 
     /**
@@ -141,23 +159,23 @@ public class Bot  {
                     }
                 }
             }
-            System.out.println("LoggerRunnable stopped.");
         }
     }
 
     private static class DirectInputRunnable implements Runnable {
         @Override
         public void run(){
-            log(LogLevelType.DBG, "Starting 'DirectInputRunnable'");
+            log(DBG, "Starting 'DirectInputRunnable'");
             Scanner scanner = new Scanner(System.in);
-            String input = "";
+            String input;
 
             while (!stopRequest){
                 try {
                     input = scanner.nextLine();
 
                     if (input.equalsIgnoreCase("shutdown")){
-                        log(LogLevelType.BOT_EVENT, "Receiving shutdown command from console.");
+                        log(COMMAND_FIRE, "Receiving shutdown command from console.");
+                        stop();
                         break;
                     } else if (input.equalsIgnoreCase("list features")){
                         for (BaseFeature f : heimdall.getFeatureManager().getFeatures()){
@@ -167,10 +185,153 @@ public class Bot  {
                         for (TS3User u : heimdall.getUserManager().getUserList()) {
                             System.out.println("\t" + u.getRuntimeId() + "\t" + u.getOfflineCopy().getNickname() + " [" + u.getOfflineCopy().getUUID() + "] " + u.getLoginDate());
                         }
-                    } else if (input.startsWith("poke")) {
-                        poke(input.split(" "));
+
+                    } else if (input.equalsIgnoreCase("list groups")) {
+                        System.out.println(pcm.toString());
+
+                    } else if (input.equalsIgnoreCase("reload")) {
+                        pcm = new PermissionManager(true);
+
+                    } else if (input.startsWith("grp")) {
+
+                        Client c = heimdall.getApi().getClientByUId("jIKSv0a8bavNq2mvpH/N4vG+vFs=");
+
+                        if (c != null) {
+                            Map<Integer, Boolean> m = pcm.calculateChannelEntrancePermissions(c);
+
+                            System.out.println(String.format("Channel permissions for client '%s'", c.getUniqueIdentifier()));
+                            for (Map.Entry<Integer, Boolean> entry : m.entrySet()) {
+                                if (!entry.getValue()) continue;
+
+                                System.out.println(String.format("\tChannel ID: %d\t Can join: %b", entry.getKey(), true));
+                            }
+                        }
+
+                    } else if (input.equalsIgnoreCase("toggle")){
+
+                        int channelId = 127; // Public Talk 1
+                        int guestGroupId = 8;
+                        int unlockedGroupId = 10;
+
+                        Client c = heimdall.getApi().getClientByUId("jIKSv0a8bavNq2mvpH/N4vG+vFs=");
+                        if (c != null){
+
+                            List<ChannelGroupClient> channelGroupClients = heimdall.getApi().getChannelGroupClientsByChannelId(channelId);
+                            boolean found = false;
+
+                            for (ChannelGroupClient channelGroupClient : channelGroupClients){
+                                if (channelGroupClient.getClientDatabaseId() == c.getDatabaseId()){
+                                    // User is in any group --> reset
+                                    System.out.println("Found some assigned channel group, resetting!");
+                                    heimdall.getApi().setClientChannelGroup(guestGroupId, channelId, c.getDatabaseId());
+                                    found = true;
+                                    break;
+                                }
+                            }
+
+                            if (!found){
+                                System.out.println("Setting to unlocked");
+                                heimdall.getApi().setClientChannelGroup(unlockedGroupId, channelId, c.getDatabaseId());
+                            }
+
+                        }
+
+
+                    } else if (input.equalsIgnoreCase("assign")) {
+
+                        TS3User victim = heimdall.getUserManager().getUserByUUID("jIKSv0a8bavNq2mvpH/N4vG+vFs=");
+
+                        int channelId = 127;
+                        int groupId = 8;
+                        int dbID;
+
+                        if (victim != null){
+                            dbID = victim.getClientInfo().getDatabaseId();
+
+                            System.out.println("getChannelGroupClientsByChannelId:");
+
+                            for (ChannelGroupClient c : heimdall.getApi().getChannelGroupClientsByChannelId(channelId)){
+                                System.out.println("\t" + c.toString());
+                            }
+
+
+                            System.out.println();
+                            System.out.println("getChannelGroupClients(channelId, dbID, groupId");
+
+                            for (ChannelGroupClient c : heimdall.getApi().getChannelGroupClients(channelId, dbID, groupId)){
+                                System.out.println("\t" + c.toString());
+                            }
+
+
+
+
+
+
+
+                        }
+
+
                     } else if (input.startsWith("test")) {
-                        System.out.println("testing...");
+                        List<ServerGroup> srvGroups = heimdall.getApi().getServerGroups();
+                        for (ServerGroup g : srvGroups) {
+                            if (g.getType() == PermissionGroupDatabaseType.REGULAR) {
+                                for (Permission p : heimdall.getApi().getServerGroupPermissions(g)) {
+                                    if (p.getName().equalsIgnoreCase("i_icon_id")) {
+                                        System.out.println(String.format("Server Group '%s' contains 'i_icon_id' with value %s", g.getName(), p.getValue()));
+                                    }
+                                }
+
+                            }
+                        }
+
+                    } else if (input.startsWith("cj")){
+
+                        try {
+                            if (pcm.isInitialized()){
+
+                                String[] args = input.split(" ");
+
+                                // cj [clientUUID] [channelId]
+                                if (args.length != 3){
+                                    System.out.println("Invalid command args.");
+                                } else {
+                                    TS3User target = heimdall.getUserManager().getUserByUUID(args[1]);
+                                    if (target == null){
+                                        System.out.println("Cannot resolve target by uuid " + args[1]);
+                                    } else {
+                                        int targetChannelId = Integer.parseInt(args[2]);
+
+                                        boolean canJoin = false;
+
+                                        for (PermissionGroup p : pcm.getPermissionGroups()){
+                                            for (int groupId : target.getClientInfo().getServerGroups()){
+                                                if (groupId == p.getServerGroup().getId()){
+
+                                                    if (p.getChannelMap().get(targetChannelId) == null){
+                                                        continue;
+                                                    }
+
+                                                    canJoin = p.getChannelMap().get(targetChannelId);
+
+                                                    System.out.println(String.format("PermissionGroup %s %s access to channel %d",
+                                                            p.getName(),
+                                                            (canJoin ? "allows" : "denies"),
+                                                            targetChannelId));
+                                                }
+                                            }
+                                        }
+
+                                        System.out.println("Final value: " + canJoin);
+                                    }
+                                }
+
+
+
+                            }
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+
 
                     } else if (input.startsWith("enc")){
 
@@ -191,7 +352,7 @@ public class Bot  {
                 }
             }
             scanner.close();
-            System.out.println("DirectInputRunnable stopped.");
+            log(DBG, "DirectInputRunnable stopped.");
             stop();
         }
     }
@@ -205,33 +366,20 @@ public class Bot  {
     }
 
     public static void stop(){
-        stopRequest = true;
-
-        heimdall.stop();
-
-        System.out.println("Shutting down InputThread..." + inputThread.getState().toString());
-        try {
-            if (inputThread.getState() != Thread.State.TERMINATED){
-                inputThread.join();
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        if (stopRequested()){
+            return;
         }
 
-        System.out.println("Shutting down LoggerThread..." + loggerThread.getState().toString());
-        try {
-            if (loggerThread.getState() != Thread.State.TERMINATED){
-                loggerThread.join();
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        stopRequest = true;
+
+        if (!heimdall.stopRequested()){
+            heimdall.stop();
         }
 
         while (!logStack.isEmpty()){
             logger.log(logStack.poll());
         }
 
-        System.out.println("End of Bot.stop()"); // ToDo
         System.exit(0);
     }
 

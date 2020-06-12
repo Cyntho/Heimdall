@@ -7,16 +7,13 @@ import com.github.theholywaffle.teamspeak3.api.event.TS3Listener;
 import com.github.theholywaffle.teamspeak3.api.exception.TS3ConnectionFailedException;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
-import com.github.theholywaffle.teamspeak3.api.wrapper.ServerGroup;
 import org.cyntho.ts.heimdall.commands.*;
-import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.database.DatabaseConnector;
 import org.cyntho.ts.heimdall.database.DatabaseSetup;
 import org.cyntho.ts.heimdall.events.GlobalListener;
 import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
 import org.cyntho.ts.heimdall.features.userHistory.UserHistoryFeature;
 import org.cyntho.ts.heimdall.features.welcomeMessages.WelcomeMessageFeature;
-import org.cyntho.ts.heimdall.logging.BotLogger;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.CommandManager;
 import org.cyntho.ts.heimdall.manager.FeatureManager;
@@ -26,12 +23,10 @@ import org.cyntho.ts.heimdall.util.PlaceHolder;
 import org.cyntho.ts.heimdall.util.StringParser;
 
 import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 
 import static org.cyntho.ts.heimdall.app.Bot.DEBUG_MODE;
 import static org.cyntho.ts.heimdall.util.StringParser.getRandomString;
@@ -226,7 +221,7 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // Load Permission Manager
-        //permissionManager = new PermissionManager();
+        permissionManager = new PermissionManager(false);
 
         ts3Api.registerAllEvents();
 
@@ -295,7 +290,9 @@ public class Heimdall extends SimpleBotInstance {
 
             try {
                 this.featureManager.deactivateAll();
-            } catch (Exception ignored) {}
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             this.commandManager.deactivate();
 
@@ -324,6 +321,10 @@ public class Heimdall extends SimpleBotInstance {
 
         log(LogLevelType.BOT_EVENT, getInstanceIdentifier() + " is now offline");
         stopReq = true;
+
+        if (!Bot.stopRequested()){
+            Bot.stop();
+        }
     }
 
 

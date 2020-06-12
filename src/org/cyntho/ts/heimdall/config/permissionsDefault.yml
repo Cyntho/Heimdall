@@ -2,35 +2,51 @@
 # See reference.yml for a full list of permissions
 
 guest:
-  serverGroupId: 0
+  serverGroupId: 52
+  rank: 0
   channel:
-    - 1
-    - 2
-    - 3
-    - 28
-    - 29
+    - 44*
+    - -44
 
 public-gamer:
-  serverGroupId: 1
+  serverGroupId: 53
+  rank: 1
   channel:
-    - 19*
+    - 146*
+    - -146
+    - 176*
+    - -176
   inherit: 'guest'
 
-regular:
-  serverGroupId: 2
+
+blutgarde:
+  serverGroupId: 72
+  rank: 2
+  channel:
+    - 137*
+    - -137
+    - -203
   inherit: 'public-gamer'
 
-moderator:
-  serverGroupId: 3
+
+regular:
+  rank: 2
+  serverGroupId: 67
   inherit: 'public-gamer'
+
+
+moderator:
+  serverGroupId: 59
+  rank: 3
+  inherit: 'regular'
   permissions:
     - commands.help
     - commands.lock
-
-admin:
-  serverGroupId: 5
-  permissions:
-    - '*'
   channel:
     - '*'
 
+admin:
+  serverGroupId: 63
+  rank: 99
+  channel:
+    - '*'

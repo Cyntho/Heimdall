@@ -19,9 +19,6 @@ public class UserHistoryListener implements TS3Listener {
     @Override public void onClientJoin(ClientJoinEvent e){
         logDebug("Debug of: UserHistoryListener.onClientJoin");
 
-
-
-
         // Get the TS3User object from the event (if it has been registered yet)
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
         if (user != null){
@@ -56,27 +53,6 @@ public class UserHistoryListener implements TS3Listener {
         }
     }
 
-    @Override public void onClientMoved(ClientMovedEvent e) {
-        TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
-        if (user != null){
-            // Check if the client's nickname is different now
-            if (!user.getNickname().equalsIgnoreCase(user.getOfflineCopy().getNickname())){
-
-                System.out.println("Debug of: UserHistoryListener.onClientMoved");
-                System.out.println("Old name: " + user.getOfflineCopy().getNickname());
-                System.out.println("New name: " + user.getNickname());
-
-                feature.updateNicknameAlias(user);
-            }
-
-            updateData(user);
-        }
-    }
-
-
-    private void updateData(TS3User user){
-        System.out.println(user.getClientInfo().getAvatar());
-    }
 
 
 
@@ -90,5 +66,6 @@ public class UserHistoryListener implements TS3Listener {
     @Override public void onChannelDeleted(ChannelDeletedEvent channelDeletedEvent) {}
     @Override public void onChannelMoved(ChannelMovedEvent channelMovedEvent) {}
     @Override public void onChannelPasswordChanged(ChannelPasswordChangedEvent channelPasswordChangedEvent) {}
+    @Override public void onClientMoved(ClientMovedEvent e) {}
 
 }

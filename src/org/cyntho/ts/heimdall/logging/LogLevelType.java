@@ -44,6 +44,7 @@ public enum LogLevelType {
     SERVER_GROUP_ASSIGNED("ServerGroupAssigned", 5),
     SERVER_GROUP_REVOKED("ServerGroupRevoked", 5),
     PRIVILEGE_KEY_USED("PrivilegeKeyUsed", 5),
+    PERMISSION_UPDATE("PermissionUpdate", 5),
 
     /* Channel modified */
     CHANNEL_CREATED("ChannelCreated", 6),

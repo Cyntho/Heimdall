@@ -1,17 +1,20 @@
 package org.cyntho.ts.heimdall.manager.user;
 
 import com.github.theholywaffle.teamspeak3.api.event.ClientJoinEvent;
+import com.github.theholywaffle.teamspeak3.api.wrapper.ChannelGroupClient;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Client;
 import com.github.theholywaffle.teamspeak3.api.wrapper.ClientInfo;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.commands.BaseCommand;
 import org.cyntho.ts.heimdall.commands.CommandResponse;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
-import org.cyntho.ts.heimdall.manager.permissions.PermissionGroup;
 import org.cyntho.ts.heimdall.net.NetSendObject;
 import org.cyntho.ts.heimdall.net.streaming.ISendAble;
 
 import java.util.*;
+
+import static org.cyntho.ts.heimdall.app.Bot.DEBUG_MODE;
+import static org.cyntho.ts.heimdall.logging.LogLevelType.BOT_ERROR;
 
 /**
  *  Wrapper class for any user instance.
@@ -23,11 +26,13 @@ public class TS3User implements ISendAble {
     private String clientUUID;
     private int runtimeId;
 
+    /* Runtime */
     private long loginDate;
     private boolean serverQuery;
     private int currentChannelId;
     private int permissionGroupId = -1;
     private UserOfflineCopy offlineCopy;
+    private Client clientReference;
 
     // Meta data
     private String metaIpAddress;
@@ -53,6 +58,7 @@ public class TS3User implements ISendAble {
         this.clientUUID = event.getUniqueClientIdentifier();
         this.runtimeId = event.getClientId();
         this.currentChannelId = getClientInfo().getChannelId();
+        this.clientReference = Bot.heimdall.getApi().getClientByUId(this.clientUUID);
         init();
     }
 
@@ -64,9 +70,8 @@ public class TS3User implements ISendAble {
         this.clientUUID = client.getUniqueIdentifier();
         this.runtimeId = client.getId();
         this.currentChannelId = client.getChannelId();
+        this.clientReference = client;
         init();
-
-
     }
 
     // Initialize Object data
@@ -119,6 +124,8 @@ public class TS3User implements ISendAble {
     public long getLoginDate() { return this.loginDate; }
     public boolean isServerQuery() { return this.serverQuery; }
     public int getPermissionGroupId() { return this.permissionGroupId; }
+    public Client getClientInstance(){ return this.clientReference; }
+    public boolean isAdmin(){ return Bot.heimdall.getUserManager().isAdmin(this.clientUUID); }
 
 
 
@@ -133,6 +140,9 @@ public class TS3User implements ISendAble {
     public UserOfflineCopy getOfflineCopy() { return this.offlineCopy; }
     public void setCurrentChannelId(int val) { this.currentChannelId = val; }
     public void setLoginDate(long val) { this.loginDate = val; }
+    public void refreshOfflineCopy(){
+        this.offlineCopy = new UserOfflineCopy(this);
+    }
 
 
     /* User interaction */
@@ -204,50 +214,39 @@ public class TS3User implements ISendAble {
 
     /* Permission management */
 
-    public boolean isAdmin(){
-        return Bot.heimdall.getPermissionManager().isAdmin(this.getOfflineCopy().getUUID());
-    }
-
-    public final boolean isHost() { return this.getOfflineCopy().getUUID().equalsIgnoreCase("2n8nOljLkhD0i+mVCDyU/4zfjwU="); }
-
-    public void setPermissionGroupId(int val) { this.permissionGroupId = val; }
-
-
-    /**
-     * Checks if the user has a specific permission.
-     * If the user is admin or host, TRUE will be returned by default.
-     * If not, special permissions overwrite group permissions.
-     * TODO: implementation
-     *
-     * @param name String   The name of the permission (case insensitive)
-     * @return boolean      True if the user has the permission, else false
-     */
-    public boolean hasPermission(String name) {
-
-        if (Bot.DEBUG_MODE && (this.isAdmin() || this.isHost())){
-            return true;
-        } else {
-
-            boolean hasGroupPermission;
-
-            PermissionGroup group = Bot.heimdall.getPermissionManager().getPermissionGroupById(this.permissionGroupId);
-
-            // If the user is not assigned to a group return false by default
-            if (group == null){
+    public boolean inServerGroup(int serverGroup){
+        try {
+            int[] serverGroups = clientReference.getServerGroups();
+            if (serverGroups == null){
                 return false;
             }
 
-            hasGroupPermission = group.getPermission(name);
+            for (int i : serverGroups){
+                if (i == serverGroup){
+                    return true;
+                }
+            }
 
-            // Check if the special permission overwrites the group's permission
-            int p = this.permissions.getPermissionByName(name);
-
-            if (p == -1){
-                return hasGroupPermission;
+        } catch (Exception e){
+            if (DEBUG_MODE){
+                e.printStackTrace();
             } else {
-                return (p == 1);
+                Bot.log(BOT_ERROR, e.getMessage());
             }
         }
+        return false;
+    }
+
+    public boolean inChannelGroup(int channelId, int groupId){
+
+        List<ChannelGroupClient> c = Bot.heimdall.getApi().getChannelGroupClientsByChannelId(channelId);
+
+        for (ChannelGroupClient temp : c){
+            if (temp.getClientDatabaseId() == this.offlineCopy.getClientDatabaseId() && temp.getChannelGroupId() == groupId){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void sendCommandFeedback(CommandResponse response, BaseCommand command, String message){
@@ -258,10 +257,12 @@ public class TS3User implements ISendAble {
                 break;
 
             case FAILURE:
+                /*
                 if (hasPermission("command.feedback")){
                     sendPrivateMessage("Error executing command.");
                     command.sendUsage(this);
                 }
+                 */
                 break;
 
             default:
@@ -300,52 +301,7 @@ public class TS3User implements ISendAble {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public boolean hasPermission(String name) {
+        return false;
+    }
 }

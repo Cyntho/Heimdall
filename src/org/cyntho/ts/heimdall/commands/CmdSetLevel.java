@@ -29,6 +29,7 @@ public class CmdSetLevel extends BaseCommand {
                 return false;
             }
 
+            /*
             int invokerLevel = Bot.heimdall.getPermissionManager().getPermissionGroupById(invoker.getPermissionGroupId()).getRanking();
 
             if (invokerLevel <= targetLevel){
@@ -37,7 +38,7 @@ public class CmdSetLevel extends BaseCommand {
             }
 
             return Bot.heimdall.getPermissionManager().setLevel(targetUUID, targetLevel);
-
+            */
         } else {
             invoker.sendPrivateMessage("Insufficient Permission.");
         }

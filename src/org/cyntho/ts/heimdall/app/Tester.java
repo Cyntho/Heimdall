@@ -1,54 +1,29 @@
 package org.cyntho.ts.heimdall.app;
 
-
-import java.util.Scanner;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Tester {
 
-    private static boolean stopRequest = false;
-
     public static void main(String[] args) {
 
-        System.out.println("Starting from Test env.");
+        Map<Integer, Boolean>  map = new HashMap<>();
 
-        TestRunner runner = new TestRunner();
-        runner.start("bot");
+        map.put(1, true);
+        map.put(2, true);
 
 
-    }
+        System.out.println("before: " + map.toString());
 
-    private static class TestRunner implements Runnable {
+        int i = 1;
 
-        Thread instance;
-        HeimdallOld heimdall = new HeimdallOld();
+        map.remove(i);
 
-        @Override
-        public void run() {
-            heimdall.start();
-            while (!stopRequest){
-                handleDirectInput();
-            }
-            heimdall.stop();
+        for (Map.Entry<Integer, Boolean> entry : map.entrySet()){
+            System.out.println("key: " + entry.getKey() + "\tvalue: " + entry.getValue());
+
         }
 
-        public void start(String name){
-            if (instance == null){
-                instance = new Thread(this, name);
-                instance.start();
-            }
-        }
-    }
 
-
-    private static void handleDirectInput(){
-
-        // Some spaghetti code just for debugging here
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        if (input.equalsIgnoreCase("shutdown")){
-            stopRequest = true;
-        }
-        scanner.close();
     }
 }

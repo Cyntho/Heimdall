@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 
-import static org.cyntho.ts.heimdall.util.NumberConversations.*;
+import static org.cyntho.ts.heimdall.util.NumberConversion.*;
 
 public abstract class CustomConfig {
 

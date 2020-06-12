@@ -3,13 +3,11 @@ package org.cyntho.ts.heimdall.util;
 import com.github.theholywaffle.teamspeak3.api.ChannelProperty;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import com.github.theholywaffle.teamspeak3.api.wrapper.ChannelInfo;
+import com.sun.istack.internal.Nullable;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * The (static) ChannelManagement class provides
@@ -70,6 +68,29 @@ public class ChannelManagement {
 
     public static Map<ChannelProperty, String> mapOf(ChannelProperty property, Object value){
         return Collections.singletonMap(property, String.valueOf(value));
+    }
+
+    public static List<Integer> getSubChannels(@Nullable List<Integer> current, int start, boolean deep){
+
+        if (current == null)
+            current = new ArrayList<>();
+
+
+        for (Channel c : Bot.heimdall.getApi().getChannels()){
+            if (c.getParentChannelId() == start){
+                current.add(c.getId());
+
+                if (deep){
+                    List<Integer> sub = getSubChannels(null, c.getId(), true);
+                    if (sub.size() > 0){
+                        current.addAll(sub);
+                    }
+                }
+
+            }
+        }
+
+        return current;
     }
 
 }

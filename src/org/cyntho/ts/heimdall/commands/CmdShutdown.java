@@ -16,13 +16,13 @@ public class CmdShutdown extends BaseCommand {
     }
 
     public boolean execute(@NotNull TS3User invoker, @Nullable String[] args){
-
+        /*
         if (invoker.isAdmin() || invoker.isHost() || invoker.hasPermission("shutdown")){
             Bot.log(LogLevelType.BOT_EVENT, "Receiving shutdown command from user " + invoker.getOfflineCopy().getNickname() + " [" + invoker.getOfflineCopy().getUUID() + "]");
             Bot.heimdall.stop();
             return true;
         }
-
+         */
         return false;
     }
 

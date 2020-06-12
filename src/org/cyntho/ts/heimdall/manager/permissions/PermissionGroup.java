@@ -1,82 +1,77 @@
 package org.cyntho.ts.heimdall.manager.permissions;
 
+import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
+import com.github.theholywaffle.teamspeak3.api.wrapper.ServerGroup;
 import org.cyntho.ts.heimdall.app.Bot;
-import org.cyntho.ts.heimdall.database.DatabaseTables;
-import org.cyntho.ts.heimdall.logging.LogLevelType;
 
-import java.sql.*;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PermissionGroup {
 
+    private final String name;
+    private Map<Integer, Boolean> channelMap;
+    private ServerGroup serverGroup;
+    private int ranking = 0;
 
-    private final int id;
-    private int ranking;
-    private String name;
-    private String descr;
-    private Map<String, Boolean> permissions;
-
-
-    // Constructor
-    public PermissionGroup(final int id){
-        this.id = id;
-        this.permissions = new HashMap<>();
-        init();
+    public PermissionGroup(String name){
+        this.name = name;
+        this.channelMap = new HashMap<>();
     }
 
-    // Public read-only getter
-    public final int getId() { return this.id; }
-    public final int getRanking() { return this.ranking; }
-    public final String getName() { return this.name; }
-    public final String getDescr() { return this.descr; }
-    public final Map<String, Boolean> getPermissions()  { return this.permissions; }
-
-    // Void to (re-)initialize the permissions and meta data
-    private void init(){
-        List<String> columns = Bot.heimdall.getDb().getDatabaseColumns(DatabaseTables.PERM_GROUP_LIST);
-
-        if (columns != null){
-
-            // Clear if loading column names succeeded
-            this.permissions.clear();
-
-            try {
-                String qry = "SELECT * FROM tsb_perm_group_list WHERE id = ? LIMIT 1";
-                PreparedStatement stmt = Bot.heimdall.getDb().getConnection().prepareStatement(qry);
-
-                ResultSet rs = stmt.executeQuery();
-
-                while (rs.next()){
-
-                    // Load general information
-                    this.ranking = rs.getInt("rank");
-                    this.name = rs.getString("name");
-                    this.descr = rs.getString("descr");
-
-                    for (String col : columns){
-                        this.permissions.put(col, rs.getBoolean(col));
-                    }
-                }
-
-            } catch (SQLException e) {
-                e.printStackTrace();
+    public void setServerGroup(int id){
+        for (ServerGroup g : Bot.heimdall.getApi().getServerGroups()){
+            if (g.getId() == id){
+                this.serverGroup = g;
+                return;
             }
+        }
+    }
+
+    public void setRanking(int i){
+        ranking = i;
+    }
+
+    public int getRanking(){
+        return ranking;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ServerGroup getServerGroup(){
+        return serverGroup;
+    }
+
+    public Map<Integer, Boolean> getChannelMap(){
+        return channelMap;
+    }
+
+    public void setChannel(Integer id, boolean canJoin){
+        if (canJoin){
+            channelMap.put(id, true);
         } else {
-            Bot.log(LogLevelType.BOT_CRITICAL, "Error initializing PermissionGroup {" + this.id + "}");
+            channelMap.remove(id);
         }
     }
 
 
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
 
-    /**
-     * Method to access a specific permission.
-     * @return  The permission's value. False on default
-     */
-    public final boolean getPermission(String name){
-        return permissions.getOrDefault(name, false);
+        sb.append(this.name).append(" (Rank ").append(ranking).append("): \n");
+
+        for (Map.Entry<Integer, Boolean> entry : channelMap.entrySet()){
+            sb.append("\tChannel: ").append(entry.getKey());
+            sb.append(" ");
+            sb.append(entry.getValue() ? "Allowed" : "Denied");
+            sb.append("\n");
+        }
+
+        return sb.toString();
     }
+
 
 
 

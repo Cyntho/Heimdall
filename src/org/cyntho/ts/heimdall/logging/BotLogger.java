@@ -28,14 +28,14 @@ public class BotLogger {
     private final int dayOfMonth;
     private final String currentLogFile;
 
-    private DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+    private final DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    private boolean logToFile;
-    private boolean logToDb;
+    private final boolean logToFile;
+    private final boolean logToDb;
     private File logFileObject;
 
-    private PrintWriter fileWriter;
-    private LogLevelType logLevel;
+    private final PrintWriter fileWriter;
+    private final LogLevelType logLevel;
 
 
     public BotLogger(boolean logToFile, boolean logToDb, LogLevelType lvl) {
