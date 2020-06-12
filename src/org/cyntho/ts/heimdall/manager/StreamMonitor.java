@@ -72,7 +72,7 @@ public class StreamMonitor extends BaseFeature {
                 Bot.heimdall.getApi().addChannelPermission(channelId, p.getName(), p.getValue());
             }
         }
-        Bot.heimdall.log(BOT_EVENT, "Channel '" + channelId + "' has been restored.");
+        Bot.log(BOT_EVENT, "Channel '" + channelId + "' has been restored.");
     }
 
     public void saveClientState(String uuid){
@@ -99,11 +99,11 @@ public class StreamMonitor extends BaseFeature {
         for (Permission p : state){
             Bot.heimdall.getApi().addChannelClientPermission(channelId, streamer.getClientInfo().getDatabaseId(), p.getName(), p.getValue());
         }
-        Bot.heimdall.log(BOT_EVENT, "User '" + streamer.getOfflineCopy().getNickname() + "' [" + uuid + "] has been restored.");
+        Bot.log(BOT_EVENT, "User '" + streamer.getOfflineCopy().getNickname() + "' [" + uuid + "] has been restored.");
     }
 
     /* Available channel/client flags */
-    public static enum StreamFlag {
+    public enum StreamFlag {
         POKE_ALLOW("i_client_needed_poke_power"),
         POKE_DENY("i_client_needed_poke_power"),
         TEXT_ALLOW("i_client_needed_private_textmessage_power"),

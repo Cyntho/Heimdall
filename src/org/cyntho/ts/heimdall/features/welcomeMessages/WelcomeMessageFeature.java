@@ -20,7 +20,7 @@ public class WelcomeMessageFeature extends BaseFeature {
 
     public void activate(){
 
-        Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
+        Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
 
         if (!super.active){
             super.active = true;
@@ -33,7 +33,7 @@ public class WelcomeMessageFeature extends BaseFeature {
 
     public void deactivate(){
 
-        Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
+        Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
 
         if (super.active){
             super.active = false;

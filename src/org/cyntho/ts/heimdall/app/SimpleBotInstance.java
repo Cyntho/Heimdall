@@ -5,8 +5,6 @@ import com.github.theholywaffle.teamspeak3.TS3Config;
 import com.github.theholywaffle.teamspeak3.TS3Query;
 import org.cyntho.ts.heimdall.config.BotConfig;
 import org.cyntho.ts.heimdall.exceptions.SingleInstanceViolationException;
-import org.cyntho.ts.heimdall.logging.LogEntry;
-import org.cyntho.ts.heimdall.logging.LogLevelType;
 
 import java.io.IOException;
 
@@ -41,7 +39,7 @@ public abstract class SimpleBotInstance {
 
     private final String instanceIdentifier;
     private final boolean forceSingleInstance;
-    private SimpleBotInstance parent;
+    private final SimpleBotInstance parent;
 
 
     /* Constructor */
@@ -121,6 +119,17 @@ public abstract class SimpleBotInstance {
 
     public final SimpleBotInstance getParent(){
         return this.parent;
+    }
+
+    /* Installation stuff */
+    public final void doInstall(){
+
+        /*
+            1)
+         */
+
+
+
     }
 
 

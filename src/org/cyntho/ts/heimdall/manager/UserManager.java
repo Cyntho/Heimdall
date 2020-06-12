@@ -85,14 +85,14 @@ public class UserManager {
                     parent.addChild(user);
                     user.setParent(parent);
 
-                    //Bot.heimdall.log(LogLevelType.DBG,"User {" + parent.getRuntimeId() + "} is now parent of {" + user.getRuntimeId() + "}");
+                    //Bot.log(LogLevelType.DBG,"User {" + parent.getRuntimeId() + "} is now parent of {" + user.getRuntimeId() + "}");
 
                 } else {
                     // The candidate is not a parent, so we make it one (since its online longer)
                     candidate.addChild(user);
                     user.setParent(candidate);
 
-                    //Bot.heimdall.log(LogLevelType.DBG,"User {" + candidate.getRuntimeId() + "} is now parent of {" + user.getRuntimeId() + "}");
+                    //Bot.log(LogLevelType.DBG,"User {" + candidate.getRuntimeId() + "} is now parent of {" + user.getRuntimeId() + "}");
                 }
 
                 // We break the for loop here, since there can only be one parent
@@ -179,14 +179,14 @@ public class UserManager {
                 }
             }
 
-            //Bot.heimdall.log(LogLevelType.DBG,"{" + user.getRuntimeId() + "} is no longer parent. It's child {" + oldest.getRuntimeId() + "} took the job!");
+            //Bot.log(LogLevelType.DBG,"{" + user.getRuntimeId() + "} is no longer parent. It's child {" + oldest.getRuntimeId() + "} took the job!");
 
         } else if (user.isChild()){
             // This client is a child itself
             TS3User parent = user.getParent();
             parent.removeChild(user);
 
-            //Bot.heimdall.log(LogLevelType.DBG,"Removed " + user.getRuntimeId() + " as child from " + parent.getRuntimeId());
+            //Bot.log(LogLevelType.DBG,"Removed " + user.getRuntimeId() + " as child from " + parent.getRuntimeId());
         } else {
             // If the UserHistory feature is active and there is no other instance
             // left than the one leaving right now, log it to the database
@@ -206,7 +206,7 @@ public class UserManager {
 
         this.userList.remove(user);
 
-        //Bot.heimdall.log(LogLevelType.CLIENT_LEAVE_EVENT, "Successfully unregistered " + user.getOfflineCopy().getNickname() + " [uuid=" + user.getClientUUID() + "] [RuntimeId=" + user.getRuntimeId() + "]");
+        //Bot.log(LogLevelType.CLIENT_LEAVE_EVENT, "Successfully unregistered " + user.getOfflineCopy().getNickname() + " [uuid=" + user.getClientUUID() + "] [RuntimeId=" + user.getRuntimeId() + "]");
 
         return true;
     }

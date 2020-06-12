@@ -26,13 +26,13 @@ public class LogDatabaseEntry {
         ResultSet resultSet = Bot.heimdall.getDb().executeQuery(sql, params);
 
         if (resultSet != null) {
-            Bot.heimdall.log(LogLevelType.DBG, "Added log entry to Database.");
+            Bot.log(LogLevelType.DBG, "Added log entry to Database.");
         } else {
             String prepared = String.format("INSERT INTO prefix_log_entries (server_id, log_type, invoker_id, target_id, " +
                     "invoker_uuid, target_uuid, loggedOn, message) VALUES (%d, %d, %d, %d, %s, %s, %d, %s)",
                     server, type, invokerID, targetID, invokerUUID, targetUUID, new Date().getTime(), msg);
 
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, prepared);
+            Bot.log(LogLevelType.DATABASE_ERROR, prepared);
         }
 
     }

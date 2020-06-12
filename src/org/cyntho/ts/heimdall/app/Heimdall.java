@@ -85,7 +85,6 @@ public class Heimdall extends SimpleBotInstance {
         ts3Config.setQueryPort(botConfig.getQryPort());
         ts3Config.setCommandTimeout(botConfig.getServerCommandTimeout());
 
-
         log(LogLevelType.BOT_EVENT, "Environment: ready!");
 
 
@@ -119,14 +118,14 @@ public class Heimdall extends SimpleBotInstance {
         log(LogLevelType.BOT_EVENT, "API: connected!");
 
         // Login with server query
-        /*
-        if (!ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass())){
-            ts3Query.exit();
-            log(LogLevelType.BOT_CRITICAL, "Could not login with teamspeak query credentials!");
-            System.exit(1);
-        }
-         */
         ts3Api.login(botConfig.getQryUser(), botConfig.getQryPass());
+        if (ts3Api.whoAmI() == null){
+
+            // Login Unsuccessful
+            log(LogLevelType.BOT_CRITICAL, "Error while logging in with with query credentials.");
+            stop();
+            return;
+        }
 
 
         try {
@@ -145,45 +144,14 @@ public class Heimdall extends SimpleBotInstance {
 
 
         // For security reasons, inform host if the query uses the 'ServerAdmin' credentials
-        if (botConfig.getQryUser().equalsIgnoreCase("ServerAdmin") && !DEBUG_MODE){
-            log(LogLevelType.BOT_CRITICAL, "Attention! The Query uses the default 'ServerAdmin' account. This could lead to security issues!");
+        if (botConfig.getQryUser().equalsIgnoreCase("ServerAdmin")){
+            log(LogLevelType.BOT_CRITICAL, "Attention! The Query uses the default 'ServerAdmin' account");
         }
 
 
         // Try to set nickname
         nickname = botConfig.getString("bot.nick", "[Bot] Heimdall");
         ts3Api.setNickname(nickname);
-
-        /*
-        if (!ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
-            log(LogLevelType.BOT_ERROR, "The bot's specified nickname is already in use. Trying to kick user...");
-
-            for (Client client : ts3Api.getClients()){
-                if (client.getNickname().equalsIgnoreCase(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
-                    if (client.isServerQueryClient()){
-                        log(LogLevelType.BOT_ERROR, "Could not kick the user, since its a server query client!");
-                    } else {
-                        if(ts3Api.kickClientFromServer("This username is reserved!", client)){
-                            log(LogLevelType.BOT_EVENT, "User has been kicked. Trying again to use nickname..");
-
-                            if (!ts3Api.setNickname(botConfig.getString("bot.nick", "[Bot] HeimdallOld"))){
-                                log(LogLevelType.BOT_ERROR, "Still not able to set nickname.. Shutting down!");
-                                stop();
-                                System.exit(1);
-                            }
-
-                        } else {
-                            log(LogLevelType.BOT_ERROR, "Unable to kick this user!");
-                            System.exit(1);
-                        }
-                    }
-                    break;
-                }
-            }
-        }
-        nickname = botConfig.getString("bot.nick", "[Bot] HeimdallOld");
-
-         */
         log(LogLevelType.BOT_EVENT, "Nickname: set!");
 
 
@@ -214,7 +182,6 @@ public class Heimdall extends SimpleBotInstance {
             featureManager.register(new WelcomeMessageFeature());
         }
 
-
         // Load user manager
         userManager = new UserManager(this);
         userManager.refreshUserList();
@@ -225,16 +192,12 @@ public class Heimdall extends SimpleBotInstance {
 
         ts3Api.registerAllEvents();
 
-        //
-        // TODO --> webNotifications
-
-
         /* Register commands */
         commandManager = new CommandManager();
         if (botConfig.getBoolean("commands.debug", false) && DEBUG_MODE)
             commandManager.registerCommand(new CmdDebug());
 
-        if (botConfig.getBoolean("commands.hasPermission", true))
+        if (botConfig.getBoolean("commands.hasPermission", false))
             commandManager.registerCommand(new CmdHasPermission());
 
         /*if (botConfig.getBoolean("commands.list", true))
@@ -243,43 +206,31 @@ public class Heimdall extends SimpleBotInstance {
         if (botConfig.getBoolean("commands.getPath", false))
             commandManager.registerCommand(new CmdGetPath());
 
-        if (botConfig.getBoolean("commands.setLevel", true))
+        if (botConfig.getBoolean("commands.setLevel", false))
             commandManager.registerCommand(new CmdSetLevel());
 
         if (botConfig.getBoolean("commands.shutdown", false))
             commandManager.registerCommand(new CmdShutdown());
 
 
-        // TODO: Command to do backup
-
         // Activate all features
         featureManager.register(commandManager);
         featureManager.activateAll();
 
-
-
         // Set own runtime Id
         botRuntimeId = ts3Api.whoAmI().getId();
-
 
         // Set the default channel's description to be a TS-Link to this bot's Identity
         setChannelDescription(currentChannelId, true);
 
-
-
-        log(LogLevelType.BOT_EVENT, "Bot is now running!");
-
-        if (DEBUG_MODE){
-            ts3Api.sendServerMessage("Online!");
-        }
-
+        // Send server wide message (if set)
         String onlineMessage = botConfig.getString("bot.goOnlineMessage", "ERR_NONE");
         if (!onlineMessage.equalsIgnoreCase("ERR_NONE")){
             onlineMessage = PlaceHolder.handleBotPlaceholder(onlineMessage);
             ts3Api.sendServerMessage(onlineMessage);
-        } else if (DEBUG_MODE) {
-            System.out.println(onlineMessage);
         }
+
+        log(LogLevelType.BOT_EVENT, "Bot is now running!");
     }
 
     @Override
@@ -305,7 +256,7 @@ public class Heimdall extends SimpleBotInstance {
                     }
                 }
 
-                String offlineMessage = botConfig.getString("bot.offlineMessage", "ERR_NONE");
+                String offlineMessage = botConfig.getString("bot.goOfflineMessage", "ERR_NONE");
                 if (!offlineMessage.equalsIgnoreCase("ERR_NONE"))
                     ts3Api.sendServerMessage(PlaceHolder.handleBotPlaceholder(offlineMessage));
 
@@ -388,7 +339,7 @@ public class Heimdall extends SimpleBotInstance {
         }
     }
 
-    public static void log(LogLevelType type, String message){
+    protected static void log(LogLevelType type, String message){
         Bot.log(type, message);
     }
 

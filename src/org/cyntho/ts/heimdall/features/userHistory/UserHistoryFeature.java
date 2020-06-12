@@ -1,13 +1,11 @@
 package org.cyntho.ts.heimdall.features.userHistory;
 
 import org.cyntho.ts.heimdall.app.Bot;
-import org.cyntho.ts.heimdall.app.Heimdall;
 import org.cyntho.ts.heimdall.events.UserHistoryListener;
 import org.cyntho.ts.heimdall.features.BaseFeature;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
@@ -42,9 +40,9 @@ public class UserHistoryFeature extends BaseFeature {
             Bot.heimdall.getApi().addTS3Listeners(listener);
 
             super.active = true;
-            Heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
+            Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been activated.");
         } else {
-            Heimdall.log(LogLevelType.BOT_ERROR, "Could not activate UserHistoryFeature, since it's already running!");
+            Bot.log(LogLevelType.BOT_ERROR, "Could not activate UserHistoryFeature, since it's already running!");
         }
     }
 
@@ -74,9 +72,9 @@ public class UserHistoryFeature extends BaseFeature {
             }
 
             super.active = false;
-            Bot.heimdall.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
+            Bot.log(LogLevelType.BOT_EVENT, "Feature: " + super.getName() + " has been deactivated.");
         } else {
-            Bot.heimdall.log(LogLevelType.BOT_ERROR, "Could not deactivate UserHistoryFeature, since it's not running!");
+            Bot.log(LogLevelType.BOT_ERROR, "Could not deactivate UserHistoryFeature, since it's not running!");
         }
 
     }
@@ -117,11 +115,10 @@ public class UserHistoryFeature extends BaseFeature {
              * to update the parent-child instance relationship.
              */
 
-            String qry = "SELECT COUNT(*) as TOTAL FROM tsb_user_history_login WHERE uid = ? AND logout = 0";
-            PreparedStatement stmt = Bot.heimdall.getDb().getConnection().prepareStatement(qry);
-            stmt.setString(1, user.getClientUUID());
+            String qry = "SELECT COUNT(*) as TOTAL FROM prefix_user_history_login WHERE uid = ? AND logout = 0";
 
-            ResultSet rs = stmt.executeQuery();
+            ResultSet rs = Bot.heimdall.getDb().executeQuery(qry, new String[]{user.getClientUUID()});
+
             int counter = -1;
 
             while (rs.next()){
@@ -137,11 +134,9 @@ public class UserHistoryFeature extends BaseFeature {
             } else if (counter == 1){
                 // Check if the user needs to be updated
 
-                String q = "SELECT * FROM tsb_user_history_login WHERE uid = ? AND LOGOUT = 0 LIMIT 1";
-                PreparedStatement statement = Bot.heimdall.getDb().getConnection().prepareStatement(q);
-                statement.setString(1, user.getClientUUID());
+                String q = "SELECT * FROM prefix_user_history_login WHERE uid = ? AND LOGOUT = 0 LIMIT 1";
 
-                ResultSet resultSet = statement.executeQuery();
+                ResultSet resultSet = Bot.heimdall.getDb().executeQuery(q, new String[]{user.getClientUUID()});
 
                 long userSet = 0;
                 long dbSet = 0;
@@ -167,13 +162,8 @@ public class UserHistoryFeature extends BaseFeature {
                     user.setLoginDate(dbSet);
                 } else {
                     // The database entry is outdated
-                    q = "UPDATE tsb_user_history_login SET logout = -1 WHERE uid = ? AND logout = 0";
-                    statement = Bot.heimdall.getDb().getConnection().prepareStatement(q);
-                    statement.setString(1, user.getClientUUID());
-
-                    if (statement.executeUpdate() <= 0){
-                        Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Could not repair tsb_user_history_login after restart");
-                    }
+                    q = "UPDATE prefix_user_history_login SET logout = -1 WHERE uid = ? AND logout = 0";
+                    Bot.heimdall.getDb().executeQuery(q, new String[]{user.getClientUUID()});
 
                     // We 'repaired' the database, so we can now save the user as a new one
                     insertLoginData(user);
@@ -183,12 +173,12 @@ public class UserHistoryFeature extends BaseFeature {
             } else {
                 //  The counter remained equals -1 or it's > 1
                 // So there was an error with our query (or we fucked up in the past o_O)
-                Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::handleLogin(TS3User)] Could not update the database after restart/crash");
+                Bot.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::handleLogin(TS3User)] Could not update the database after restart/crash");
             }
 
 
         } catch (SQLException ex){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, ex.getMessage());
+            Bot.log(LogLevelType.DATABASE_ERROR, ex.getMessage());
         }
     }
 
@@ -196,24 +186,20 @@ public class UserHistoryFeature extends BaseFeature {
 
         // Save meta data
         try {
-            String sql = "INSERT INTO tsb_user_history_login (uid, login, ip, version, connections, os, country) VALUES (?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement stmt = Bot.heimdall.getDb().getConnection().prepareStatement(sql);
+            String sql = "INSERT INTO prefix_user_history_login (uid, login, ip, version, connections, os, country) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
+            Bot.heimdall.getDb().executeQuery(sql, new Object[]{
+                    user.getClientUUID(),
+                    user.getLoginDate(),
+                    user.getMetaIpAddress(),
+                    user.getMetaVersion(),
+                    user.getMetaConnections(),
+                    user.getMetaOperatingSystem(),
+                    user.getMetaCountry()
+            });
 
-            stmt.setString(1, user.getClientUUID());
-            stmt.setLong(2, user.getLoginDate());
-            stmt.setString(3, user.getMetaIpAddress());
-            stmt.setString(4, user.getMetaVersion());
-            stmt.setInt(5, user.getMetaConnections());
-            stmt.setString(6, user.getMetaOperatingSystem());
-            stmt.setString(7, user.getMetaCountry());
-
-            if (stmt.executeUpdate() <= 0){
-                Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Error inserting login meta data");
-            }
-
-        } catch (SQLException ex){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "SQL-Exception: " + ex.getMessage());
+        } catch (Exception ex){
+            Bot.log(LogLevelType.DATABASE_ERROR, "SQL-Exception: " + ex.getMessage());
         }
     }
 
@@ -221,14 +207,13 @@ public class UserHistoryFeature extends BaseFeature {
         try {
 
             // First, check if the user's nickname has already been used before
-            String sqlCount = "SELECT COUNT(*) as TOTAL FROM tsb_user_history_nickname WHERE (uuid = ? AND (name = ? OR name_sc = ?))";
-            PreparedStatement stmtCount = Bot.heimdall.getDb().getConnection().prepareStatement(sqlCount);
+            String sqlCount = "SELECT COUNT(*) as TOTAL FROM prefix_user_history_nickname WHERE (uuid = ? AND (name = ? OR name_sc = ?))";
 
-            stmtCount.setString(1, user.getClientUUID());
-            stmtCount.setString(2, user.getOfflineCopy().getNickname());
-            stmtCount.setString(3, user.getOfflineCopy().getNickname().toLowerCase());
-
-            ResultSet resCount = stmtCount.executeQuery();
+            ResultSet resCount = Bot.heimdall.getDb().executeQuery(sqlCount, new Object[]{
+                    user.getClientUUID(),
+                    user.getOfflineCopy().getNickname(),
+                    user.getOfflineCopy().getNickname().toLowerCase()
+            });
 
             int c = 0;
             while (resCount.next()){
@@ -237,32 +222,25 @@ public class UserHistoryFeature extends BaseFeature {
 
             if (c == 0){
                 // If its a new one, insert it
-                String sqlInsert = "INSERT INTO tsb_user_history_nickname (uuid, name, name_sc) VALUES (?, ?, ?)";
-                PreparedStatement stmtInsert = Bot.heimdall.getDb().getConnection().prepareStatement(sqlInsert);
+                String sqlInsert = "INSERT INTO prefix_user_history_nickname (uuid, name, name_sc) VALUES (?, ?, ?)";
 
-                stmtInsert.setString(1, user.getClientUUID());
-                stmtInsert.setString(2, user.getOfflineCopy().getNickname());
-                stmtInsert.setString(3, user.getOfflineCopy().getNickname().toLowerCase());
+                Bot.heimdall.getDb().executeQuery(sqlInsert, new Object[]{
+                        user.getClientUUID(),
+                        user.getOfflineCopy().getNickname(),
+                        user.getOfflineCopy().getNickname().toLowerCase()
+                });
 
-                if (stmtInsert.executeUpdate() <= 0){
-                    Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::updateNicknameAlias(TS3User)] Error inserting meta data into database");
-                }
             } else {
                 // Its not a new one. Increase counter
-                String sqlUpdate = "UPDATE tsb_user_history_nickname SET counter = counter + 1 WHERE (uuid = ? AND name_sc = ?)";
-                PreparedStatement stmtUpdate = Bot.heimdall.getDb().getConnection().prepareStatement(sqlUpdate);
+                String sqlUpdate = "UPDATE prefix_user_history_nickname SET counter = counter + 1 WHERE (uuid = ? AND name_sc = ?)";
 
-                stmtUpdate.setString(1, user.getClientUUID());
-                stmtUpdate.setString(2, user.getOfflineCopy().getNickname().toLowerCase());
-
-                if (stmtUpdate.executeUpdate() <= 0){
-                    Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::updateNicknameAlias(TS3User)] Error updating database");
-                }
+                Bot.heimdall.getDb().executeQuery(sqlUpdate, new Object[]{
+                        user.getClientUUID(),
+                        user.getOfflineCopy().getNickname().toLowerCase()
+                });
             }
-
-
         } catch (SQLException ex){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, ex.getMessage());
+            Bot.log(LogLevelType.DATABASE_ERROR, ex.getMessage());
         }
     }
 
@@ -271,19 +249,15 @@ public class UserHistoryFeature extends BaseFeature {
     public void handleLogout(TS3User user){
 
         try {
-            String sql = "UPDATE tsb_user_history_login SET logout = ? WHERE uid = ? AND login = ?";
-            PreparedStatement stmt = Bot.heimdall.getDb().getConnection().prepareStatement(sql);
+            String sql = "UPDATE prefix_user_history_login SET logout = ? WHERE uid = ? AND login = ?";
 
-            stmt.setLong(1, new Date().getTime());
-            stmt.setString(2, user.getClientUUID());
-            stmt.setLong(3, user.getLoginDate());
-
-            if (stmt.executeUpdate() <= 0){
-                Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::Logout] Unable to update Database for uuid=" + user.getClientUUID());
-            }
-
-        } catch (SQLException ex){
-            Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::Logout] Error updating database");
+            Bot.heimdall.getDb().executeQuery(sql, new Object[]{
+                    new Date().getTime(),
+                    user.getClientUUID(),
+                    user.getLoginDate()
+            });
+        } catch (Exception ex){
+            Bot.log(LogLevelType.DATABASE_ERROR, "[UserHistoryFeature::Logout] Error updating database");
             ex.printStackTrace();
         }
 

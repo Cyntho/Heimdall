@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class DebugLogger {
 
-    private static DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+    private static final DateFormat consoleLogFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
     public static void logDebug(String msg){
         if (!Bot.DEBUG_MODE) return;

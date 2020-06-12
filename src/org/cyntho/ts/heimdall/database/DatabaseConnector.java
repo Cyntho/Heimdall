@@ -23,15 +23,15 @@ import java.util.List;
  */
 public class DatabaseConnector {
 
-    private String dbHost;
-    private String dbUser;
-    private String dbPass;
-    private String dbBase;
-    private String dbPref;
-    private int dbPort;
+    private final String dbHost;
+    private final String dbUser;
+    private final String dbPass;
+    private final String dbBase;
+    private final String dbPref;
+    private final int dbPort;
 
     private Connection connection = null;
-    private boolean isInitialized = false;
+    private boolean initialized = false;
 
     //TODO: escape prefix
     public DatabaseConnector(BotConfig cfg){
@@ -62,19 +62,20 @@ public class DatabaseConnector {
 
             connection = DriverManager.getConnection(getConnectionString(), dbUser, dbPass);
 
-            isInitialized = true;
+            initialized = true;
         } catch (Exception e){
             System.out.println(e.getMessage());
             throw new DatabaseAuthException(getConnectionString(), dbUser, dbPass);
         }
     }
 
+    public boolean isInitialized() { return this.initialized; }
+
     public String getConnectionString() { return ("jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbBase + "?user=" + dbUser + "&pass=" + dbPass); }
-    //public String getConnectionString() { return ("jdbc:mysql://localhost/teamspeak_heimdall?serverTimezone=GMT"); }
 
-    public Connection getConnection() { return this.connection; }
+    protected Connection getConnection() { return this.connection; }
 
-    public Connection getConnectionInstance() throws SQLException {
+    protected Connection getConnectionInstance() throws SQLException {
         return DriverManager.getConnection(getConnectionString(), dbUser, dbPass);
     }
 
@@ -164,7 +165,7 @@ public class DatabaseConnector {
             return columns;
 
         } catch (SQLException e){
-            //Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Could not resolve columns for database '" + table + "', query was: " + e.getMessage());
+            //Bot.log(LogLevelType.DATABASE_ERROR, "Could not resolve columns for database '" + table + "', query was: " + e.getMessage());
             System.out.println(e.getMessage());
         }
 

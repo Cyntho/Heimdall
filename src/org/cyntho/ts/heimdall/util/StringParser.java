@@ -9,6 +9,7 @@ import java.util.*;
  * @author  Xida
  * @version 1.0
  */
+@SuppressWarnings("unchecked")
 public class StringParser {
 
     public static String longToDateString(long val){
@@ -39,30 +40,43 @@ public class StringParser {
     public static String convertToTeamspeakName(String raw){
 
          /*
-        5C%5C%5B    == [
-        5C%5C%5D    == ]
-        20          == space
-        7B          == {
-        28          == (
-        -           == -
-        _           == _
-        2B          == +
-        3D          == =
-        26          == &
-        21          == !
-        24          == $
-        25          == %
-        5E          == ^
-        2A          == *
-        \\          == \
-
+            5C%5C%5B    == [
+            5C%5C%5D    == ]
+            20          == space
+            7B          == {
+            28          == (
+            -           == -
+            _           == _
+            2B          == +
+            3D          == =
+            26          == &
+            21          == !
+            24          == $
+            25          == %
+            5E          == ^
+            2A          == *
+            \\          == \
          */
 
-        raw = replace(raw, "%5C%5C%5B", '[');
-        raw = replace(raw, "%5C%5C%5D", ']');
-        raw = replace(raw, "%20", ' ');
-        //raw = replace(raw, "\\\\", '\\');
+        Map<String, Character> map = new HashMap<>();
+        map.put("5C%5C%5B", '[');
+        map.put("5C%5C%5D", ']');
+        map.put("%20", ' ');
+        map.put("%7B", '{');
+        map.put("%28", '(');
+        map.put("%2B", '+');
+        map.put("%3D", '=');
+        map.put("%26", '&');
+        map.put("%21", '!');
+        map.put("%24", '$');
+        map.put("%25", '%');
+        map.put("%5E", '^');
+        map.put("%2A", '*');
+        map.put("\\\\", '\\');
 
+        for (Map.Entry<String, Character> entry : map.entrySet()){
+            raw = replace(raw, entry.getKey(), entry.getValue());
+        }
 
         return raw;
     }

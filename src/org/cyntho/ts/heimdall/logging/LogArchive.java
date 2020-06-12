@@ -18,7 +18,7 @@ public class LogArchive {
         // check environment
         File dir = new File(System.getProperty("user.dir") + "/logs");
         if (!dir.exists() || !dir.isDirectory()){
-            Bot.heimdall.log(LogLevelType.BOT_CRITICAL, "Could not archive older log files. Directory doesn't exist.");
+            Bot.log(LogLevelType.BOT_CRITICAL, "Could not archive older log files. Directory doesn't exist.");
             return -1;
         }
 
