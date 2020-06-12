@@ -134,44 +134,14 @@ public class DatabaseConnector {
         return null;
     }
 
+
     /**
      * Get a List of Strings containing all columns from the
      * requested table
      * @param table String  The name of the requested database table
-     * @param ignore String[] Optional array of Columns that will not be included
+     * @param ignored String[] Optional array of Columns that will not be included
      * @return List<String> on success, NULL on failure
      */
-    @Deprecated
-    public List<String> getDatabaseColumnsOld(String table, String... ignore){
-        List<String> columns = new ArrayList<>();
-
-        try {
-            String qry = "SELECT * FROM ?";
-
-            Connection con = getConnectionInstance();
-
-            PreparedStatement stmt = con.prepareStatement(qry);
-            stmt.setString(1, table);
-
-            ResultSet resultSet = stmt.executeQuery();
-            ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
-
-            for (int i = 0; i < resultSetMetaData.getColumnCount(); i++){
-                String col = resultSetMetaData.getColumnName(i);
-                if (!Arrays.asList(ignore).contains(col)){
-                    columns.add(col);
-                }
-            }
-            return columns;
-
-        } catch (SQLException e){
-            //Bot.log(LogLevelType.DATABASE_ERROR, "Could not resolve columns for database '" + table + "', query was: " + e.getMessage());
-            System.out.println(e.getMessage());
-        }
-
-        return null;
-    }
-
     public List<String> getDatabaseColumns(DatabaseTables table, String... ignored){
 
         List<String> columns = new ArrayList<>();
