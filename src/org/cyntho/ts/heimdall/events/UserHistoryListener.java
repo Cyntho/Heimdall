@@ -17,38 +17,16 @@ public class UserHistoryListener implements TS3Listener {
 
 
     @Override public void onClientJoin(ClientJoinEvent e){
-        logDebug("Debug of: UserHistoryListener.onClientJoin");
-
         // Get the TS3User object from the event (if it has been registered yet)
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
         if (user != null){
-            logDebug("user != null");
-
-            if (user.isParent()){
-                logDebug("user is parent");
-            } else {
-                logDebug("user is child");
-                for (TS3User u : user.getChildren()){
-                    logDebug(u.getRuntimeId());
-                }
-            }
-
-
-            logDebug("handleLogin()");
-
             feature.handleLogin(user);
-
-        } else {
-            logDebug("user is null");
         }
     }
 
     @Override public void onClientLeave(ClientLeaveEvent e){
         TS3User user = Bot.heimdall.getUserManager().getUserByRuntimeId(e.getClientId());
         if (user != null && user.isParent()){
-            System.out.println("Debug of: UserHistoryListener.onClientLeave");
-            System.out.println("handleLogout()");
-
             feature.handleLogout(user);
         }
     }
