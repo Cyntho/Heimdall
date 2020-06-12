@@ -5,7 +5,6 @@ import com.github.theholywaffle.teamspeak3.api.event.*;
 import com.github.theholywaffle.teamspeak3.api.wrapper.Channel;
 import org.cyntho.ts.heimdall.app.Bot;
 import org.cyntho.ts.heimdall.logging.LogLevelType;
-import org.cyntho.ts.heimdall.manager.PermissionManager;
 import org.cyntho.ts.heimdall.manager.user.TS3User;
 import org.cyntho.ts.heimdall.util.ChannelManagement;
 import org.cyntho.ts.heimdall.util.StringParser;
@@ -122,7 +121,7 @@ public class GlobalListener implements TS3Listener {
             }
 
             // Update permissions
-            PermissionManager.updateFor(user);
+            Bot.heimdall.getPermissionManager().updateFor(user);
         }
 
 
@@ -175,7 +174,7 @@ public class GlobalListener implements TS3Listener {
         }
 
         // Update permissions
-        PermissionManager.updateFor(user);
+        Bot.heimdall.getPermissionManager().updateFor(user);
 
         Bot.log(LogLevelType.CLIENT_MOVED_EVENT, logMessage.toString());
     }
@@ -192,7 +191,7 @@ public class GlobalListener implements TS3Listener {
             privilegeKeyUsedEvent.getInvokerName() + "} uuid: {" + privilegeKeyUsedEvent.getInvokerUniqueId() + "}");
 
         // Update permissions
-        PermissionManager.updateFor(Bot.heimdall.getUserManager().getUserByUUID(privilegeKeyUsedEvent.getInvokerUniqueId()));
+        Bot.heimdall.getPermissionManager().updateFor(Bot.heimdall.getUserManager().getUserByUUID(privilegeKeyUsedEvent.getInvokerUniqueId()));
     }
 
 
