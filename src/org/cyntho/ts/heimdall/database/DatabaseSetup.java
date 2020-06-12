@@ -63,7 +63,7 @@ public final class DatabaseSetup {
                     try {
                         statement.execute(part);
                     } catch (SQLException e) {
-                        Bot.heimdall.log(LogLevelType.DATABASE_ERROR, "Could not execute setup statement: " + part);
+                        Bot.log(LogLevelType.DATABASE_ERROR, "Could not execute setup statement: " + part);
                     }
                 }
             }
